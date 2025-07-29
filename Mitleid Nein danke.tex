@@ -1,0 +1,227 @@
+\documentclass[fontsize=13pt,a4paper,headinclude,DIV=calc,automark,frontmatter=normal]{scrbook}
+
+\usepackage[left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry} % Seitenränder
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\setotherlanguage{english}
+\hyphenation{Kran-ken-hau-ses}
+
+\usepackage[
+    format=plain,
+    labelformat=empty,
+    textfont={small,it},
+    belowskip=-15pt
+ ]{caption}
+
+\usepackage{booktabs}       % Für professionelle Tabellenlinien
+\usepackage{eurosym}        % Für das Euro-Symbol
+\usepackage{graphicx}       % Für das Einbinden von Grafiken
+
+\usepackage{scrlayer-scrpage} % Paket einfach laden, Optionen zentral setzen
+\KOMAoptions{
+    automark,             % Wichtig: Aktiviert die automatische Markierung
+    markcase=nouppercase, % Verhindert Großbuchstaben in den Kopfzeilen
+    headsepline=0.4pt,    % Linie unter der Kopfzeile
+    footsepline=0pt,      % Keine Linie über der Fußzeile
+    chapterprefix=true    % Auch wenn Kapitel nicht nummeriert sind, oft hilfreich
+}
+
+\RedeclareSectionCommand[
+  runin=false,
+  afterindent=false,
+  beforeskip=.5\baselineskip,
+  afterskip=5pt]{section}
+
+\raggedbottom
+
+%\clearpairofpagestyles % Alle vorhandenen Definitionen für Kopf- und Fußzeilen leeren (globaler Reset)
+%\rehead{\rightmark}
+\rohead{\rightmark}
+%\lehead{\leftmark} 
+%\lohead{\leftmark}
+
+\setkomafont{pageheadfoot}{} % Stellt sicher, dass die Schriftart der Kopf-/Fußzeile neutral ist
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{myblue}{RGB}{47, 84, 150}
+
+\usepackage{fontspec}
+%\setmainfont{Palatino Linotype}
+%\setsansfont{Palatino Linotype}
+%\setmonofont{Palatino Linotype}
+\setmainfont{Cambria}
+\setsansfont{Cambria}
+\setmonofont{Cambria}
+
+\setkomafont{chapter}{\normalfont\huge\bfseries\rmfamily}
+\setkomafont{section}{\normalfont\fontsize{14}{20}\bfseries\rmfamily\textcolor{myblue}}
+\setkomafont{subsection}{\normalfont\large\bfseries\rmfamily}
+
+\setcounter{secnumdepth}{-1} % Deaktiviert die Nummerierung für alle Überschriften
+
+\title{Mitleid? Nein, danke!}
+\author{Marius Ebel}
+\date{November 2024}
+
+\begin{document}
+\frontmatter
+
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+    \huge\bfseries Mitleid? - Nein, danke!\par
+    \vspace{1cm}
+    \large Meine Geschichte: Ein Leben mit Freude trotz\\ unheilbarer Krankheit\par
+    \vspace{1cm}
+    \normalsize von \textit{Marius Ebel}\par
+\end{center}
+\vspace*{\fill}
+
+\pagestyle{plain}
+\chapter*{Danksagung}
+\addcontentsline{toc}{chapter}{Danksagung}
+
+Ich möchte mich bei all jenen bedanken, die mich dabei unterstützt haben, diese Autobiographie zu schreiben und die mich dazu ermuntert haben, am Ball zu bleiben, wenn Zweifel in mir aufkamen.
+Ein besonderer Dank gilt dabei Anja Schulte, Roland Penz und Rüdiger Barth vom Kinder- und Jugendhospiz Balthasar, die mir dieses Projekt ans Herz gelegt haben, und ebenso Rebecca Kranz, die die Organisation übernommen und dafür gesorgt hat, dass aus dem Text ein richtiges Buch geworden ist.
+
+Danksagen möchte ich auch allen Mitarbeiter:innen des Balthasars. Danke für eure Verbundenheit, eure Fürsorge und Gastfreundschaft. Ihr seid es, die das Balthasar für mich zu einem zweiten Zuhause haben werden lassen.
+Ebenso bedanken möchte ich mich bei allen, die mich bei diesem Projekt in der ein oder anderen Form unterstützt haben. Ohne ihre Hilfe wäre dieses Buch nicht möglich gewesen.
+
+Schließlich will ich an dieser Stelle auch meine Eltern erwähnen, deren Liebe ich mir ebenso sicher sein kann wie ihrer Unterstützung, wann immer ich sie brauche. Ihr wart und seid immer für mich da und ermutigt mich, meinen eigenen Weg zu gehen. Ihr habt mir gezeigt, dass das Leben trotz aller Herausforderungen lebenswert ist und dass es sich lohnt, für seine Träume zu kämpfen.
+
+\vspace{0.5cm}
+\noindent\textit{Marius Ebel}
+
+\chapter*{Statt eines Vorwortes}
+Lieber Marius,\par
+\vspace*{0.5\baselineskip}
+\noindent als ich in Deinem Alter war, hatte ich mir auch gerade einen Traum erfüllt: Ich war in meinem ersten Theaterengagement.
+Der Weg dorthin war eher alptraumhaft. Ich hatte kaum Kohle für Fahrten und Bewerbungen. Ich hatte an allen Schauspielschulen Aufnahmeprüfungen abgelegt und alle versicherten mir, dass es mir an Talent fehlt. Ich hatte einen Minderwertigkeitskomplex, der für mehrere Leben gereicht hätte.
+Aber ich wollte, nein, musste doch Schauspieler werden.
+
+Zunächst parkte ich mich auf der Bank. Einer großen deutschen Bank, die mich ausbildete. Mein kreatives Potenzial konnte ich dort nicht gerade ausleben. Eher lernte ich dort, wie man einen Lederschlips bindet, man ab 15 Uhr nicht mehr ans Telefon geht und man Greisen Sparpläne über 20 Jahre aufdrückt. (Alles Dinge, die mir für bestimmte Rollen später wichtig sein sollten, das wusste ich damals aber noch nicht…)
+Allen Absagen und Unkenrufen zum Trotz hielt ich an meinen Versuchen fest, meinen Traum zu verwirklichen.
+Ich ließ nicht locker und zog mich an meinem – damals noch vorhandenen – Haarschopf aus dem einen oder anderen Loch.
+Mein Langmut, meine Beharrlichkeit und mein Selbstverwirklichungsdrang setzten sich am Ende durch, und mittlerweile bin ich dankbar für die gemachten Erfahrungen.
+
+Auf gewisse Weise erinnerst Du, Marius, mich an mich. Nicht nur, dass Dein Name die männliche Variante meines zweiten Vornamens ist, strebst Du auch danach, Dich auszudrücken, kreativ zu sein, der Welt etwas zu schenken. Und dieses Geschenk, das gleichsam Dein Vermächtnis ist, halten wir nun in den Händen.
+Danke dafür. Danke, dass Du uns an Dir teilhaben lässt. Danke, dass Du diesen Kraftakt vollzogen hast.
+Ein schlauer Mensch hat mal gesagt: Es ist schön, wenn man tun kann, was man will. Es ist schöner, wenn man tun will, was man kann.
+Du kannst. Und wie!
+
+Schenk uns weitere Bücher. Ich weiß schon jemanden, der gerne wieder ein Vorwort schreiben wird, das keins ist…
+
+\vspace{0.5cm}
+\noindent\textit{Dein Christoph Maria Herbst}
+
+\begin{figure}[h] % [htbp] sind Platzierungsoptionen: h=here, t=top, b=bottom, p=page
+    \centering % Zentriert die Abbildung auf der Seite
+    \includegraphics[width=0.8\textwidth]{ChristophMariaHerbst.jpg}
+    \label{fig:ChristophMariaHerbst} % Label für Querverweise
+\end{figure}
+
+\chapter*{Warum es dieses Buch gibt}
+\addcontentsline{toc}{chapter}{Warum es dieses Buch gibt}
+
+\textit{"Wie kommst Du damit klar?"}, fragte mich die Frau ganz direkt. Wir hatten bereits eine Zeit lang über dies und das geplaudert. Gemeinsam mit der pädagogischen Leiterin der Einrichtung saßen wir im Leseraum des Kinder- und Jugendhospizes Olpe und ich überlegte, wie ich ihre Frage beantworten wollte. Es ging um die Krankheit, an der ich leide: eine fortschreitende Form von Muskelschwund. Die Antwort, die ich ihr dann gab, klingt vielleicht banal: \textit{"Man wächst einfach hinein."} Aber genauso ist es.
+
+Das war 2020 während eines Aufenthalts im Balthasar. Ich war gerade angekommen. Meine Eltern hatten die Koffer ausgeräumt, meine Klamotten in den Schränken verstaut, Laptop und Playstation angeschlossen und sich nach der üblichen Abschiedszeremonie auf den Heimweg gemacht. Anja Schulte, die damalige pädagogische Leiterin, kam in mein Zimmer und fragte mich, ob ich Zeit und Lust auf ein Gespräch hätte. Die Mutter eines sechsjährigen Jungen, der ebenfalls mit Duchenne Muskeldystrophie auf die Welt gekommen war, wollte die Gelegenheit nutzen und sich mit jemandem austauschen, der an der gleichen Krankheit litt wie ihr Sohn. Jemand, der sozusagen aus erster Hand berichten und ihr Tipps geben konnte.
+Natürlich hatte ich Zeit. Und Lust. So trafen wir uns noch am gleichen Nachmittag. Die Frau war ziemlich taff; sie erinnerte mich an meine Mutter. In ihrem Sohn, der mir zuvor schon im Aufenthaltsbereich aufgefallen war, sah ich mich selbst vor über 20 Jahren. Ich beantwortete ihre Fragen so gut ich konnte, beispielsweise welche medizinischen Eingriffe ich hinter mir habe, warum ich mich für die eine oder andere Operation entschieden habe, welche Hilfsmittel ich in der Vergangenheit in Anspruch genommen habe und welche ich zurzeit nutze, aber auch wie meine Erfahrungen mit den Krankenkassen sind und welche Therapien ich mache.
+
+Die Zeit flog nur so dahin. Obwohl das Gespräch über zwei Stunden dauerte, kam es mir vor wie zehn Minuten. Ich hoffe sehr, dass ich der Frau habe helfen können, indem ich ihr von meinem Leben mit der Krankheit erzählte und von meinen Erfahrungen, in der Kindheit, der Jugend, bis zum heutigen Tag. Vielleicht konnte ich ihr auch vor Augen führen, dass man als Mittzwanziger mit Duchenne durchaus zuversichtlich und lebensbejahend sein kann und nicht zurückgezogen und in sich gekehrt sein muss – was wohl viele denken – und dass die Krankheit das Leben der Betroffenen und ihrer Familien zwar in vielen Bereichen beherrscht, aber eben nicht komplett. Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetzt etwas pathetisch an, aber ich spürte das Geschenk des ehrlichen Interesses, des aufmerksamen Zuhörens und des Dankes. Das inspirierte mich.
+
+Als die Einrichtungsleitung des Balthasars einige Wochen später auf mich zukam und mich fragte, ob ich mir vorstellen könne, ein Buch über mich und meine Krankheit zu schreiben, musste ich nur kurz überlegen. Früher hätte ich mir ein solches Projekt nicht zugetraut. Jetzt aber gehe ich dieses Wagnis ein, auch wenn es mich einiges an Überwindung kostet, immerhin gebe ich viel von mir Preis.
+
+\noindent Aber alles der Reihe nach …
+
+\begin{figure}[h]
+    \raggedright
+    \includegraphics[width=0.45\textwidth]{Marius.jpg}
+\end{figure}
+\noindent\small\textit{Grevenbroich, September 2024}
+
+%\clearpage
+%\tableofcontents % Hier wird das Inhaltsverzeichnis eingefügt
+%\clearpage
+
+\mainmatter
+\pagestyle{scrheadings}
+\chapter*{Die ersten Jahre}
+\addchap{Die ersten Jahre}
+%\markboth{Die ersten Jahre}{Die ersten Jahre}
+\addcontentsline{toc}{chapter}{Die ersten Jahre}
+
+\leavevmode
+\vspace*{0.5\baselineskip}
+{\noindent\fontsize{18}{24}\bfseries Ich, Wunschkind\par}
+{\noindent\fontsize{14}{20}\selectfont\scshape Eigentlich lief alles bestens\ldots\par}
+\vspace*{0.5\baselineskip}
+%\noindent
+\normalsize
+
+Was ist deine früheste Kindheitserinnerung? Und wie alt warst du da? Man sagt, dass die Grenze für früheste Erinnerungen zwischen drei und vier Jahren liegt. Um euch also über meine ersten Lebensjahre berichten zu können, musste ich meine Eltern, Elke und Peter, interviewen. Wir drei haben ein sehr gutes und inniges Verhältnis zueinander. Und meine Fragen über diese Phase meines Lebens haben sie gerne und ausführlich beantwortet. Apropos: falls ihr euch fragt – ich bin Marius, 29 Jahre alt.
+
+Offenbar war ich ein lang ersehntes Wunschkind. Meine Eltern hatten sich jedenfalls riesig gefreut, als feststand, dass meine Mutter mit mir schwanger war. So wie sich alle Eltern freuen, die sich ein Kind wünschen. Die ersten drei Monate einer Schwangerschaft sind ja die kritischsten. Wie man nachlesen kann, übernimmt die Plazenta etwa ab der 12. Schwangerschaftswoche die vollständige Versorgung des Fötus. Danach sinkt das Risiko einer Fehlgeburt drastisch. Dementsprechend vorsichtig war meine Mutter während dieser Zeit und gab besonders gut auf uns beide acht. Wir kamen gut durch diese Phase und auch die übrigen 26 Wochen der Schwangerschaft.
+
+Auf die Welt kam ich schließlich im Mai 1995 im Kreißsaal des Elisabeth-Kran\-ken\-hau\-ses in Grevenbroich. Auf den Tag genau, so wie es die Geburtsberechnung vorausgesagt hatte. Ich kam mit dem Kopf voran und mein jetziges, dunkelblondes Haar war bei der Geburt und auch einige Wochen danach noch schwarz. Getauft wurde ich auf den Namen Marius. Im Wettstreit der Vornamen hatten die Konkurrenten Oskar und Luis das Nachsehen. Zum Glück. Denn ist es nicht so, hat man erst einmal einen Vornamen, kann man sich einen anderen irgendwie nicht mehr vorstellen?
+Apropos Namen: Den Namen Grevenbroich habt ihr vermutlich schon einmal gehört. Grevenbroich ist diese kleine Stadt, gelegen auf der linken Rheinseite im Dreieck Köln-Düsseldorf-Mönchengladbach, die bei Umweltschützern wegen der Braunkohleförderung im riesigen Tagebau Garzweiler zu zweifelhaftem Ruhm gekommen ist. 2030 soll damit Schluss sein. Grevenbroich wurde aber auch durch die von Hape Kerkeling verkörperte Kunstfigur Horst Schlämmer, seines Zeichens nuschelnder Chefredakteur des fiktiven Grevenbroicher Tagblattes, deutschlandweit bekannt.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{Grevenbroich_in_Google_Earth.png}
+    \caption{Grevenbroich hat etwa 67.000 Einwohner und liegt im Braunkohlerevier westlich von Köln. Die ockerfarbenen Flecken auf der Karte sind Tagebaue, riesige, hunderte Meter tiefe Löcher, in denen gigantische Schaufelradbagger Braunkohle fördern.}
+    \label{fig:grevenbroich}
+\end{figure}
+
+In diesem Städtchen also, genauer gesagt in seinem südlichsten Stadtteil Neurath, lebe ich seit meiner Geburt gemeinsam mit meinen Eltern, Kater Smokie sowie dem langhaarigen holländischen Hütehund Gonzalo. Ich war das erste Kind meiner Eltern und sollte auch das einzige bleiben. Nach Neurath kamen meine Eltern im November 1990, etwa fünf Jahre vor meiner Geburt. Beide sind gebürtige Grevenbroicher. Sie lebten bereits seit drei Jahren zusammen und hatten sich wegen einer aus ihrer Sicht unverschämten Mieterhöhung auf die Suche nach einem eigenen Haus gemacht. In Neurath wurden sie schließlich fündig.
+
+Das Haus, in dem ich die ersten acht Jahre meines Lebens verbracht habe, ist eine zweieinhalbgeschossige Doppelhaushälfte aus den 50er Jahren. Keine Schönheit, aber einigermaßen gut in Schuss. Zum Zeitpunkt meiner Geburt gehörten auch die Bernhardiner-Dame Bianca und die beiden Kater Max und Felix mit zur Familie. Bianca litt leider an einem bösartigen Knochentumor am vorderen Lauf, der sich nicht operieren ließ. Mit vier Jahren haben meine Eltern sie auf Anraten des Tierarztes einschläfern lassen. Eine Erinnerung an sie habe ich nicht. Allerdings gibt es ein Foto, das sie neben meinem Kinderwagen sitzend zeigt. Mit den beiden Katern habe ich noch einige Jahre zusammen verbracht. Hunde und Katzen gehören von Anfang an zu meinem Leben. Sie haben mir immer viel Freude bereitet und mich oft zum Lachen gebracht. Ich bin fest davon überzeugt, dass Haustiere das Leben ihrer Besitzer positiv beeinflussen.
+
+Zurück zum Haus. Wenn meine Eltern gewusst hätten, dass ihr Kind früher oder später auf einen Rollstuhl angewiesen wäre, hätten sie sich nicht für dieses Haus entschieden. Sie haben es aber weder gewusst noch haben sie es geahnt. Wie auch? Nichts deutete in den ersten zwei Jahren meines Lebens darauf hin. In Sachen Barrierefreiheit war das Haus eine Katastrophe. Mein Kinderzimmer, das mein Vater während der Schwangerschaft hergerichtet hatte und das von meinen Eltern liebevoll eingerichtet worden war, lag direkt unter dem Dach, zwei ziemlich steile Treppen vom Erdgeschoss entfernt. Ich kann mich noch daran erinnern, dass ich mich diese Treppen mühsam hinaufgeschleppt habe, beide Hände das Geländer fest umklammernd. Meine Schritte beim Treppensteigen waren dabei nicht alternierend. Das bedeutet, dass ich den ersten Fuß auf eine Stufe gesetzt habe und anschließend den zweiten Fuß auf dieselbe und nicht etwa auf die nächsthöhere Stufe. Ein typisches Anzeichen für eine Muskelschwäche.
+
+Der Zugang zum Haus stellte ebenfalls eine Hürde dar, denn selbst das Erdgeschoss befand sich nicht auf Straßenniveau. Wie bei vielen Häusern, die in den 50er und 60er Jahren gebaut worden waren, musste man erst ein paar Stufen erklimmen, bevor man vor der Haustür stand. Und auch in den Garten kam man nur über eine Treppe. Von der reinen Quadratmeterzahl her bot das Haus locker Platz für bis zu vier Personen. Aber die Wohnfläche verteilte sich auf drei Etagen. Rollstuhl, Treppenlift, Aufzug? Undenkbar.
+
+Die ersten zwei Jahre meines Lebens waren unspektakulär. Ich lernte nach und nach alle Familienmitglieder kennen, wurde auf Familienfeiern herumgereicht, aß und trank gut und wuchs zu einem Wonneproppen heran, der sich in nichts von anderen zweijährigen Wonneproppen unterschied.
+Zumindest nicht auf den ersten Blick.
+
+\section{Da stimmt was nicht}
+Rückblickend betrachtet, so meine Mutter, gab es sehr wohl Anzeichen. Allerdings subtile, die man als Argloser nicht unbedingt zu deuten vermochte. Ich krabbelte beispielsweise nicht, so wie es viele (wenn auch nicht alle) Kleinkinder tun, bevor sie laufen lernen. Und ich war seit meinem ersten Lebensjahr heiser. In einer Situation fiel meiner Mutter auch auf, dass es mich Kraft kostete, wenn ich auf dem Bauch lag und den Kopf anheben wollte. Aber da ich schließlich mit 16 Monaten das Laufen erlernte, lösten sich diese ersten Bedenken, dass mit mir körperlich vielleicht etwas nicht stimmte, erstmal in Luft auf.
+
+Meine Mutter hatte mich ein halbes Jahr nach meiner Geburt bereits in einem Kindergarten angemeldet, den ich mit dreieinhalb Jahren dann auch besuchte. Ein Jahr zuvor bin ich bereits regelmäßig in eine Spielgruppe gegangen (in der ich meinen ältesten Freund Marvin kennengelernt habe, zu dem ich heute noch Kontakt halte, auch wenn er zwischenzeitlich nach Berlin gezogen ist).
+
+Gegen Ende meiner Zeit in dieser Spielgruppe fiel einer der beiden Pädagoginnen auf, dass ich offensichtlich Plattfüße und einen Watschelgang hatte. Beides sind Anzeichen für Duchenne Muskeldystrophie. Diese Art zu gehen, entsteht aufgrund der Schwäche der Hüft- und Gesäßmuskulatur. Um die Schwäche in der Hüfte auszugleichen und eine möglichst stabile Körperhaltung einzunehmen, machen Duchenne-Jungen ein Hohlkreuz und wölben den Bauch nach vorne. Wenn man in dieser Haltung barfuß geht, Plattfüße hat, weil das Fußgewölbe nicht richtig ausgebildet ist, und man den Fuß auch nicht abrollen kann, dann hat dieser Gang etwas von Watscheln. Duchenne Muskeldystrophie erkläre ich euch auf Seite 119 noch genauer.
+
+\section{„Ach was! Das kommt noch!“ Denkste!}
+
+Auch wenn man diese Fehlhaltung anfangs vielleicht noch mit einem "Ach was! Nicht alle Kinder sind gleich flink und beweglich. Das kommt schon noch!" abtut, so schaut man nach einem solchen Fingerzeig vielleicht doch etwas genauer hin. Während man anfangs noch darüber hinwegsah, so waren die eigentümliche Körperhaltung mit vorgewölbtem Bauch und der tapsige Gang spätestens von da an unübersehbar geworden. Aber sie waren längst noch nicht beunruhigend. Wofür gibt es schließlich Physiotherapeut:innen? Man riet uns denn auch, eine solche aufzusuchen, um den Plattfuß und die vermeintlich daraus resultierende Fehlhaltung (wie meine Eltern fälschlicherweise glaubten) frühzeitig zu behandeln.
+              
+\section{Gowers-Manöver und die Schwierigkeit aufzustehen}
+
+Alles gut? Leider nicht. Denn es wurde immer offensichtlicher, dass ich meinen Altersgenossen körperlich immer mehr hinterherhinkte. Vom Boden aufzustehen, fiel mir besonders schwer. Ich musste mich immer erst hinknien und dann mit dem Arm am Oberschenkel hochdrücken, um in den aufrechten Stand zu kommen. Diese Art sich aufzurichten, wird als Gowers-Manöver bezeichnet. Es ist typisch für Duchenne Muskeldystrophie.
+
+\section{Ich kann nicht so schnell}
+
+Eine Situation hat sich bei meiner Mutter besonders eingeprägt. Wir hatten mit der Spielgruppe eine Waldwanderung unternommen und die Kinder trafen nach und nach am vereinbarten Ort ein, um von ihren Eltern in Empfang genommen zu werden. Die letzten, die dort viele Minuten nach den anderen ankamen, waren meine Spielgefährtin Janine und ich, gefolgt von einer erwachsenen Begleiterin. Ich konnte einfach nicht so schnell. Gehen kostete mich Kraft und ich stolperte auch immer häufiger, weil ich meine Füße beim Gehen nicht mehr ausreichend anheben konnte.
+
+Als sich meine Eltern auf Anraten der Pädagogin dieser Spielgruppe dazu entschlossen hatten, mit mir einen Physiotherapeuten aufzusuchen, war es aus ihrer Sicht eigentlich nur eine Frage der Zeit, bis meine Beeinträchtigungen auskuriert wären und ich zu meinen Altersgenossen körperlich wieder aufschließen würde.
+
+\section{Physiotherapie half auch nicht}
+
+Nach einer Reihe von Physiotherapie-Sitzungen stellte sich der erhoffte Erfolg jedoch nicht ein. Die erste Praxis behandelte nach dem Ansatz von Bobath. Diese Methode wird bei Erwachsenen und Kindern mit neurologischen Erkrankungen angewendet, zum Beispiel bei Menschen, die nach einem Schlaganfall halbseitig gelähmt sind. Das Konzept beruht auf der Annahme, dass sich das Gehirn umorganisieren lässt, dass gesunde Hirnregionen Aufgaben neu lernen und übernehmen können, die zuvor von erkrankten Hirnregionen ausgeführt worden waren. Duchenne ist jedoch keine neurologische Erkrankung, von daher änderte die Behandlung natürlich auch nichts an meinem Zustand.
+
+Man riet meinen Eltern, es mit einem anderen physiotherapeutischen Ansatz zu versuchen. Bei der Vojta-Therapie sollen Bewegungsstörungen durch eine Stimulation, nämlich das Auslösen von Reflexen, also auf einen bestimmten Reiz hin stets gleich ablaufende Reaktionen, die nicht bewusst gesteuert werden können, behoben werden. Für Vojta gilt das gleiche wie für Bobath: Duchenne ist eine muskuläre Erkrankung, die körperlichen Beeinträchtigungen sind Folge eines Absterbens von Muskelzellen – Reflextherapien beheben solche muskulären Defekte nicht.
+
+Die dritte Physiotherapeutin (diese Praxis betreut mich übrigens bis heute) riet uns schließlich, mein Problem besser einmal medizinisch begutachten zu lassen. Der Kinderarzt, der mich von Geburt an behandelte und meine Eltern beraten hatte, war zwischenzeitlich in den Ruhestand gegangen. So vereinbarten sie einen Termin bei einem Kinderarzt, der seine Praxis in Grevenbroich gerade neu eröffnet hatte. Ihm erzählten sie also im Dezember 1998 meine Geschichte und dass keine der Physiotherapien auch nur eine leichte Besserung bewirkt hatte.
+
+\section{Das Ende der unbeschwerten Jahre}
+
+Der Arzt entnahm mir eine Blutprobe und ließ sie im Labor untersuchen. Wir hatten vor, das Weihnachtsfest und den Jahreswechsel gemeinsam mit meinen Großeltern im Erzgebirge zu verbringen. Meine Eltern erwähnten dies dem Arzt gegenüber wohl mehr oder weniger beiläufig. Denn obwohl das Ergebnis der Blutuntersuchung bereits vor unserer Abreise feststand, teilte man es meinen Eltern sozusagen aus Rücksicht auf ein paar unbeschwerte Feiertage erst nach unserer Rückkehr am 11. Januar 1999 mit. Der Creatinkinase Wert (CK) in meinem Blut war deutlich erhöht. Das Enzym Creatinkinase ist für den Energiestoffwechsel der Muskelzellen wichtig. Sind die Zellen geschädigt, etwa durch einen Herzinfarkt, Sturz oder wie in meinem Fall durch das Fehlen des Proteins Dystrophin (daher auch der Name Muskeldystrophie), findet sich vermehrt Creatinkinase im Blut. Der Normalwert liegt bei einem Gesunden in meinem Alter bei weniger als 150 Einheiten pro Liter Plasma. Bei mir waren es 7.000.
+Die unbeschwerten Jahre waren damit vorbei.
+
+Was die Diagnose Duchenne Muskeldystrophie bedeutete, war mir natürlich nicht klar. Aber von dem Moment der Diagnose an änderte sich mein Leben und das meiner Eltern schlagartig und dauerhaft. Ihnen wurde der Boden unter den Füßen weggezogen. Unser altes Leben, das noch wenige Wochen zuvor unbekümmert und glücklich war, rückte mit einem Schlag unwiederbringlich in weite Ferne und wurde zu etwas langsam Verblassendem, an das sie sehnsüchtig zurückdachten. Es sollten zwei Jahre vergehen, bis der Horror zumindest teilweise verarbeitet worden war und das Glück nach und nach in unsere Familie zurückkehrte.
+
+\section{Was tun? Aktion Benni \& Co.}
+
+Was tun Eltern, die soeben erfahren haben, dass ihr nicht einmal vier Jahre alter Sohn an einer fortschreitenden und tödlich verlaufenden Muskelkrankheit litt? Meine beschäftigten sich von dem Moment an intensiver mit dieser Krankheit. Beim Stöbern im Internet (Google war damals übrigens gerade mal ein Jahr alt) stießen sie auf die im Westerwald beheimatete Elterninitiative Aktion Benni \& Co. Diese war 1996, also ein Jahr nach meiner Geburt, von den Eltern des ebenfalls an Duchenne Muskeldystrophie erkrankten Benni gegründet worden. Ziel der Initiative war es, Geld zu sammeln, um damit die Forschung in Bezug auf eine Heilung der Duchenne Muskeldystrophie zu intensivieren. Aktion Benni \& Co. ist mittlerweile in dem eingetragenen Verein Duchenne Deutschland e.~V. aufgegangen.
+
+\end{document}

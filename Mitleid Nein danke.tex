@@ -1,5 +1,6 @@
-\documentclass[fontsize=13pt,a4paper,headinclude,DIV=calc,automark,frontmatter=normal]{scrbook}
+\documentclass[fontsize=12pt,a4paper,headinclude,DIV=calc,automark]{scrbook}
 
+\usepackage{float}
 \usepackage[left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry} % Seitenränder
 \usepackage{polyglossia}
 \setmainlanguage{german}
@@ -36,7 +37,7 @@
 
 %\clearpairofpagestyles % Alle vorhandenen Definitionen für Kopf- und Fußzeilen leeren (globaler Reset)
 %\rehead{\rightmark}
-\rohead{\rightmark}
+\rohead{\leftmark}
 %\lehead{\leftmark} 
 %\lohead{\leftmark}
 
@@ -63,6 +64,10 @@
 \author{Marius Ebel}
 \date{November 2024}
 
+\clubpenalty=10000    % Verhindert Schusterjungen (erste Zeile eines Absatzes am Seitenende)
+\widowpenalty=10000   % Verhindert Hurenkinder (letzte Zeile eines Absatzes am Seitenanfang)
+% ...existing code...
+
 \begin{document}
 \frontmatter
 
@@ -78,7 +83,7 @@
 \vspace*{\fill}
 
 \pagestyle{plain}
-\chapter*{Danksagung}
+\addchap{Danksagung}
 \addcontentsline{toc}{chapter}{Danksagung}
 
 Ich möchte mich bei all jenen bedanken, die mich dabei unterstützt haben, diese Autobiographie zu schreiben und die mich dazu ermuntert haben, am Ball zu bleiben, wenn Zweifel in mir aufkamen.
@@ -92,7 +97,8 @@ Schließlich will ich an dieser Stelle auch meine Eltern erwähnen, deren Liebe 
 \vspace{0.5cm}
 \noindent\textit{Marius Ebel}
 
-\chapter*{Statt eines Vorwortes}
+\addchap{Statt eines Vorwortes}
+\addcontentsline{toc}{chapter}{Statt eines Vorwortes}
 Lieber Marius,\par
 \vspace*{0.5\baselineskip}
 \noindent als ich in Deinem Alter war, hatte ich mir auch gerade einen Traum erfüllt: Ich war in meinem ersten Theaterengagement.
@@ -114,13 +120,13 @@ Schenk uns weitere Bücher. Ich weiß schon jemanden, der gerne wieder ein Vorwo
 \vspace{0.5cm}
 \noindent\textit{Dein Christoph Maria Herbst}
 
-\begin{figure}[h] % [htbp] sind Platzierungsoptionen: h=here, t=top, b=bottom, p=page
+\begin{figure}[ht] % [htbp] sind Platzierungsoptionen: h=here, t=top, b=bottom, p=page
     \centering % Zentriert die Abbildung auf der Seite
     \includegraphics[width=0.8\textwidth]{ChristophMariaHerbst.jpg}
     \label{fig:ChristophMariaHerbst} % Label für Querverweise
 \end{figure}
 
-\chapter*{Warum es dieses Buch gibt}
+\addchap{Warum es dieses Buch gibt}
 \addcontentsline{toc}{chapter}{Warum es dieses Buch gibt}
 
 \textit{"Wie kommst Du damit klar?"}, fragte mich die Frau ganz direkt. Wir hatten bereits eine Zeit lang über dies und das geplaudert. Gemeinsam mit der pädagogischen Leiterin der Einrichtung saßen wir im Leseraum des Kinder- und Jugendhospizes Olpe und ich überlegte, wie ich ihre Frage beantworten wollte. Es ging um die Krankheit, an der ich leide: eine fortschreitende Form von Muskelschwund. Die Antwort, die ich ihr dann gab, klingt vielleicht banal: \textit{"Man wächst einfach hinein."} Aber genauso ist es.
@@ -134,7 +140,7 @@ Als die Einrichtungsleitung des Balthasars einige Wochen später auf mich zukam 
 
 \noindent Aber alles der Reihe nach …
 
-\begin{figure}[h]
+\begin{figure}[H]
     \raggedright
     \includegraphics[width=0.45\textwidth]{Marius.jpg}
 \end{figure}
@@ -146,9 +152,8 @@ Als die Einrichtungsleitung des Balthasars einige Wochen später auf mich zukam 
 
 \mainmatter
 \pagestyle{scrheadings}
-\chapter*{Die ersten Jahre}
 \addchap{Die ersten Jahre}
-%\markboth{Die ersten Jahre}{Die ersten Jahre}
+\thispagestyle{scrheadings}
 \addcontentsline{toc}{chapter}{Die ersten Jahre}
 
 \leavevmode
@@ -166,7 +171,7 @@ Offenbar war ich ein lang ersehntes Wunschkind. Meine Eltern hatten sich jedenfa
 Auf die Welt kam ich schließlich im Mai 1995 im Kreißsaal des Elisabeth-Kran\-ken\-hau\-ses in Grevenbroich. Auf den Tag genau, so wie es die Geburtsberechnung vorausgesagt hatte. Ich kam mit dem Kopf voran und mein jetziges, dunkelblondes Haar war bei der Geburt und auch einige Wochen danach noch schwarz. Getauft wurde ich auf den Namen Marius. Im Wettstreit der Vornamen hatten die Konkurrenten Oskar und Luis das Nachsehen. Zum Glück. Denn ist es nicht so, hat man erst einmal einen Vornamen, kann man sich einen anderen irgendwie nicht mehr vorstellen?
 Apropos Namen: Den Namen Grevenbroich habt ihr vermutlich schon einmal gehört. Grevenbroich ist diese kleine Stadt, gelegen auf der linken Rheinseite im Dreieck Köln-Düsseldorf-Mönchengladbach, die bei Umweltschützern wegen der Braunkohleförderung im riesigen Tagebau Garzweiler zu zweifelhaftem Ruhm gekommen ist. 2030 soll damit Schluss sein. Grevenbroich wurde aber auch durch die von Hape Kerkeling verkörperte Kunstfigur Horst Schlämmer, seines Zeichens nuschelnder Chefredakteur des fiktiven Grevenbroicher Tagblattes, deutschlandweit bekannt.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{Grevenbroich_in_Google_Earth.png}
     \caption{Grevenbroich hat etwa 67.000 Einwohner und liegt im Braunkohlerevier westlich von Köln. Die ockerfarbenen Flecken auf der Karte sind Tagebaue, riesige, hunderte Meter tiefe Löcher, in denen gigantische Schaufelradbagger Braunkohle fördern.}

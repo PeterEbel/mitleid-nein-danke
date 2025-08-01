@@ -35,11 +35,7 @@
 
 \raggedbottom
 
-%\clearpairofpagestyles % Alle vorhandenen Definitionen für Kopf- und Fußzeilen leeren (globaler Reset)
-%\rehead{\rightmark}
-\rohead{\leftmark}
-%\lehead{\leftmark} 
-%\lohead{\leftmark}
+%\rohead{\leftmark} % Unkommentieren, falls die Seitenzahlen in der Fußzeile erscheinen sollen
 
 \setkomafont{pageheadfoot}{} % Stellt sicher, dass die Schriftart der Kopf-/Fußzeile neutral ist
 
@@ -66,7 +62,7 @@
 
 \clubpenalty=10000    % Verhindert Schusterjungen (erste Zeile eines Absatzes am Seitenende)
 \widowpenalty=10000   % Verhindert Hurenkinder (letzte Zeile eines Absatzes am Seitenanfang)
-% ...existing code...
+
 
 \begin{document}
 \frontmatter
@@ -129,10 +125,12 @@ Schenk uns weitere Bücher. Ich weiß schon jemanden, der gerne wieder ein Vorwo
 \addchap{Warum es dieses Buch gibt}
 \addcontentsline{toc}{chapter}{Warum es dieses Buch gibt}
 
-\textit{"Wie kommst Du damit klar?"}, fragte mich die Frau ganz direkt. Wir hatten bereits eine Zeit lang über dies und das geplaudert. Gemeinsam mit der pädagogischen Leiterin der Einrichtung saßen wir im Leseraum des Kinder- und Jugendhospizes Olpe und ich überlegte, wie ich ihre Frage beantworten wollte. Es ging um die Krankheit, an der ich leide: eine fortschreitende Form von Muskelschwund. Die Antwort, die ich ihr dann gab, klingt vielleicht banal: \textit{"Man wächst einfach hinein."} Aber genauso ist es.
+\textit{„Wie kommst Du damit klar?“}, fragte mich die Frau ganz direkt. Wir hatten bereits eine Zeit lang über dies und das geplaudert. Gemeinsam mit der pädagogischen Leiterin der Einrichtung saßen wir im Leseraum des Kinder- und Jugendhospizes Olpe und ich überlegte, wie ich ihre Frage beantworten wollte. Es ging um die Krankheit, an der ich leide: eine fortschreitende Form von Muskelschwund. Die Antwort, die ich ihr dann gab, klingt vielleicht banal: \textit{„Man wächst einfach hinein.“} Und genauso ist es.
 
 Das war 2020 während eines Aufenthalts im Balthasar. Ich war gerade angekommen. Meine Eltern hatten die Koffer ausgeräumt, meine Klamotten in den Schränken verstaut, Laptop und Playstation angeschlossen und sich nach der üblichen Abschiedszeremonie auf den Heimweg gemacht. Anja Schulte, die damalige pädagogische Leiterin, kam in mein Zimmer und fragte mich, ob ich Zeit und Lust auf ein Gespräch hätte. Die Mutter eines sechsjährigen Jungen, der ebenfalls mit Duchenne Muskeldystrophie auf die Welt gekommen war, wollte die Gelegenheit nutzen und sich mit jemandem austauschen, der an der gleichen Krankheit litt wie ihr Sohn. Jemand, der sozusagen aus erster Hand berichten und ihr Tipps geben konnte.
-Natürlich hatte ich Zeit. Und Lust. So trafen wir uns noch am gleichen Nachmittag. Die Frau war ziemlich taff; sie erinnerte mich an meine Mutter. In ihrem Sohn, der mir zuvor schon im Aufenthaltsbereich aufgefallen war, sah ich mich selbst vor über 20 Jahren. Ich beantwortete ihre Fragen so gut ich konnte, beispielsweise welche medizinischen Eingriffe ich hinter mir habe, warum ich mich für die eine oder andere Operation entschieden habe, welche Hilfsmittel ich in der Vergangenheit in Anspruch genommen habe und welche ich zurzeit nutze, aber auch wie meine Erfahrungen mit den Krankenkassen sind und welche Therapien ich mache.
+Natürlich hatte ich Zeit. Und Lust.
+
+So trafen wir uns noch am gleichen Nachmittag. Die Frau war ziemlich taff; sie erinnerte mich an meine Mutter. In ihrem Sohn, der mir zuvor schon im Aufenthaltsbereich aufgefallen war, sah ich mich selbst vor über 20 Jahren. Ich beantwortete ihre Fragen so gut ich konnte, beispielsweise welche medizinischen Eingriffe ich hinter mir habe, warum ich mich für die eine oder andere Operation entschieden habe, welche Hilfsmittel ich in der Vergangenheit in Anspruch genommen habe und welche ich zurzeit nutze, aber auch wie meine Erfahrungen mit den Krankenkassen sind und welche Therapien ich mache.
 
 Die Zeit flog nur so dahin. Obwohl das Gespräch über zwei Stunden dauerte, kam es mir vor wie zehn Minuten. Ich hoffe sehr, dass ich der Frau habe helfen können, indem ich ihr von meinem Leben mit der Krankheit erzählte und von meinen Erfahrungen, in der Kindheit, der Jugend, bis zum heutigen Tag. Vielleicht konnte ich ihr auch vor Augen führen, dass man als Mittzwanziger mit Duchenne durchaus zuversichtlich und lebensbejahend sein kann und nicht zurückgezogen und in sich gekehrt sein muss – was wohl viele denken – und dass die Krankheit das Leben der Betroffenen und ihrer Familien zwar in vielen Bereichen beherrscht, aber eben nicht komplett. Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetzt etwas pathetisch an, aber ich spürte das Geschenk des ehrlichen Interesses, des aufmerksamen Zuhörens und des Dankes. Das inspirierte mich.
 
@@ -151,9 +149,17 @@ Als die Einrichtungsleitung des Balthasars einige Wochen später auf mich zukam 
 %\clearpage
 
 \mainmatter
+
+\clearpairofpagestyles % Setzt alle Kopf-/Fußzeilen zurück
+\lehead{\leftmark}     % Gerade Seiten: Kapitelüberschrift links
+\rehead{\thepage}      % Gerade Seiten: Seitenzahl rechts
+\lohead{\thepage}      % Ungerade Seiten: Seitenzahl links
+\rohead{\leftmark}     % Ungerade Seiten: Kapitelüberschrift rechts
+
 \pagestyle{scrheadings}
+
 \addchap{Die ersten Jahre}
-\thispagestyle{scrheadings}
+\thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seiet des Kapitels
 \addcontentsline{toc}{chapter}{Die ersten Jahre}
 
 \leavevmode
@@ -161,10 +167,9 @@ Als die Einrichtungsleitung des Balthasars einige Wochen später auf mich zukam 
 {\noindent\fontsize{18}{24}\bfseries Ich, Wunschkind\par}
 {\noindent\fontsize{14}{20}\selectfont\scshape Eigentlich lief alles bestens\ldots\par}
 \vspace*{0.5\baselineskip}
-%\noindent
 \normalsize
 
-Was ist deine früheste Kindheitserinnerung? Und wie alt warst du da? Man sagt, dass die Grenze für früheste Erinnerungen zwischen drei und vier Jahren liegt. Um euch also über meine ersten Lebensjahre berichten zu können, musste ich meine Eltern, Elke und Peter, interviewen. Wir drei haben ein sehr gutes und inniges Verhältnis zueinander. Und meine Fragen über diese Phase meines Lebens haben sie gerne und ausführlich beantwortet. Apropos: falls ihr euch fragt – ich bin Marius, 29 Jahre alt.
+\noindent Was ist deine früheste Kindheitserinnerung? Und wie alt warst du da? Man sagt, dass die Grenze für früheste Erinnerungen zwischen drei und vier Jahren liegt. Um euch also über meine ersten Lebensjahre berichten zu können, musste ich meine Eltern, Elke und Peter, interviewen. Wir drei haben ein sehr gutes und inniges Verhältnis zueinander. Und meine Fragen über diese Phase meines Lebens haben sie gerne und ausführlich beantwortet. Apropos: falls ihr euch fragt – ich bin Marius, 29 Jahre alt.
 
 Offenbar war ich ein lang ersehntes Wunschkind. Meine Eltern hatten sich jedenfalls riesig gefreut, als feststand, dass meine Mutter mit mir schwanger war. So wie sich alle Eltern freuen, die sich ein Kind wünschen. Die ersten drei Monate einer Schwangerschaft sind ja die kritischsten. Wie man nachlesen kann, übernimmt die Plazenta etwa ab der 12. Schwangerschaftswoche die vollständige Versorgung des Fötus. Danach sinkt das Risiko einer Fehlgeburt drastisch. Dementsprechend vorsichtig war meine Mutter während dieser Zeit und gab besonders gut auf uns beide acht. Wir kamen gut durch diese Phase und auch die übrigen 26 Wochen der Schwangerschaft.
 
@@ -198,7 +203,7 @@ Gegen Ende meiner Zeit in dieser Spielgruppe fiel einer der beiden Pädagoginnen
 
 \section{„Ach was! Das kommt noch!“ Denkste!}
 
-Auch wenn man diese Fehlhaltung anfangs vielleicht noch mit einem "Ach was! Nicht alle Kinder sind gleich flink und beweglich. Das kommt schon noch!" abtut, so schaut man nach einem solchen Fingerzeig vielleicht doch etwas genauer hin. Während man anfangs noch darüber hinwegsah, so waren die eigentümliche Körperhaltung mit vorgewölbtem Bauch und der tapsige Gang spätestens von da an unübersehbar geworden. Aber sie waren längst noch nicht beunruhigend. Wofür gibt es schließlich Physiotherapeut:innen? Man riet uns denn auch, eine solche aufzusuchen, um den Plattfuß und die vermeintlich daraus resultierende Fehlhaltung (wie meine Eltern fälschlicherweise glaubten) frühzeitig zu behandeln.
+Auch wenn man diese Fehlhaltung anfangs vielleicht noch mit einem „Ach was! Nicht alle Kinder sind gleich flink und beweglich. Das kommt schon noch!“ abtut, so schaut man nach einem solchen Fingerzeig vielleicht doch etwas genauer hin. Während man anfangs noch darüber hinwegsah, so waren die eigentümliche Körperhaltung mit vorgewölbtem Bauch und der tapsige Gang spätestens von da an unübersehbar geworden. Aber sie waren längst noch nicht beunruhigend. Wofür gibt es schließlich Physiotherapeut:innen? Man riet uns denn auch, eine solche aufzusuchen, um den Plattfuß und die vermeintlich daraus resultierende Fehlhaltung (wie meine Eltern fälschlicherweise glaubten) frühzeitig zu behandeln.
               
 \section{Gowers-Manöver und die Schwierigkeit aufzustehen}
 
@@ -239,7 +244,7 @@ Meine Eltern erzählten mir, dass ihnen die vielen Aktivitäten rund um Aktion B
 
 \section{Wir bauen ein Haus}
 
-Rückblickend war 2001 ein wirklich besonderes Jahr, weil in jenen 12 Monaten so viel passiert ist. Zum einen war im Spätsommer die Zeit des sorglosen Spielens, Bastelns und Singens im Kindergarten "Villa Kunterbunt" vorbei. Ich war im Mai sechs geworden und kam in die Schule, so wie viele andere Sechsjährige auch. Ich kann mich nicht mehr daran erinnern, ob ich mich auf die Schule gefreut habe oder aber der Kindergartenzeit hinterhertrauerte. Wahrscheinlich tat ich beides. Von meiner Schulzeit werde ich später noch berichten. Zunächst möchte ich euch von dem bis dahin größten Projekt meiner Eltern erzählen, dem Bau eines behindertengerechten Hauses.
+Rückblickend war 2001 ein wirklich besonderes Jahr, weil in jenen 12 Monaten so viel passiert ist. Zum einen war im Spätsommer die Zeit des sorglosen Spielens, Bastelns und Singens im Kindergarten „Villa Kunterbunt“ vorbei. Ich war im Mai sechs geworden und kam in die Schule, so wie viele andere Sechsjährige auch. Ich kann mich nicht mehr daran erinnern, ob ich mich auf die Schule gefreut habe oder aber der Kindergartenzeit hinterhertrauerte. Wahrscheinlich tat ich beides. Von meiner Schulzeit werde ich später noch berichten. Zunächst möchte ich euch von dem bis dahin größten Projekt meiner Eltern erzählen, dem Bau eines behindertengerechten Hauses.
 
 Ich kann mir vorstellen, dass es eine ganz besondere Herausforderung ist, ein Haus zu planen und zu bauen. Man bindet sich nicht nur für viele Jahre an eine Bank, sondern man entscheidet auch, wo man in Zukunft leben möchte und wo sich das Leben der Familie abspielen wird. Meine Eltern entschieden sich, in Neurath zu bauen.
 
@@ -247,7 +252,7 @@ Die Doppelhaushälfte in Neurath, die die beiden 1990 gekauft hatten und in der 
 
 \section{Unser erstes Zuhause, das Gegenteil von barrierefrei}
 
-So sehr wir drei unser Zuhause auch liebten, hatte es doch einen gravierenden Nachteil: Es war das genaue Gegenteil eines behindertengerechten und barrierefreien Hauses. In der Zeit, als es gebaut wurde, war der Begriff "Barrierefreiheit" noch nicht im Duden aufgeführt, und ob man mit dem Rollstuhl in ein öffentliches oder privates Gebäude kam, interessierte vor 70 Jahren niemanden. Zum Teil auch heute noch nicht.
+So sehr wir drei unser Zuhause auch liebten, hatte es doch einen gravierenden Nachteil: Es war das genaue Gegenteil eines behindertengerechten und barrierefreien Hauses. In der Zeit, als es gebaut wurde, war der Begriff „Barrierefreiheit“ noch nicht im Duden aufgeführt, und ob man mit dem Rollstuhl in ein öffentliches oder privates Gebäude kam, interessierte vor 70 Jahren niemanden. Zum Teil auch heute noch nicht.
 
 Natürlich hatte ich als kleiner Junge überhaupt keine Ahnung, was Barrierefreiheit bedeutete und ebenso wenig wusste ich, dass die beengten Verhältnisse in unserem Haus für eine:n Rollstuhlfahrer:in ein echtes Problem darstellten. Ich war klein, hatte ganz andere Dinge im Kopf und konnte ja schließlich noch laufen. Allerdings ahnte ich damals schon, dass mit dem Haus irgendetwas nicht stimmt. Ich konnte zwar trotz der allmählich schwindenden Muskulatur in meinen Beinen noch im Erdgeschoss umherlaufen (und fiel dabei das eine oder andere Mal auch hin), ich schaffte es jedoch nicht, aus eigener Kraft in mein Kinderzimmer im zweiten Stock zu gelangen. Zwar kämpfte ich mich in ganz jungen Jahren noch alleine die Stufen hoch, später jedoch war es ganz selbstverständlich, dass meine Eltern mich die beiden steilen Treppen in mein Zimmer hochtrugen. Heruntersteigen konnte ich die Treppen anfangs noch alleine. Allerdings auch das nie, ohne dass meine Eltern danebenstanden, um auffangen zu können, falls ich stolperte. Damit musste man bei mir immer rechnen.
 
@@ -292,7 +297,7 @@ Die Bekannte erzählte meiner Mutter, ihr sei zu Ohren gekommen, dass RWE plante
 
 Das war im Frühjahr 2001, und die Aussicht auf ein Baugrundstück war eine Gelegenheit, die man beim Schopf packen musste. Wenn RWE ohnehin vorhatte, in ein paar Jahren und in Abstimmung mit der Stadt Grevenbroich aus der Brachfläche Bauland zu machen, dann ließe sich diese Entscheidung unter Umständen beschleunigen? Das konnte man nur herausfinden, indem man RWE und die Stadt Grevenbroich anschrieb und die Situation schilderte. Eigentlich mussten nur zwei Fragen beantwortet werden: Würde RWE die Parzelle eventuell vor dem bislang geplanten Zeitpunkt verkaufen und falls ja, würde die Stadt Grevenbroich dann einer Erschließung des Geländes zustimmen und sie gegebenenfalls sogar beschleunigen? Vielleicht wäre es ja sogar möglich, dass wir bereits im kommenden Jahr mit dem Neubau beginnen könnten. Es war möglich.
 
-Die Nachricht erreichte uns im Sommer 2001, nur wenige Monate nach der ersten Kontaktaufnahme. Wir verbrachten gerade unseren Urlaub in Südspanien. Es war der letzte Urlaub in "Freiheit", ab August ging ich ja zur Schule. Der Urlaub bleibt meinen Eltern in zweifacher Hinsicht in Erinnerung. Ich wäre nämlich beinahe im Außenpool unseres Hotels in Andalusien ertrunken. Ich sprang in einem unbeobachteten Moment ins Wasser, ohne zu wissen, dass ich nicht schwimmen konnte. Meine Mutter döste vor sich hin, hörte jedoch zum Glück das Platschen, als ich im Wasser landete. Nach einigen Sekunden fiel ihr dann auf, dass es still war und sie mich nicht mehr reden hörte. Da lief sie in Panik zum Beckenrand und sah mich dort senkrecht treibend, den Kopf unter Wasser. Sie packte mich an einem Arm und zog mich heraus. Adrenalin pur. Wie ihr seht, habe ich es überlebt. Glück gehabt!
+Die Nachricht erreichte uns im Sommer 2001, nur wenige Monate nach der ersten Kontaktaufnahme. Wir verbrachten gerade unseren Urlaub in Südspanien. Es war der letzte Urlaub in „Freiheit“, ab August ging ich ja zur Schule. Der Urlaub bleibt meinen Eltern in zweifacher Hinsicht in Erinnerung. Ich wäre nämlich beinahe im Außenpool unseres Hotels in Andalusien ertrunken. Ich sprang in einem unbeobachteten Moment ins Wasser, ohne zu wissen, dass ich nicht schwimmen konnte. Meine Mutter döste vor sich hin, hörte jedoch zum Glück das Platschen, als ich im Wasser landete. Nach einigen Sekunden fiel ihr dann auf, dass es still war und sie mich nicht mehr reden hörte. Da lief sie in Panik zum Beckenrand und sah mich dort senkrecht treibend, den Kopf unter Wasser. Sie packte mich an einem Arm und zog mich heraus. Adrenalin pur. Wie ihr seht, habe ich es überlebt. Glück gehabt!
 
 An einem Tag während dieses Urlaubs rief uns meine Tante an. Sie hatte während unserer Abwesenheit unseren Briefkasten geleert und dabei einen Brief vom RWE entdeckt. Wir baten sie, uns den Inhalt vorzulesen. RWE teilte uns darin freudig mit, dass man die Parzelle schnellstmöglich veräußern würde und bereits Kontakt zur Stadt Grevenbroich aufgenommen habe. Vom Bauamt hatten wir vorab schon die Zusage erhalten, dass man sich für eine zügige Erschließung der Fläche einsetzen werde, sobald RWE diese verkaufen würde. Der Bebauungsplan müsse hierfür allerdings zunächst angepasst und dann veröffentlicht werden, was noch ein paar Monate dauern könne und tatsächlich auch ein halbes Jahr dauerte.
 

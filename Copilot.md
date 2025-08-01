@@ -469,12 +469,10 @@ So hast du deine Konversation gesichert und kannst sie später wiederverwenden o
 PeterEbel: Sehr gute Idee!
 
 GitHub Copilot: Danke!  
-Mit einer eigenen Text- oder Markdown-Datei im Projektordner kannst du alle wichtigen Tipps, Codebeispiele und Antworten aus unserer Konversation übersichtlich und dauerhaft sichern.  
 So behältst du den Überblick und kannst jederzeit darauf zurückgreifen – besonders praktisch für ein längeres Buchprojekt!
 
 PeterEbel: Den gesamten Chatverlauf kann man in VS Code im Chatfenster nicht markieren, oder?
 
 GitHub Copilot: Das stimmt: Im Chatfenster von VS Code kannst du den **gesamten Chatverlauf** meist **nicht auf einmal markieren**.  
-Du kannst aber einzelne Nachrichten oder Abschnitte markieren und kopieren. Für längere Verläufe musst du das ggf. in mehreren Schritten tun.
 
 **Tipp:**  

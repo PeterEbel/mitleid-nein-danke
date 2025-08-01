@@ -17,6 +17,9 @@
 \usepackage{booktabs}       % Für professionelle Tabellenlinien
 \usepackage{eurosym}        % Für das Euro-Symbol
 \usepackage{graphicx}       % Für das Einbinden von Grafiken
+\usepackage{fancybox}       % Für Rahmen um Text und Bilder
+\usepackage{mdframed}       % Für Rahmen um Text und Bilder
+\usepackage{hyperref}       
 
 \usepackage{scrlayer-scrpage} % Paket einfach laden, Optionen zentral setzen
 \KOMAoptions{
@@ -41,18 +44,19 @@
 
 \usepackage[dvipsnames]{xcolor}
 \definecolor{myblue}{RGB}{47, 84, 150}
+\definecolor{rahmenlinie}{RGB}{127, 127, 127}
 
 \usepackage{fontspec}
 %\setmainfont{Palatino Linotype}
 %\setsansfont{Palatino Linotype}
 %\setmonofont{Palatino Linotype}
 \setmainfont{Cambria}
-\setsansfont{Cambria}
-\setmonofont{Cambria}
+\setsansfont{Calibri}
+\setmonofont{Calibri}
 
-\setkomafont{chapter}{\normalfont\huge\bfseries\rmfamily}
-\setkomafont{section}{\normalfont\fontsize{14}{20}\bfseries\rmfamily\textcolor{myblue}}
-\setkomafont{subsection}{\normalfont\large\bfseries\rmfamily}
+\setkomafont{chapter}{\normalfont\huge\rmfamily\textcolor{myblue}}
+\setkomafont{section}{\normalfont\fontsize{14}{20}\rmfamily\textcolor{myblue}}
+\setkomafont{subsection}{\normalfont\large\bfseries\rmfamily\textcolor{myblue}}
 
 \setcounter{secnumdepth}{-1} % Deaktiviert die Nummerierung für alle Überschriften
 
@@ -102,9 +106,9 @@ Der Weg dorthin war eher alptraumhaft. Ich hatte kaum Kohle für Fahrten und Bew
 Aber ich wollte, nein, musste doch Schauspieler werden.
 
 Zunächst parkte ich mich auf der Bank. Einer großen deutschen Bank, die mich ausbildete. Mein kreatives Potenzial konnte ich dort nicht gerade ausleben. Eher lernte ich dort, wie man einen Lederschlips bindet, man ab 15 Uhr nicht mehr ans Telefon geht und man Greisen Sparpläne über 20 Jahre aufdrückt. (Alles Dinge, die mir für bestimmte Rollen später wichtig sein sollten, das wusste ich damals aber noch nicht…)
+
 Allen Absagen und Unkenrufen zum Trotz hielt ich an meinen Versuchen fest, meinen Traum zu verwirklichen.
-Ich ließ nicht locker und zog mich an meinem – damals noch vorhandenen – Haarschopf aus dem einen oder anderen Loch.
-Mein Langmut, meine Beharrlichkeit und mein Selbstverwirklichungsdrang setzten sich am Ende durch, und mittlerweile bin ich dankbar für die gemachten Erfahrungen.
+Ich ließ nicht locker und zog mich an meinem – damals noch vorhandenen – Haarschopf aus dem einen oder anderen Loch. Mein Langmut, meine Beharrlichkeit und mein Selbstverwirklichungsdrang setzten sich am Ende durch, und mittlerweile bin ich dankbar für die gemachten Erfahrungen.
 
 Auf gewisse Weise erinnerst Du, Marius, mich an mich. Nicht nur, dass Dein Name die männliche Variante meines zweiten Vornamens ist, strebst Du auch danach, Dich auszudrücken, kreativ zu sein, der Welt etwas zu schenken. Und dieses Geschenk, das gleichsam Dein Vermächtnis ist, halten wir nun in den Händen.
 Danke dafür. Danke, dass Du uns an Dir teilhaben lässt. Danke, dass Du diesen Kraftakt vollzogen hast.
@@ -118,7 +122,7 @@ Schenk uns weitere Bücher. Ich weiß schon jemanden, der gerne wieder ein Vorwo
 
 \begin{figure}[ht] % [htbp] sind Platzierungsoptionen: h=here, t=top, b=bottom, p=page
     \centering % Zentriert die Abbildung auf der Seite
-    \includegraphics[width=0.8\textwidth]{ChristophMariaHerbst.jpg}
+    \includegraphics[width=0.8\textwidth]{Fotos/ChristophMariaHerbst.jpg}
     \label{fig:ChristophMariaHerbst} % Label für Querverweise
 \end{figure}
 
@@ -132,15 +136,15 @@ Natürlich hatte ich Zeit. Und Lust.
 
 So trafen wir uns noch am gleichen Nachmittag. Die Frau war ziemlich taff; sie erinnerte mich an meine Mutter. In ihrem Sohn, der mir zuvor schon im Aufenthaltsbereich aufgefallen war, sah ich mich selbst vor über 20 Jahren. Ich beantwortete ihre Fragen so gut ich konnte, beispielsweise welche medizinischen Eingriffe ich hinter mir habe, warum ich mich für die eine oder andere Operation entschieden habe, welche Hilfsmittel ich in der Vergangenheit in Anspruch genommen habe und welche ich zurzeit nutze, aber auch wie meine Erfahrungen mit den Krankenkassen sind und welche Therapien ich mache.
 
-Die Zeit flog nur so dahin. Obwohl das Gespräch über zwei Stunden dauerte, kam es mir vor wie zehn Minuten. Ich hoffe sehr, dass ich der Frau habe helfen können, indem ich ihr von meinem Leben mit der Krankheit erzählte und von meinen Erfahrungen, in der Kindheit, der Jugend, bis zum heutigen Tag. Vielleicht konnte ich ihr auch vor Augen führen, dass man als Mittzwanziger mit Duchenne durchaus zuversichtlich und lebensbejahend sein kann und nicht zurückgezogen und in sich gekehrt sein muss – was wohl viele denken – und dass die Krankheit das Leben der Betroffenen und ihrer Familien zwar in vielen Bereichen beherrscht, aber eben nicht komplett. Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetzt etwas pathetisch an, aber ich spürte das Geschenk des ehrlichen Interesses, des aufmerksamen Zuhörens und des Dankes. Das inspirierte mich.
+Die Zeit flog nur so dahin. Obwohl das Gespräch über zwei Stunden dauerte, kam es mir vor wie zehn Minuten. Ich hoffe sehr, dass ich der Frau habe helfen können, indem ich ihr von meinem Leben mit der Krankheit erzählte und von meinen Erfahrungen, in der Kindheit, der Jugend, bis zum heutigen Tag. Vielleicht konnte ich ihr auch vor Augen führen, dass man als Mittzwanziger mit Duchenne durchaus zuversichtlich und lebensbejahend sein kann und nicht zurückgezogen und in sich gekehrt sein muss – was wohl viele denken – und dass die Krankheit das Leben der Betroffenen und ihrer Familien zwar in vielen Bereichen beherrscht, aber eben nicht komplett.
 
-Als die Einrichtungsleitung des Balthasars einige Wochen später auf mich zukam und mich fragte, ob ich mir vorstellen könne, ein Buch über mich und meine Krankheit zu schreiben, musste ich nur kurz überlegen. Früher hätte ich mir ein solches Projekt nicht zugetraut. Jetzt aber gehe ich dieses Wagnis ein, auch wenn es mich einiges an Überwindung kostet, immerhin gebe ich viel von mir Preis.
+Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetzt etwas pathetisch an, aber ich spürte das Geschenk des ehrlichen Interesses, des aufmerksamen Zuhörens und des Dankes. Das inspirierte mich. Als die Einrichtungsleitung des Balthasars einige Wochen später auf mich zukam und mich fragte, ob ich mir vorstellen könne, ein Buch über mich und meine Krankheit zu schreiben, musste ich nur kurz überlegen. Früher hätte ich mir ein solches Projekt nicht zugetraut. Jetzt aber gehe ich dieses Wagnis ein, auch wenn es mich einiges an Überwindung kostet, immerhin gebe ich viel von mir Preis.
 
 \noindent Aber alles der Reihe nach …
 
 \begin{figure}[H]
     \raggedright
-    \includegraphics[width=0.45\textwidth]{Marius.jpg}
+    \includegraphics[width=0.45\textwidth]{Fotos/Marius.jpg}
 \end{figure}
 \noindent\small\textit{Grevenbroich, September 2024}
 
@@ -164,8 +168,8 @@ Als die Einrichtungsleitung des Balthasars einige Wochen später auf mich zukam 
 
 \leavevmode
 \vspace*{0.5\baselineskip}
-{\noindent\fontsize{18}{24}\bfseries Ich, Wunschkind\par}
-{\noindent\fontsize{14}{20}\selectfont\scshape Eigentlich lief alles bestens\ldots\par}
+{\noindent\fontsize{18}{24}\selectfont\textcolor{myblue}{Ich, Wunschkind}\par}
+{\noindent\fontsize{14}{20}\selectfont\scshape\textcolor{myblue}{Eigentlich lief alles bestens}\ldots\par}
 \vspace*{0.5\baselineskip}
 \normalsize
 
@@ -174,11 +178,12 @@ Als die Einrichtungsleitung des Balthasars einige Wochen später auf mich zukam 
 Offenbar war ich ein lang ersehntes Wunschkind. Meine Eltern hatten sich jedenfalls riesig gefreut, als feststand, dass meine Mutter mit mir schwanger war. So wie sich alle Eltern freuen, die sich ein Kind wünschen. Die ersten drei Monate einer Schwangerschaft sind ja die kritischsten. Wie man nachlesen kann, übernimmt die Plazenta etwa ab der 12. Schwangerschaftswoche die vollständige Versorgung des Fötus. Danach sinkt das Risiko einer Fehlgeburt drastisch. Dementsprechend vorsichtig war meine Mutter während dieser Zeit und gab besonders gut auf uns beide acht. Wir kamen gut durch diese Phase und auch die übrigen 26 Wochen der Schwangerschaft.
 
 Auf die Welt kam ich schließlich im Mai 1995 im Kreißsaal des Elisabeth-Kran\-ken\-hau\-ses in Grevenbroich. Auf den Tag genau, so wie es die Geburtsberechnung vorausgesagt hatte. Ich kam mit dem Kopf voran und mein jetziges, dunkelblondes Haar war bei der Geburt und auch einige Wochen danach noch schwarz. Getauft wurde ich auf den Namen Marius. Im Wettstreit der Vornamen hatten die Konkurrenten Oskar und Luis das Nachsehen. Zum Glück. Denn ist es nicht so, hat man erst einmal einen Vornamen, kann man sich einen anderen irgendwie nicht mehr vorstellen?
+
 Apropos Namen: Den Namen Grevenbroich habt ihr vermutlich schon einmal gehört. Grevenbroich ist diese kleine Stadt, gelegen auf der linken Rheinseite im Dreieck Köln-Düsseldorf-Mönchengladbach, die bei Umweltschützern wegen der Braunkohleförderung im riesigen Tagebau Garzweiler zu zweifelhaftem Ruhm gekommen ist. 2030 soll damit Schluss sein. Grevenbroich wurde aber auch durch die von Hape Kerkeling verkörperte Kunstfigur Horst Schlämmer, seines Zeichens nuschelnder Chefredakteur des fiktiven Grevenbroicher Tagblattes, deutschlandweit bekannt.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=\textwidth]{Grevenbroich_in_Google_Earth.png}
+    \includegraphics[width=\textwidth]{Fotos/Grevenbroich_in_Google_Earth.png}
     \caption{Grevenbroich hat etwa 67.000 Einwohner und liegt im Braunkohlerevier westlich von Köln. Die ockerfarbenen Flecken auf der Karte sind Tagebaue, riesige, hunderte Meter tiefe Löcher, in denen gigantische Schaufelradbagger Braunkohle fördern.}
     \label{fig:grevenbroich}
 \end{figure}
@@ -186,6 +191,15 @@ Apropos Namen: Den Namen Grevenbroich habt ihr vermutlich schon einmal gehört. 
 In diesem Städtchen also, genauer gesagt in seinem südlichsten Stadtteil Neurath, lebe ich seit meiner Geburt gemeinsam mit meinen Eltern, Kater Smokie sowie dem langhaarigen holländischen Hütehund Gonzalo. Ich war das erste Kind meiner Eltern und sollte auch das einzige bleiben. Nach Neurath kamen meine Eltern im November 1990, etwa fünf Jahre vor meiner Geburt. Beide sind gebürtige Grevenbroicher. Sie lebten bereits seit drei Jahren zusammen und hatten sich wegen einer aus ihrer Sicht unverschämten Mieterhöhung auf die Suche nach einem eigenen Haus gemacht. In Neurath wurden sie schließlich fündig.
 
 Das Haus, in dem ich die ersten acht Jahre meines Lebens verbracht habe, ist eine zweieinhalbgeschossige Doppelhaushälfte aus den 50er Jahren. Keine Schönheit, aber einigermaßen gut in Schuss. Zum Zeitpunkt meiner Geburt gehörten auch die Bernhardiner-Dame Bianca und die beiden Kater Max und Felix mit zur Familie. Bianca litt leider an einem bösartigen Knochentumor am vorderen Lauf, der sich nicht operieren ließ. Mit vier Jahren haben meine Eltern sie auf Anraten des Tierarztes einschläfern lassen. Eine Erinnerung an sie habe ich nicht. Allerdings gibt es ein Foto, das sie neben meinem Kinderwagen sitzend zeigt. Mit den beiden Katern habe ich noch einige Jahre zusammen verbracht. Hunde und Katzen gehören von Anfang an zu meinem Leben. Sie haben mir immer viel Freude bereitet und mich oft zum Lachen gebracht. Ich bin fest davon überzeugt, dass Haustiere das Leben ihrer Besitzer positiv beeinflussen.
+
+\setlength{\fboxsep}{0pt}    % Kein Abstand zwischen Rahmen und Bild
+\setlength{\fboxrule}{0.2pt} % Rahmenstärke auf 0.2 pt setzen
+\begin{figure}[ht]
+    \centering
+    \fcolorbox{rahmenlinie}{white}{\includegraphics[width=1\textwidth]{Fotos/Zeltgemeinschaft.jpg}}
+    \caption{Der Schapendoes-Rüde Rudi hat mich viele Jahre begleitet. Aufgenommen wurde das Foto an einem Strand in der niederländischen Provinz Zeeland. Ein Leben ohne Haustiere ist für mich unvorstellbar.}
+    \label{fig:zeltgemeinschaft}
+\end{figure}
 
 Zurück zum Haus. Wenn meine Eltern gewusst hätten, dass ihr Kind früher oder später auf einen Rollstuhl angewiesen wäre, hätten sie sich nicht für dieses Haus entschieden. Sie haben es aber weder gewusst noch haben sie es geahnt. Wie auch? Nichts deutete in den ersten zwei Jahren meines Lebens darauf hin. In Sachen Barrierefreiheit war das Haus eine Katastrophe. Mein Kinderzimmer, das mein Vater während der Schwangerschaft hergerichtet hatte und das von meinen Eltern liebevoll eingerichtet worden war, lag direkt unter dem Dach, zwei ziemlich steile Treppen vom Erdgeschoss entfernt. Ich kann mich noch daran erinnern, dass ich mich diese Treppen mühsam hinaufgeschleppt habe, beide Hände das Geländer fest umklammernd. Meine Schritte beim Treppensteigen waren dabei nicht alternierend. Das bedeutet, dass ich den ersten Fuß auf eine Stufe gesetzt habe und anschließend den zweiten Fuß auf dieselbe und nicht etwa auf die nächsthöhere Stufe. Ein typisches Anzeichen für eine Muskelschwäche.
 
@@ -232,9 +246,61 @@ Was die Diagnose Duchenne Muskeldystrophie bedeutete, war mir natürlich nicht k
 
 \section{Was tun? Aktion Benni \& Co.}
 
-Was tun Eltern, die soeben erfahren haben, dass ihr nicht einmal vier Jahre alter Sohn an einer fortschreitenden und tödlich verlaufenden Muskelkrankheit litt? Meine beschäftigten sich von dem Moment an intensiver mit dieser Krankheit. Beim Stöbern im Internet (Google war damals übrigens gerade mal ein Jahr alt) stießen sie auf die im Westerwald beheimatete Elterninitiative Aktion Benni \& Co. Diese war 1996, also ein Jahr nach meiner Geburt, von den Eltern des ebenfalls an Duchenne Muskeldystrophie erkrankten Benni gegründet worden. Ziel der Initiative war es, Geld zu sammeln, um damit die Forschung in Bezug auf eine Heilung der Duchenne Muskeldystrophie zu intensivieren. Aktion Benni \& Co. ist mittlerweile in dem eingetragenen Verein Duchenne Deutschland e.~V. aufgegangen.
+Was tun Eltern, die soeben erfahren haben, dass ihr nicht einmal vier Jahre alter Sohn an einer fortschreitenden und tödlich verlaufenden Muskelkrankheit litt? Meine beschäftigten sich von dem Moment an intensiver mit dieser Krankheit. Beim Stöbern im Internet (Google war damals übrigens gerade mal ein Jahr alt) stießen sie auf die im Westerwald beheimatete Elterninitiative Aktion Benni \& Co. Diese war 1996, also ein Jahr nach meiner Geburt, von den Eltern des ebenfalls an Duchenne Muskeldystrophie erkrankten Benni gegründet worden.
 
-Auch wenn Duchenne Muskeldystrophie die häufigste muskuläre Erbkrankheit im Kindesalter ist und statistisch etwa jeder 3.500ste Junge an ihr erkrankt, ist ihre Häufigkeit dennoch verschwindend gering im Vergleich zu Erkrankungen des Herz-Kreislauf-Systems, Krebs oder Diabetes. Alleine im Jahr 2020 gab es über eine halbe Million neudiagnostizierte Krebserkrankungen. Für Pharmaunternehmen ist der Markt der Volkskrankheiten deutlich lukrativer als der eher übersichtliche Markt der neuromuskulären Erkrankungen wie Duchenne. Mit der kostspieligen Entwicklung von Medikamenten und Therapien lässt sich in diesem Segment schlicht kein Geld verdienen, und als Folge davon kommt auch die Forschung zu kurz. Und wenn an Duchenne Muskeldystrophie nicht geforscht wird, dann wird es weder mittelfristig noch langfristig Hoffnung auf Heilung geben. Das möchten in Deutschland Vereine wie seinerzeit Aktion Benni \& Co., heute Duchenne Deutschland e.~V., oder in den USA Parent Project DMD ändern: sie machen die Öffentlichkeit auf die Krankheit aufmerksam und sammeln Spendengelder zur Unterstützung der Forschung mit Blick auf eine Heilung der Erkrankung.
+Ziel der Initiative war es, Geld zu sammeln, um damit die Forschung in Bezug auf eine Heilung der Duchenne Muskeldystrophie zu intensivieren. Aktion Benni \& Co. ist mittlerweile in dem eingetragenen Verein Duchenne Deutschland e.~V. aufgegangen.
+
+\begin{mdframed}[
+    linewidth=0.3pt,         % Dünne Linie
+    linecolor=rahmenlinie,   % Deine definierte Rahmenfarbe
+    leftmargin=0, rightmargin=0,
+    innertopmargin=8pt, innerbottommargin=8pt,
+    innerleftmargin=12pt, innerrightmargin=12pt,
+    backgroundcolor=white
+]
+\small\sffamily
+\setlength{\parindent}{0pt} % Kein Erstzeileneinzug
+
+\vspace{0.2\baselineskip}
+\textbf{Duchenne Deutschland e.\,V. und Deutsche Duchenne Stiftung}
+
+Duchenne Deutschland e.~V. ist eine Initiative von Eltern, deren Kinder Duchenne Muskeldystrophie (DMD) haben. Mit seiner Arbeit, die größtenteils von ehrenamtlichen Helfern geleistet wird, unterstützt der Selbsthilfeverein Betroffene und ihre Familien durch Beratung und Information in allen Lebensphasen.
+
+\vspace{0.8\baselineskip}
+
+Zweck des Vereins ist auch die Förderung von Wissenschaft und Forschung. Mit Spendengeldern unterstützt er – in Absprache mit einem wissenschaftlichen Beirat – die DMD-Forschung sowie Studien und fördert die Kommunikation und die Zusammenarbeit der weltweit mit DMD befassten Wissenschaftler. Der Verein informiert Patienten und ihre Familien über aktuelle und geplante Forschungsprojekte und richtet Veranstaltungen wie das jährliche Duchenne-Symposium oder regelmäßige Web-Konferenzen aus.
+
+\vspace{0.8\baselineskip}
+
+Die Deutsche Duchenne Stiftung (\url{https://www.duchenne-deutschland.de}) wurde 2010 als selbständige Stiftung gegründet, um die Arbeit für die Duchenne-Gemeinschaft dauerhaft zu sichern, die Forschung zur Entwicklung von Therapien zu forcieren und die Lebenssituation der Betroffenen zu verbessern. Aufklärung der Öffentlichkeit sowie die Umsetzung sozialer und psychologischer Projekte für DMD-Familien sind weitere Bestandteile der Stiftungsarbeit.\\
+
+\vspace{0.8\baselineskip}
+\textbf{Deutsche Duchenne Stiftung – Duchenne Deutschland e.~V.}
+
+Huestraße 20, 44787 Bochum\\
+Telefon: +49 234 925 696 70\\
+Fax: +49 234 925 696 72\\
+E-Mail: info@duchenne-deutschland.de\\
+Webseite: \url{https://www.duchenne-deutschland.de}
+
+\vspace{0.8\baselineskip}
+\textbf{Spendenkonten}
+
+Duchenne Deutschland e.~V.\\
+Sparkasse Bochum\\
+IBAN: DE67 4305 0001 0000 4277 24\\
+BIC: WELADED1BOC\\
+Deutsche Duchenne Stiftung\\
+Volksbank Ruhr Mitte\\
+IBAN: DE44 4226 0001 0603 1297 00
+
+\end{mdframed}
+
+\vspace{0.8\baselineskip}
+
+\noindent Auch wenn Duchenne Muskeldystrophie die häufigste muskuläre Erbkrankheit im Kindesalter ist und statistisch etwa jeder 3.500ste Junge an ihr erkrankt, ist ihre Häufigkeit dennoch verschwindend gering im Vergleich zu Erkrankungen des Herz-Kreislauf-Systems, Krebs oder Diabetes. Alleine im Jahr 2020 gab es über eine halbe Million neudiagnostizierte Krebserkrankungen.
+
+Für Pharmaunternehmen ist der Markt der Volkskrankheiten deutlich lukrativer als der eher übersichtliche Markt der neuromuskulären Erkrankungen wie Duchenne. Mit der kostspieligen Entwicklung von Medikamenten und Therapien lässt sich in diesem Segment schlicht kein Geld verdienen, und als Folge davon kommt auch die Forschung zu kurz. Und wenn an Duchenne Muskeldystrophie nicht geforscht wird, dann wird es weder mittelfristig noch langfristig Hoffnung auf Heilung geben. Das möchten in Deutschland Vereine wie seinerzeit Aktion Benni \& Co., heute Duchenne Deutschland e.~V., oder in den USA Parent Project DMD ändern: sie machen die Öffentlichkeit auf die Krankheit aufmerksam und sammeln Spendengelder zur Unterstützung der Forschung mit Blick auf eine Heilung der Erkrankung.
 
 Meine Eltern traten also dem Verein Aktion Benni \& Co. bei. Sie machten in und um Grevenbroich auf die Krankheit Duchenne Muskeldystrophie aufmerksam und sammelten fleißig Spendengelder. Damit begann eine Zeit mit vielen Benefizveranstaltungen, Fototerminen und Scheckübergaben. Wir tauchten in etlichen Zeitungsartikeln auf und machten mit unserer Geschichte das Thema Duchenne Muskeldystrophie einer größeren Öffentlichkeit bekannt.
 
@@ -302,5 +368,7 @@ Die Nachricht erreichte uns im Sommer 2001, nur wenige Monate nach der ersten Ko
 An einem Tag während dieses Urlaubs rief uns meine Tante an. Sie hatte während unserer Abwesenheit unseren Briefkasten geleert und dabei einen Brief vom RWE entdeckt. Wir baten sie, uns den Inhalt vorzulesen. RWE teilte uns darin freudig mit, dass man die Parzelle schnellstmöglich veräußern würde und bereits Kontakt zur Stadt Grevenbroich aufgenommen habe. Vom Bauamt hatten wir vorab schon die Zusage erhalten, dass man sich für eine zügige Erschließung der Fläche einsetzen werde, sobald RWE diese verkaufen würde. Der Bebauungsplan müsse hierfür allerdings zunächst angepasst und dann veröffentlicht werden, was noch ein paar Monate dauern könne und tatsächlich auch ein halbes Jahr dauerte.
 
 Noch am Tag des Anrufs begannen die Planungen. Meine Mutter hatte in der Nacht vor lauter Aufregung kein Auge zugemacht und damit begonnen, einen ersten Grundriss zu zeichnen. Von diesem ist, wie zu erwarten, am Ende kaum etwas übriggeblieben. Allerdings wurde das Wohnkonzept so umgesetzt, wie meine Eltern es sich vorgestellt hatten. Mittelpunkt unseres häuslichen Lebens ist eine 40 Quadratmeter große Küche. Hier spielt sich fast alles ab.
+
+
 
 \end{document}

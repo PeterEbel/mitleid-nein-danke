@@ -1,4 +1,4 @@
-\documentclass[fontsize=12pt,a4paper,headinclude,DIV=calc,automark]{scrbook}
+\documentclass[fontsize=14pt,a4paper,headinclude,DIV=calc,automark]{scrbook}
 
 \usepackage{float}
 \usepackage[left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry} % Seitenränder
@@ -10,8 +10,9 @@
 \usepackage[
     format=plain,
     labelformat=empty,
-    textfont={small,it},
-    belowskip=-15pt
+    textfont={small,it,singlespacing},
+    justification=raggedright,
+    belowskip=-6pt
  ]{caption}
 
 \usepackage{booktabs}       % Für professionelle Tabellenlinien
@@ -19,7 +20,12 @@
 \usepackage{graphicx}       % Für das Einbinden von Grafiken
 \usepackage{fancybox}       % Für Rahmen um Text und Bilder
 \usepackage{mdframed}       % Für Rahmen um Text und Bilder
-\usepackage{hyperref}       
+
+\usepackage[
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=green
+]{hyperref}    
 
 \usepackage{scrlayer-scrpage} % Paket einfach laden, Optionen zentral setzen
 \KOMAoptions{
@@ -55,8 +61,10 @@
 \setmonofont{Calibri}
 
 \setkomafont{chapter}{\normalfont\huge\rmfamily\textcolor{myblue}}
-\setkomafont{section}{\normalfont\fontsize{14}{20}\rmfamily\textcolor{myblue}}
+\setkomafont{section}{\normalfont\fontsize{18}{24}\rmfamily\textcolor{myblue}}
 \setkomafont{subsection}{\normalfont\large\bfseries\rmfamily\textcolor{myblue}}
+
+\linespread{1.2}
 
 \setcounter{secnumdepth}{-1} % Deaktiviert die Nummerierung für alle Überschriften
 
@@ -167,7 +175,7 @@ Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetz
 \addcontentsline{toc}{chapter}{Die ersten Jahre}
 
 \leavevmode
-\vspace*{0.5\baselineskip}
+%\vspace*{0.5\baselineskip}
 {\noindent\fontsize{18}{24}\selectfont\textcolor{myblue}{Ich, Wunschkind}\par}
 {\noindent\fontsize{14}{20}\selectfont\scshape\textcolor{myblue}{Eigentlich lief alles bestens}\ldots\par}
 \vspace*{0.5\baselineskip}
@@ -206,14 +214,17 @@ Zurück zum Haus. Wenn meine Eltern gewusst hätten, dass ihr Kind früher oder 
 Der Zugang zum Haus stellte ebenfalls eine Hürde dar, denn selbst das Erdgeschoss befand sich nicht auf Straßenniveau. Wie bei vielen Häusern, die in den 50er und 60er Jahren gebaut worden waren, musste man erst ein paar Stufen erklimmen, bevor man vor der Haustür stand. Und auch in den Garten kam man nur über eine Treppe. Von der reinen Quadratmeterzahl her bot das Haus locker Platz für bis zu vier Personen. Aber die Wohnfläche verteilte sich auf drei Etagen. Rollstuhl, Treppenlift, Aufzug? Undenkbar.
 
 Die ersten zwei Jahre meines Lebens waren unspektakulär. Ich lernte nach und nach alle Familienmitglieder kennen, wurde auf Familienfeiern herumgereicht, aß und trank gut und wuchs zu einem Wonneproppen heran, der sich in nichts von anderen zweijährigen Wonneproppen unterschied.
-Zumindest nicht auf den ersten Blick.
+
+\vspace{0.5\baselineskip}
+
+\noindent Zumindest nicht auf den ersten Blick.
 
 \section{Da stimmt was nicht}
 Rückblickend betrachtet, so meine Mutter, gab es sehr wohl Anzeichen. Allerdings subtile, die man als Argloser nicht unbedingt zu deuten vermochte. Ich krabbelte beispielsweise nicht, so wie es viele (wenn auch nicht alle) Kleinkinder tun, bevor sie laufen lernen. Und ich war seit meinem ersten Lebensjahr heiser. In einer Situation fiel meiner Mutter auch auf, dass es mich Kraft kostete, wenn ich auf dem Bauch lag und den Kopf anheben wollte. Aber da ich schließlich mit 16 Monaten das Laufen erlernte, lösten sich diese ersten Bedenken, dass mit mir körperlich vielleicht etwas nicht stimmte, erstmal in Luft auf.
 
 Meine Mutter hatte mich ein halbes Jahr nach meiner Geburt bereits in einem Kindergarten angemeldet, den ich mit dreieinhalb Jahren dann auch besuchte. Ein Jahr zuvor bin ich bereits regelmäßig in eine Spielgruppe gegangen (in der ich meinen ältesten Freund Marvin kennengelernt habe, zu dem ich heute noch Kontakt halte, auch wenn er zwischenzeitlich nach Berlin gezogen ist).
 
-Gegen Ende meiner Zeit in dieser Spielgruppe fiel einer der beiden Pädagoginnen auf, dass ich offensichtlich Plattfüße und einen Watschelgang hatte. Beides sind Anzeichen für Duchenne Muskeldystrophie. Diese Art zu gehen, entsteht aufgrund der Schwäche der Hüft- und Gesäßmuskulatur. Um die Schwäche in der Hüfte auszugleichen und eine möglichst stabile Körperhaltung einzunehmen, machen Duchenne-Jungen ein Hohlkreuz und wölben den Bauch nach vorne. Wenn man in dieser Haltung barfuß geht, Plattfüße hat, weil das Fußgewölbe nicht richtig ausgebildet ist, und man den Fuß auch nicht abrollen kann, dann hat dieser Gang etwas von Watscheln. Duchenne Muskeldystrophie erkläre ich euch auf Seite 119 noch genauer.
+Gegen Ende meiner Zeit in dieser Spielgruppe fiel einer der beiden Pädagoginnen auf, dass ich offensichtlich Plattfüße und einen Watschelgang hatte. Beides sind Anzeichen für Duchenne Muskeldystrophie. Diese Art zu gehen, entsteht aufgrund der Schwäche der Hüft- und Gesäßmuskulatur. Um die Schwäche in der Hüfte auszugleichen und eine möglichst stabile Körperhaltung einzunehmen, machen Duchenne-Jungen ein Hohlkreuz und wölben den Bauch nach vorne. Wenn man in dieser Haltung barfuß geht, Plattfüße hat, weil das Fußgewölbe nicht richtig ausgebildet ist, und man den Fuß auch nicht abrollen kann, dann hat dieser Gang etwas von Watscheln. Duchenne Muskeldystrophie erkläre ich euch auf Seite 119 *** noch genauer.
 
 \section{„Ach was! Das kommt noch!“ Denkste!}
 
@@ -222,6 +233,15 @@ Auch wenn man diese Fehlhaltung anfangs vielleicht noch mit einem „Ach was! Ni
 \section{Gowers-Manöver und die Schwierigkeit aufzustehen}
 
 Alles gut? Leider nicht. Denn es wurde immer offensichtlicher, dass ich meinen Altersgenossen körperlich immer mehr hinterherhinkte. Vom Boden aufzustehen, fiel mir besonders schwer. Ich musste mich immer erst hinknien und dann mit dem Arm am Oberschenkel hochdrücken, um in den aufrechten Stand zu kommen. Diese Art sich aufzurichten, wird als Gowers-Manöver bezeichnet. Es ist typisch für Duchenne Muskeldystrophie.
+
+\setlength{\fboxsep}{0pt}    % Kein Abstand zwischen Rahmen und Bild
+\setlength{\fboxrule}{0.2pt} % Rahmenstärke auf 0.2 pt setzen
+\begin{figure}[ht]
+    \centering
+    \fcolorbox{rahmenlinie}{white}{\includegraphics[width=1\textwidth]{Fotos/gowers-manöver.jpg}}
+    \caption{Als Gowers-Manöver bezeichnet man die typische Art, wie sich Patienten mit einer Rumpfmuskelschwäche aus der Bauchlage in den Stand aufrichten. Zeichnung: Thomas Ebel}
+    \label{fig:gowers-manöver}
+\end{figure}
 
 \section{Ich kann nicht so schnell}
 
@@ -239,10 +259,17 @@ Die dritte Physiotherapeutin (diese Praxis betreut mich übrigens bis heute) rie
 
 \section{Das Ende der unbeschwerten Jahre}
 
-Der Arzt entnahm mir eine Blutprobe und ließ sie im Labor untersuchen. Wir hatten vor, das Weihnachtsfest und den Jahreswechsel gemeinsam mit meinen Großeltern im Erzgebirge zu verbringen. Meine Eltern erwähnten dies dem Arzt gegenüber wohl mehr oder weniger beiläufig. Denn obwohl das Ergebnis der Blutuntersuchung bereits vor unserer Abreise feststand, teilte man es meinen Eltern sozusagen aus Rücksicht auf ein paar unbeschwerte Feiertage erst nach unserer Rückkehr am 11. Januar 1999 mit. Der Creatinkinase Wert (CK) in meinem Blut war deutlich erhöht. Das Enzym Creatinkinase ist für den Energiestoffwechsel der Muskelzellen wichtig. Sind die Zellen geschädigt, etwa durch einen Herzinfarkt, Sturz oder wie in meinem Fall durch das Fehlen des Proteins Dystrophin (daher auch der Name Muskeldystrophie), findet sich vermehrt Creatinkinase im Blut. Der Normalwert liegt bei einem Gesunden in meinem Alter bei weniger als 150 Einheiten pro Liter Plasma. Bei mir waren es 7.000.
-Die unbeschwerten Jahre waren damit vorbei.
+Der Arzt entnahm mir eine Blutprobe und ließ sie im Labor untersuchen. Wir hatten vor, das Weihnachtsfest und den Jahreswechsel gemeinsam mit meinen Großeltern im Erzgebirge zu verbringen. Meine Eltern erwähnten dies dem Arzt gegenüber wohl mehr oder weniger beiläufig. Denn obwohl das Ergebnis der Blutuntersuchung bereits vor unserer Abreise feststand, teilte man es meinen Eltern sozusagen aus Rücksicht auf ein paar unbeschwerte Feiertage erst nach unserer Rückkehr am 11. Januar 1999 mit.
 
-Was die Diagnose Duchenne Muskeldystrophie bedeutete, war mir natürlich nicht klar. Aber von dem Moment der Diagnose an änderte sich mein Leben und das meiner Eltern schlagartig und dauerhaft. Ihnen wurde der Boden unter den Füßen weggezogen. Unser altes Leben, das noch wenige Wochen zuvor unbekümmert und glücklich war, rückte mit einem Schlag unwiederbringlich in weite Ferne und wurde zu etwas langsam Verblassendem, an das sie sehnsüchtig zurückdachten. Es sollten zwei Jahre vergehen, bis der Horror zumindest teilweise verarbeitet worden war und das Glück nach und nach in unsere Familie zurückkehrte.
+Der Creatinkinase Wert (CK) in meinem Blut war deutlich erhöht. Das Enzym Creatinkinase ist für den Energiestoffwechsel der Muskelzellen wichtig. Sind die Zellen geschädigt, etwa durch einen Herzinfarkt, Sturz oder wie in meinem Fall durch das Fehlen des Proteins Dystrophin (daher auch der Name Muskeldystrophie), findet sich vermehrt Creatinkinase im Blut. Der Normalwert liegt bei einem Gesunden in meinem Alter bei weniger als 150 Einheiten pro Liter Plasma. Bei mir waren es 7.000.
+
+\vspace{0.5\baselineskip}    
+
+\noindent Die unbeschwerten Jahre waren damit vorbei.
+
+\vspace{0.5\baselineskip} 
+
+\noindent Was die Diagnose Duchenne Muskeldystrophie bedeutete, war mir natürlich nicht klar. Aber von dem Moment der Diagnose an änderte sich mein Leben und das meiner Eltern schlagartig und dauerhaft. Ihnen wurde der Boden unter den Füßen weggezogen. Unser altes Leben, das noch wenige Wochen zuvor unbekümmert und glücklich war, rückte mit einem Schlag unwiederbringlich in weite Ferne und wurde zu etwas langsam Verblassendem, an das sie sehnsüchtig zurückdachten. Es sollten zwei Jahre vergehen, bis der Horror zumindest teilweise verarbeitet worden war und das Glück nach und nach in unsere Familie zurückkehrte.
 
 \section{Was tun? Aktion Benni \& Co.}
 
@@ -263,7 +290,9 @@ Ziel der Initiative war es, Geld zu sammeln, um damit die Forschung in Bezug auf
 
 \textbf{Duchenne Deutschland e.\,V. und Deutsche Duchenne Stiftung}
 
-Duchenne Deutschland e.~V. ist eine Initiative von Eltern, deren Kinder Duchenne Muskeldystrophie (DMD) haben. Mit seiner Arbeit, die größtenteils von ehrenamtlichen Helfern geleistet wird, unterstützt der Selbsthilfeverein Betroffene und ihre Familien durch Beratung und Information in allen Lebensphasen.
+\vspace{0.5\baselineskip}
+
+\textbf{Duchenne Deutschland e.~V.} ist eine Initiative von Eltern, deren Kinder Duchenne Muskeldystrophie (DMD) haben. Mit seiner Arbeit, die größtenteils von ehrenamtlichen Helfern geleistet wird, unterstützt der Selbsthilfeverein Betroffene und ihre Familien durch Beratung und Information in allen Lebensphasen.
 
 \vspace{0.8\baselineskip}
 
@@ -271,7 +300,7 @@ Zweck des Vereins ist auch die Förderung von Wissenschaft und Forschung. Mit Sp
 
 \vspace{0.8\baselineskip}
 
-Die Deutsche Duchenne Stiftung (\url{https://www.duchenne-deutschland.de}) wurde 2010 als selbständige Stiftung gegründet, um die Arbeit für die Duchenne-Gemeinschaft dauerhaft zu sichern, die Forschung zur Entwicklung von Therapien zu forcieren und die Lebenssituation der Betroffenen zu verbessern. Aufklärung der Öffentlichkeit sowie die Umsetzung sozialer und psychologischer Projekte für DMD-Familien sind weitere Bestandteile der Stiftungsarbeit.
+Die \textbf{Deutsche Duchenne Stiftung} (\url{https://www.duchenne-deutschland.de}) wurde 2010 als selbständige Stiftung gegründet, um die Arbeit für die Duchenne-Gemeinschaft dauerhaft zu sichern, die Forschung zur Entwicklung von Therapien zu forcieren und die Lebenssituation der Betroffenen zu verbessern. Aufklärung der Öffentlichkeit sowie die Umsetzung sozialer und psychologischer Projekte für DMD-Familien sind weitere Bestandteile der Stiftungsarbeit.
 
 \vspace{0.8\baselineskip}
 \textbf{Deutsche Duchenne Stiftung – Duchenne Deutschland e.~V.}
@@ -299,11 +328,22 @@ IBAN: DE44 4226 0001 0603 1297 00
 
 \noindent Auch wenn Duchenne Muskeldystrophie die häufigste muskuläre Erbkrankheit im Kindesalter ist und statistisch etwa jeder 3.500ste Junge an ihr erkrankt, ist ihre Häufigkeit dennoch verschwindend gering im Vergleich zu Erkrankungen des Herz-Kreislauf-Systems, Krebs oder Diabetes. Alleine im Jahr 2020 gab es über eine halbe Million neudiagnostizierte Krebserkrankungen.
 
-Für Pharmaunternehmen ist der Markt der Volkskrankheiten deutlich lukrativer als der eher übersichtliche Markt der neuromuskulären Erkrankungen wie Duchenne. Mit der kostspieligen Entwicklung von Medikamenten und Therapien lässt sich in diesem Segment schlicht kein Geld verdienen, und als Folge davon kommt auch die Forschung zu kurz. Und wenn an Duchenne Muskeldystrophie nicht geforscht wird, dann wird es weder mittelfristig noch langfristig Hoffnung auf Heilung geben. Das möchten in Deutschland Vereine wie seinerzeit Aktion Benni \& Co., heute Duchenne Deutschland e.~V., oder in den USA Parent Project DMD ändern: sie machen die Öffentlichkeit auf die Krankheit aufmerksam und sammeln Spendengelder zur Unterstützung der Forschung mit Blick auf eine Heilung der Erkrankung.
+Für Pharmaunternehmen ist der Markt der Volkskrankheiten deutlich lukrativer als der eher übersichtliche Markt der neuromuskulären Erkrankungen wie Duchenne. Mit der kostspieligen Entwicklung von Medikamenten und Therapien lässt sich in diesem Segment schlicht kein Geld verdienen, und als Folge davon kommt auch die Forschung zu kurz. Und wenn an Duchenne Muskeldystrophie nicht geforscht wird, dann wird es weder mittelfristig noch langfristig Hoffnung auf Heilung geben.
+
+Das möchten in Deutschland Vereine wie seinerzeit Aktion Benni \& Co., heute Duchenne Deutschland e.~V., oder in den USA Parent Project DMD ändern: sie machen die Öffentlichkeit auf die Krankheit aufmerksam und sammeln Spendengelder zur Unterstützung der Forschung mit Blick auf eine Heilung der Erkrankung.
 
 Meine Eltern traten also dem Verein Aktion Benni \& Co. bei. Sie machten in und um Grevenbroich auf die Krankheit Duchenne Muskeldystrophie aufmerksam und sammelten fleißig Spendengelder. Damit begann eine Zeit mit vielen Benefizveranstaltungen, Fototerminen und Scheckübergaben. Wir tauchten in etlichen Zeitungsartikeln auf und machten mit unserer Geschichte das Thema Duchenne Muskeldystrophie einer größeren Öffentlichkeit bekannt.
 
 Dies hatte dann auch den gewünschten Schneeballeffekt zur Folge: Denn nicht nur unsere Familien waren eifrig dabei, Spendengelder zu sammeln, auch Freunde und Bekannte legten sich mächtig ins Zeug, um unser Anliegen publik zu machen. Sie sprachen ihre Freunde, Bekannten und auch Firmen an und sorgten schließlich dafür, dass innerhalb von zwei Jahren mehr als 100.000 DM aus unserem Postleitzahlbezirk auf das Spendenkonto von Aktion Benni \& Co. eingezahlt wurden!
+
+\setlength{\fboxsep}{0pt}    % Kein Abstand zwischen Rahmen und Bild
+\setlength{\fboxrule}{0.2pt} % Rahmenstärke auf 0.2 pt setzen
+\begin{figure}[ht]
+    \centering
+    \fcolorbox{rahmenlinie}{white}{\includegraphics[width=1\textwidth]{Fotos/Zeitungsausschnitte.jpg}}
+    \caption{Unsere Geschichte wurde um die Jahrtausendwende in zahlreichen Zeitschriften veröffentlicht und machte das Thema Duchenne lokal und regional einer größeren Öffentlichkeit bekannt. Viele Menschen spendeten Geld. Innerhalb von etwa zwei Jahren gingen 100.000 DM aus unserem Postleitzahlbezirk auf dem Spendenkonto von Aktion Benni \& Co. ein.}
+    \label{fig:zeitungsausschnitte}
+\end{figure}
 
 Meine Eltern erzählten mir, dass ihnen die vielen Aktivitäten rund um Aktion Benni \& Co. zwar nicht dabei halfen, die Realität um sie herum komplett auszublenden und den Horror ganz zu vergessen, man sah mir die Krankheit ja an, für deren Bekämpfung sie Spendengelder sammelten. Aber es lenkte sie zumindest ab. Sie hatten eine Aufgabe, auf die sie ihre Gedanken fokussieren konnten. Und mit jeder gespendeten (damals noch) DM, so hofften sie, würde auch die Heilung ihres Sohnes ein Stück näher rücken. Die beiden engagierten sich etwa zwei Jahre für Aktion Benni \& Co. und beschlossen dann, sich wieder mehr auf die Familie, auf uns drei zu konzentrieren. Dafür gab es einen guten Grund: Wir planten den Bau eines behindertengerechten Hauses.
 
@@ -325,7 +365,7 @@ Natürlich hatte ich als kleiner Junge überhaupt keine Ahnung, was Barrierefrei
 
 Mit der Diagnose Duchenne Muskeldystrophie stand unweigerlich fest, dass ich früher oder später einen Elektro-Rollstuhl brauchen würde, um mich eigenständig fortbewegen zu können. Ein Thema, das meine Eltern anfangs komplett ausgeblendet hatten. Mich im Rollstuhl sitzen zu sehen, war etwas, mit dem sie sich in den ersten beiden Jahren nach der Diagnose nicht befassen wollten oder konnten. Der Rollstuhl war nicht nur ein Hilfsmittel zur Fortbewegung und zum Erhalt der Selbstständigkeit. Er war auch ein Symbol. Ein Symbol dafür, dass mit dem Verlust meiner Gehfähigkeit für alle sichtbar das nächste Stadium der Krankheit begonnen hatte. Mit dem Rollstuhl würde eine neue Phase in meinem Leben anbrechen, die ich von da an im Sitzen und auf Rädern meistern musste, ob ich wollte oder nicht. Das zu akzeptieren, fiel anfangs nicht nur meinen Eltern schwer, sondern mir auch. Denn ich hatte Angst vor Rollstühlen.
 
-Klingt komisch, aber war tatsächlich so. Es gibt eine Situation, die mir heute fast wie eine sich selbst erfüllende Prophezeiung vorkommt (ich bin allerdings nicht abergläubisch). Meine Eltern waren immer schon bekennende Camper. Eigentlich sind sie es immer noch, aber leider machen die Umstände das Zelten so gut wie unmöglich, der logistische Aufwand ist einfach riesig. Früher, als ich noch gehen konnte, aber auch noch, als ich schon im e-fix saß, haben wir viele unserer Urlaube und verlängerten Wochenenden an der holländischen Küste auf einem Campingplatz in der Nähe vor Domburg verbracht. Dazu auf Seite 67 mehr.
+Klingt komisch, aber war tatsächlich so. Es gibt eine Situation, die mir heute fast wie eine sich selbst erfüllende Prophezeiung vorkommt (ich bin allerdings nicht abergläubisch). Meine Eltern waren immer schon bekennende Camper. Eigentlich sind sie es immer noch, aber leider machen die Umstände das Zelten so gut wie unmöglich, der logistische Aufwand ist einfach riesig. Früher, als ich noch gehen konnte, aber auch noch, als ich schon im e-fix saß, haben wir viele unserer Urlaube und verlängerten Wochenenden an der holländischen Küste auf einem Campingplatz in der Nähe vor Domburg verbracht. Dazu auf Seite 67 *** mehr.
 
 Es war vielleicht im Sommer 1999 oder 2000, als ich auf diesem Campingplatz zum ersten Mal einen Jungen in einem Elektro-Rollstuhl sah. Der Rollstuhl erschien mir riesig und er machte mir Angst. Anders als ich und alle anderen Menschen, die ich kannte, ging der Junge nicht auf zwei Beinen, sondern er fuhr mit diesem Ding umher, das zu allem Schrecken dieses seltsam summende Geräusch von sich gab. Ich konnte kaum hinschauen und ging dem Jungen falls möglich aus dem Weg. Dass ich keine zwei Jahre später selbst auf einen Rollstuhl angewiesen sein würde (zumindest zeitweise), ahnte ich natürlich nicht. Es würde zur Ironie des Schicksals passen, wäre der Junge so wie ich an Duchenne Muskeldystrophie erkrankt und ich sozusagen einen Blick meiner eigenen Zukunft erhascht hätte. So viel zur Angst vor Rollstühlen. Klar, die Angst war spätestens verschwunden, als ich selbst in einem saß.
 
@@ -345,6 +385,15 @@ Im Kreise all der Kinder, die mich und meine Krankheit schon aus der Kindergarte
 Neurath ist ein kleines Dorf, das von den meisten Grevenbroichern wegen seiner Lage in unmittelbarer Nähe der Braunkohlekraftwerke eher abschätzig betrachtet wird. Und von der Stadtverwaltung erhält es leider auch nicht die (finanzielle) Zuwendung, die es eigentlich bräuchte. Aber die Menschen, die hier leben, sind toll. Jedenfalls die, die ich im Laufe der Jahre kennengelernt habe.
 
 Ich war ungefähr sieben Jahre alt und saß schon zeitweise im Rollstuhl, als ich darauf angesprochen wurde, ob ich nicht Lust hätte, Mitglied in der Artillerie Neurath zu werden. Die Artillerie ist ein Schützenzug, bei dem nicht nur Erwachsene mitmachten. Sie hatte auch eine Kinderabteilung, die Jung-Artillerie, in die einige meiner Schulkameraden eingetreten waren. Wir fuhren regelmäßig ins Kino, machten viele Ausflüge und traf uns oft zum Grillen. Während der Schützenfestumzüge saßen die Erwachsenen auf einer großen und die Kinder auf einer kleinen Kanone, die von Traktoren durchs Dorf gezogen wurden. Das war für mich natürlich praktisch, denn ich musste nicht wie die anderen Schützen zu Fuß marschieren.
+
+\setlength{\fboxsep}{0pt}    % Kein Abstand zwischen Rahmen und Bild
+\setlength{\fboxrule}{0.2pt} % Rahmenstärke auf 0.2 pt setzen
+\begin{figure}[ht]
+    \centering
+    \fcolorbox{rahmenlinie}{white}{\includegraphics[width=1\textwidth]{Fotos/Schützenfest 2002.jpg}}
+    \caption{Ich auf der Kanone der Artillerie Neurath sitzend. In späteren Jahren wurde ich sicherheitshalber mit einem Gurt an der Sitzbank befestigt. Im Hintergrund sieht man übrigens den Traktor, mit dem die Kanone der Erwachsenen gezogen wird.}
+    \label{fig:schützenfest}
+\end{figure}
 
 Anfangs bin ich noch selbst auf die Kanone geklettert, später dann, als meine Kräfte mich mehr und mehr verließen, wurde ich von einem der Erwachsenen auf die Kanone gehoben. Die Umzüge haben viel Spaß gemacht und ich habe mich immer darauf gefreut! Leider war eine Fahrt auf der Kanone nach meiner Wirbelsäulen-Operation, von der ich euch auf Seite 133 berichten werde, nicht mehr möglich. Die Kanone war nicht gefedert und jede Unebenheit im Boden, hätte meine Wirbelsäule erschüttert und die an den Wirbelkörpern befestigten Stangen lösen können. Mitgefahren bin ich aber trotzdem, und zwar uniformiert in meinem Rollstuhl direkt neben der Kanone! Noch heute bin ich passives Mitglied in der Artillerie und werde von den Jungs jedes Jahr besucht. Zum Auftakt des Schützenfestes kommen sie mit der Kanone bei mir vorbei und wir böllern das Fest mit ein paar lauten Schüssen ein.
 
@@ -368,6 +417,32 @@ An einem Tag während dieses Urlaubs rief uns meine Tante an. Sie hatte während
 
 Noch am Tag des Anrufs begannen die Planungen. Meine Mutter hatte in der Nacht vor lauter Aufregung kein Auge zugemacht und damit begonnen, einen ersten Grundriss zu zeichnen. Von diesem ist, wie zu erwarten, am Ende kaum etwas übriggeblieben. Allerdings wurde das Wohnkonzept so umgesetzt, wie meine Eltern es sich vorgestellt hatten. Mittelpunkt unseres häuslichen Lebens ist eine 40 Quadratmeter große Küche. Hier spielt sich fast alles ab.
 
+\setlength{\fboxsep}{0pt}    % Kein Abstand zwischen Rahmen und Bild
+\setlength{\fboxrule}{0.2pt} % Rahmenstärke auf 0.2 pt setzen
+\begin{figure}[ht]
+    \centering
+    \fcolorbox{rahmenlinie}{white}{\includegraphics[width=1\textwidth]{Fotos/Baugrube.jpg}}
+    \caption{Mein Vater und ich in der Baugrube.}
+    \label{fig:baugrube}
+\end{figure}
 
+Als wir zurück in Deutschland waren, begannen die konkreten Planungen. Zuallererst brauchten wir einen Architekten, der das Wohnkonzept, das meinen Eltern vorschwebte, umsetzen konnte. Zum Glück mussten wir diesen nicht lange suchen. Volker war ein Klassenkamerad meines Vaters und hatte sich als Architekt einen Namen gemacht. Aufträge für 08/15 Entwürfe (Haustür, Flur, links Gäste-WC und Treppenaufgang Obergeschoß, rechts Küche, hinten Wohnzimmer und Garten) lehnte er ab, wenn er konnte. Das Projekt "Barrierefreier Bungalow" reizte ihn hingegen umso mehr, außerdem war er ein alter Freund der Familie und wollte uns helfen. Beim Preis kam er uns auch entgegen.
+
+\section{Der Bagger kommt}
+
+Die Bauarbeiten begannen im Juni 2002. Ich war natürlich live dabei, als der Bagger seine Schaufel zum ersten Mal in den Boden stieß und begann, den Keller unseres Hauses auszuheben. Meine Eltern und ich sind RWE und der Stadt Grevenbroich noch heute dankbar dafür, dass sie das Gelände unkompliziert und schnell in Bauland umgewandelt, die Erschließung und Parzellierung vorangetrieben und die Grundstücke schließlich uns und acht weiteren Interessenten zum Kauf angeboten haben. Wir würden heute nicht in Neurath leben und unser Leben wäre ganz anders verlaufen.
+
+Der Bau zog sich über ein Jahr hin, und größere Probleme gab es zum Glück keine. Im August 2003 zogen wir ein. Bis auf die Treppe in den Keller hat das Haus keine Stufen. Der Zugang von der Straße ist ebenerdig ebenso wie alle Ausgänge in den Garten. Beim Ausheben der Baugrube hatte man diese Anforderung bereits berücksichtigt und das Loch entsprechend tief gegraben. Jeder Raum ist für mich erreichbar. Selbst die Räume im Keller. Das Haus verfügt nämlich über einen Aufzug. Mein Zimmer und das sich daran anschließende Bad liegen im Erdgeschoss und sind beide genauso geräumig wie die Küche. Neben einem Heizungs- und Vorratsraum befinden sich im Keller ein Büro, das ich mir mit meinem Vater teile, das Gym meines Vaters sowie mein Zockerzimmer mit den diversen Spielekonsolen, die sich im Laufe der Jahre angesammelt haben. Hierhin ziehen wir uns zurück, wenn meine Freunde Marco und Marvin zu Gast sind, und machen dabei auch schon mal die Nacht durch (einmal sogar zwei Nächte hintereinander). Unser Haus steht für Freunde immer offen. Sie sind hier jederzeit willkommen.
+
+\addchap{Schule, Ausbildung und Job}
+\thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seiet des Kapitels
+\addcontentsline{toc}{chapter}{Schule, Ausbildung und Job}
+
+\leavevmode
+%\vspace*{0.5\baselineskip}
+{\noindent\fontsize{18}{24}\selectfont\textcolor{myblue}{Ich, Wunschkind}\par}
+{\noindent\fontsize{14}{20}\selectfont\scshape\textcolor{myblue}{Eigentlich lief alles bestens}\ldots\par}
+\vspace*{0.5\baselineskip}
+\normalsize
 
 \end{document}

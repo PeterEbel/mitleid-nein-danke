@@ -7,6 +7,9 @@
 \setotherlanguage{english}
 \hyphenation{Kran-ken-hau-ses Pro-dukt-de-signer Be-rufs-bil-dungs-werk}
 
+\usepackage{longtable}
+\usepackage{array}
+
 \usepackage[
     format=plain,
     labelformat=empty,
@@ -49,9 +52,12 @@
 
 \setkomafont{pageheadfoot}{\color{myblue}} % Stellt sicher, dass die Schriftart der Kopf-/Fußzeile neutral ist
 
-\usepackage[dvipsnames]{xcolor}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage[table,dvipsnames]{xcolor}
 \definecolor{myblue}{RGB}{47, 84, 150}
 \definecolor{rahmenlinie}{RGB}{127, 127, 127}
+\definecolor{tableheadblue}{RGB}{47,84,150}    % Dunkles Blau für Kopf
+\definecolor{tablecellblue}{RGB}{198,217,241}  % Hellblau für linke Spalte
 
 \usepackage{fontspec}
 %\setmainfont{Palatino Linotype}
@@ -873,6 +879,30 @@ Ich weiß nicht, wie viele Kilometer meine Eltern und ich in den 10 Tagen, die w
 Dass New York den Spitznamen „The City that never sleeps“ trägt, kann ich gut nachvollziehen. Selbst nachts um 3 Uhr ging mindestens einmal pro Minute irgendwo in der Nähe die Sirene eines Polizei-, Feuerwehr- oder Krankenwagens.
 
 Was mich an New York wirklich am meisten erstaunt hat, ist die Tatsache, dass man sofort zum New Yorker wird, sobald man aus dem Hotel kommt und auf die Straße geht. In New York laufen so viele Menschen unterschiedlichster Ethnien rum, dass man als Tourist sofort in der Menge aufgeht, mit ihr verschmilzt und von anderen für einen New Yorker gehalten wird.
+
+{
+\small\sffamily
+\begin{longtable}{
+    >{\raggedright\arraybackslash\columncolor{tablecellblue}}p{4cm} 
+    >{\raggedright\arraybackslash}p{10cm}}
+    \rowcolor{tableheadblue}
+    \color{white}\textbf{Sehenswürdigkeit} & \color{white}\textbf{Beschreibung} \\
+    \endfirsthead
+    \rowcolor{tableheadblue}
+    \color{white}\textbf{Sehenswürdigkeit} & \color{white}\textbf{Beschreibung} \\
+    \endhead
+
+    \textbf{High Line}\newline
+    zwischen Chelsea Market im Norden und Gansevoort Street im Süden &
+    Die High Line ist ein öffentlicher Park auf einer ehemaligen Hochbahntrasse. Sie bietet einen einzigartigen Blick auf die Stadt, ist bepflanzt und führt durch verschiedene Stadtteile. Besonders beliebt bei Einheimischen und Touristen. \\
+
+    \textbf{Empire State Building}\newline
+    350 5th Ave, New York, NY 10118 &
+    Das Empire State Building ist eines der bekanntesten Wahrzeichen New Yorks. Von der Aussichtsplattform im 86. Stock hat man einen beeindruckenden Blick über Manhattan. Besonders abends ein Highlight. \\
+    % Weitere Einträge ...
+
+\end{longtable}
+}
 
 Erstaunlich ist auch, wie leicht man sich in New York zurechtfindet. Manhattan ist in die drei Abschnitte Downtown, Midtown und Uptown unterteilt. Downtown liegt südlich vom Union Square. Midtown beginnt nördlich davon und reicht bis zur 59th Straße. Uptown ist alles nördlich der 59th Straße, etwa ab Höhe Central Park. Die Straßen sind nach einem Gittersystem angelegt. Straßen (Streets) verlaufen waagerecht von Ost nach West und Alleen (Avenues) senkrecht von Nord nach Süd. Die Fifth Avenue teilt New York in West (W) und Ost (E). Das Gebäude 150 E 34th liegt also östlich Fifth Avenue auf der 34. Straße und hat die Hausnummer 150.
 

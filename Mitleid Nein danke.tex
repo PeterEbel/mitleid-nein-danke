@@ -58,6 +58,7 @@
 \definecolor{rahmenlinie}{RGB}{127, 127, 127}
 \definecolor{tableheadblue}{RGB}{47,84,150}    % Dunkles Blau für Kopf
 \definecolor{tablecellblue}{RGB}{198,217,241}  % Hellblau für linke Spalte
+\definecolor{rightcolumn}{RGB}{235,242,249}  % Hellblau für linke Spalte
 \usepackage{makecell}
 
 \usepackage{fontspec}
@@ -882,12 +883,17 @@ Dass New York den Spitznamen „The City that never sleeps“ trägt, kann ich g
 Was mich an New York wirklich am meisten erstaunt hat, ist die Tatsache, dass man sofort zum New Yorker wird, sobald man aus dem Hotel kommt und auf die Straße geht. In New York laufen so viele Menschen unterschiedlichster Ethnien rum, dass man als Tourist sofort in der Menge aufgeht, mit ihr verschmilzt und von anderen für einen New Yorker gehalten wird.
 
 {
+%\begin{mdframed}[linewidth=1pt, linecolor=tablecellblue, backgroundcolor=white, innertopmargin=0pt, innerbottommargin=0pt, innerleftmargin=0pt, innerrightmargin=0pt] 
 \renewcommand{\arraystretch}{1.5} % Erhöht die Zeilenhöhe für bessere Vertikalausrichtung
-\small\sffamily
+\small
+\arrayrulecolor{tablecellblue} % Setzt die Farbe der Tabellenlinien
 \linespread{1}\selectfont
+\setlength{\aboverulesep}{0pt}
+\setlength{\belowrulesep}{0pt}
+\setlength{\arrayrulewidth}{0.3pt}
 \begin{longtable}{
-    >{\raggedright\arraybackslash\columncolor{tablecellblue}}m{5.1cm}
-    >{\raggedright\arraybackslash}m{10cm}
+    >{\raggedright\arraybackslash\columncolor{tablecellblue}}p{5.1cm}
+    >{\raggedright\arraybackslash\columncolor{rightcolumn}}p{10cm}
     }
     \rowcolor{tableheadblue}
     \makecell[l]{\color{white}\textbf{Sehenswürdigkeit}} & \makecell[l]{\color{white}\textbf{Beschreibung}} \\
@@ -896,18 +902,127 @@ Was mich an New York wirklich am meisten erstaunt hat, ist die Tatsache, dass ma
     \makecell[l]{\color{white}\textbf{Sehenswürdigkeit}} & \makecell[l]{\color{white}\textbf{Beschreibung}} \\
     \endhead
 
-    \textbf{High Line}\newline
-    zwischen Chelsea Market im Norden und Gansevoort Street im Süden &
-    Die High Line ist ein öffentlicher Park auf einer ehemaligen Hochbahntrasse. Sie bietet einen einzigartigen Blick auf die Stadt, ist bepflanzt und führt durch verschiedene Stadtteile. Besonders beliebt bei Einheimischen und Touristen. \\
 
+    \textbf{Hafen}\newline
+    Downtown & Staten Island Ferry \\ \midrule
+    \textbf{Battery Park \& Robert F. Wagner Park}\newline
+    Downtown, Südspitze Manhattan & Grünfläche, die auf dem Aushub des Word Trade Centers angelegt wurde. \\ \midrule
+    \textbf{Museum of Jewish Heritage}\newline
+    Downtown, Battery Park & Holocaust Museum \\ \midrule
+    \textbf{South Street Seaport}\newline
+    Downtown zwischen Water Street und East River & Wunderschönes, denkmalgeschütztes Viertel \\ \midrule
+    \textbf{Wall Street}\newline
+    Zwischen Wall Street, Exchange Place und Broad Street & Finanzzentrum \\ \midrule
+    \textbf{Federal Hall National Memorial Building }\newline
+    Downtown, Wallstreet & Erstes Kapitolgebäude der Vereinigten Staaten von Amerika \\ \midrule
+    \textbf{Trinity Church}\newline
+    Downtown & Eine der bekanntesten Kirchen New Yorks \\ \midrule
+    \textbf{World Financial Center}\newline
+    Downtown, Südspitze Manhattan & Gebäudekomplex, der bei den Anschlägen vom 1. September 2011 schwer beschädigt wurde. \\ \midrule
+    \textbf{Newspaper Row}\newline
+    Östlich des City Hall Parks & Zeitungsmeile \\ \midrule
+    \textbf{Brooklyn Bridge}\newline
+    Downtown & Kombinierte Hänge- und Schrägseilbrücke und eine der ältesten Hängebrücken dieser Bauart in den USA \\ \midrule
+    \textbf{Civic Center}\newline
+    Südlich von Chinatown, östlich vom Broadway, westlich des East Rivers & Gerichts- und Verwaltungsbezirk \\ \midrule
+    \textbf{Tribeca}\newline
+    Zwischen West Broadway, Canal West und Chambers Street & TriBeCa, ehemals „Lower West Side“, Künstlerviertel, beste Restaurants der Stadt (z. B. TriBeCa Grill, Miteigentümer ist Robert de Niro) \\ \midrule
+    \textbf{Chinatown}\newline
+    Südlich Canal Street, zwischen Canal, Baxter, Worth, Park und Bowery Street & Chinatown „Bloody Angle“, 1904 berühmter Kampfplatz chinesicher Straßenbanden \\ \midrule
+    \textbf{SoHo}\newline
+    South of Houston Street & Interessante gußeiserne Architektur, viele Antique Shops, interessanteste Läden auf der Prince Street, am West Broadway und auf der Spring Street \\ \midrule
+    \textbf{Little Italy}\newline
+    Zwischen Canal Street und Houston Street & Martin Scorsese und Robert De Niro sind hier aufgewachsen. Traditionsreichstes italienisches Restaurant ist das Puglia in der Hester Street, älteste Pizzeria Amerikas ist Lombardi’s (1905) \\ \midrule
+    \textbf{Lower East Side}\newline
+    Zwischen Bowery und Clinton Street, East Houston und Canal Street 205 E Houston Street & Größte jüdische Gemeinde der Welt, früher katastrophale Lebensbedingungen. An die Bedingungen früher erinnert das Tenement Museum in der Orchard Street, etwa 300 Synagogen \newline
+    Katz Delikatessen, berühmtester dem Food verpflichteter Delikatessenladen, kleine Gerichte für großen Hunger: Pastrami Sandwichs. „Harry und Sally“ mit Meg Ryan wurde hier gedreht. Serviert werden Burger, Gegrilltes, Salate und die besten Sandwichs der Stadt. Stolz ist man auf Katz’s Salami \\ \midrule
+    \textbf{East Village}\newline
+    Nördlicher Teil der Lower East Side, östlich vom Broadway, zwischen 14th und Houston Street & Mitte vergangenes Jahrhundert Ort für Beatniks, verrauchte Jazzkneipen (John Coltrane), später Hippies und Punks. Heute Künstler wie Keith Haring und Jeff Koons. Angesagtestes Areal ist das von den Avenues A, B, C und D gebildete „Alphabet City“. Bummel zwischen 3rd Avenue und 13th Street: viele kleine Läden mit billigen CDs und schickem Ramsch. Haare färben, Tattoos stechen. \\ \midrule
+    \textbf{Manhattan Bridge}\newline
+     & Führt von Manhattan ins Brooklyner In-Viertel DUMBO („Down Under the Manhattan Bridge Overpass“) \\ \midrule
+    \textbf{Greenwich Village}\newline
+    Zwischen 14th und Houston Street, Hudson River und Broadway & Kurz „The Village“ genannt. Viele Bäume und verwinkelte Gassen. Erinnert an ein Dorf. Lebendiges Zentrum ist der Washington Square. Bunte Szene fühlt sich hier Zuhause. Der Platz vor dem Triumphbogen zieht viele Musiker an. Sex \& the City wurde hier gedreht. Im Oktober berühmte „Village Halloween Parade“. Viele Schwule und Lesben. Mafia kaufte den Stonewall Inn und errichte auf der Christopher Street ein Schwulen- und Lesben-Lokal. \\ \midrule
+    \textbf{Union Square}\newline
+    Zwischen Broadway und Bowery Street & Beliebter Platz wo viele Angestellte Mittagspause verbringen, viele Skater und regelmäßige Märkte. Am Union Square West eröffnete Andy Warhol seine „Factory“. Heute ist dort ein Buchladen. \\ \midrule
+    \textbf{Madison Square Park}\newline
+    Zwischen 5th und Madision Avenue, 23rd und 26th Street & Beliebte grüne Oase im Flatiron District \\ \midrule
+    \textbf{Flatiron Building}\newline
+    Kreuzung 23rd Street, 5th Avenue und Broadway & Meistfotografierter Wolkenkratzer \\ \midrule
+    \textbf{Chelsea}\newline
+    Zwischen 14th und 30th Street, 6th Avenue und Hudson River & Gehört zu den begehrtesten Wohnvierteln New Yorks. An der 10th Avenue liegt das Empire Diner im Art-Deco Stil. Bette Davis war als Gast oft dort. Chelsea Hotel: Sehr bekanntes Hotel, in dem Musiker, Junkie-Poeten, Filmemacher übernachten: Lennon, Hendrix. Sid Vicious von den Sex Postols tötete hier seine Freundin Nancy und sich selbst im Drogenrausch. Viele Künstler sind noch immer Dauergäste. (23rd Street) \\ \midrule
+    \textbf{Meatpacking District}\newline
+    Zwischen Chelsea Market im Norden und Gansevoort Street im Süden & Viele Metzger hatten hier traditionell ihren Laden. Jetzt Areal für Künstler, Designer und Schriftsteller. Viele Nobelshops. Bekannter Apple-Store. Restaurant wie das Pastis und die Buddha Bar sowie Nightclubs wie Tenjune, One und Cielo. \\ \midrule
+    \textbf{Highline Park}\newline
+    Gansevoort Street bis 20th Street & Parkanlage auf einer stillgelegten Hochbahntrasse, 2009 eröffnet \\ \midrule
+    \textbf{Madison Square Garden}\newline
+    8th Avenue, 34rd Street & Mehrzweckhalle, Heimat der New York Rangers (Eishockey) und der New York Knicks (Basketball). Legendäre Boxkämpfe zwischen Muhammed Ali und Joe Frazier. Legendäres Konzert für Kambodscha von George Harrison. Letztes Konzert von John Lennon. Fasst 20.000 Zuschauer:innen, architektonisch schmucklos. \\ \midrule
     \textbf{Empire State Building}\newline
-    350 5th Ave, New York, NY 10118 &
-    Das Empire State Building ist eines der bekanntesten Wahrzeichen New Yorks. Von der Aussichtsplattform im 86. Stock hat man einen beeindruckenden Blick über Manhattan. Besonders abends ein Highlight. \\
-    % Weitere Einträge ...
-
+    E 34th Street & 381 m (449 m mit Antennenmast), 102 Stockwerke, davon 85 Nutzflächen. Aussichtsplattform auf 86. Etage. Mast war ursprünglich für das Anlegen von Luftschiffen gedacht. \\ \midrule
+    \textbf{Morgan Liberty Museum}\newline
+    Madison Avenue Ecke 37th Street & Sammlung seltener Bücher und Originalmanuskripte \\ \midrule
+    \textbf{New York Public Library}\newline
+    Bryant Park, Eingang 5th Avenue & 49,5 Millionen Archivalien, darunter 18 Millionen Bücher. Eine der bedeutendsten Bibliotheken der Welt. Gutenberg-Bibel, Brief von Christoph Columbus, handschriftlicher Entwurf der Unabhängigkeitserklärung von Thomas Jefferson. Riesiger Hauptlesesaal.\newline
+    Im Bryant Park findet in den warmen Sommermonaten das Bryant Park Filmfestival statt. Gezeigt werden oft Filmklassiker. \\ \midrule
+    \textbf{Grand Central Terminal}\newline
+    Haupteingang E 42nd Street & Größter und geschäftigster Bahnhof der Welt. Eröffnet 1913, im Beaux-Art Stil gebaut. Dort befindet sich die Grand Central Oyster Bar mit dem frischesten Seafood Manhattans. \\ \midrule
+    \textbf{Chrysler Building}\newline
+     & War mit 319 Metern Höhe das höchste Gebäude der Welt, wurde später vom Empire State Building übertrumpft. \\ \midrule
+    \textbf{United Nations Headquarter}\newline
+    Steht auf internationalem Territorium am Ufer des East River & Ehemaliges Schlachthofviertel, wurde von John D. Rockefeller gekauft und den Vereinigten Nationen geschenkt. Erbaut 1947 bis 1950. \\ \midrule
+    \textbf{Trump World Tower}\newline
+    United Nations Plaza & Eines der höchsten Wohnhäuser der Welt. 50-Quadratmeter-Wohnungen kosten 875.000 Dollar, 500 Quadratmeter (7 Bäder, 6 Schlafzimmer) 12.400.000 Dollar. Sophia Loren wohnt hier. \\ \midrule
+    \textbf{Park Avenue}\newline
+    Zwischen Union Square und Harlem River & Ursprünglich 4th Avenue genannt. Hier ballen sich mehr Hotels und Büros (ca. 3 Millionen Arbeitsplätze) als sonst auf vergleichbarem Raum. Einige Wolkenkratzer haben Architekturgeschichte geschrieben (Mutual of Amerika Building, 320 Park Avenue; Helmsey Building, 230 Park Avenue) \\ \midrule
+    \textbf{Waldorf-Astoria Hotel}\newline
+    Park Avenue & Wurde 1931 eingeweiht und war damals das größte Hotel der Welt. Eines der interessantesten Art-Deco-Gebäude der Stadt. In der Lobby steht noch immer Cole Porters Piano. Ist aus zwei Hotels entstanden, darum wird es eigentlich mit Doppel-Bindestrich geschrieben. Gehört heute zur Hilton-Gruppe \\ \midrule
+    \textbf{Sony Tower}\newline
+    153 East 53rd Street & Citygroup Center ruht auf vier neungeschössigen Pfeilern, die nicht an den Ecken, sondern an der Mitte der Seiten angebracht wurden. Die St. Peter’s Church hatte das Gelände nur unter der Auflage an die Citygroup verkauft, eine Kirche unter dem Wolkenkratzer bauen zu dürfen. Als erster Postmoderner Wolkenkratzer gilt der 1984 errichtete Sony Tower. \\ \midrule
+    \textbf{Broadway}\newline
+     & „Der Große, Weiße Weg“, ehemaliger Indianerpfad, heute berühmteste Straße der Welt. Bekanntester Abschnitt liegt zwischen 41st und 53rd Street \\ \midrule
+    \textbf{Times Square}\newline
+     & Herz New Yorks. Keimfreie Konsumfläche à la Disney World. Gewaltige Shopping-Komplexe und „Themenrestaurants“ bestimmen den ehemaligen „Schmuddelplatz“. Früher Taschendiebe, Drogendealer und leichte Mädchen. Wurde 2009 in Fußgängerzone umgewandelt (mit Ausnahme der 7th Avenue). Viele Hotdog-Stände. Soll ein Pole erfunden haben, der 1916 seinen ersten Hotdog-Stand aufgemacht hat. Hieraus hat sich eine berühmte Restaurant-Kette gebildet, die seinen Namen trägt: „Nathan’s Famous“ \\ \midrule
+    \textbf{Avenue of the Americas}\newline
+     & Führt von Little Italy im Süden bis zum Central Park im Norden. Name hat sich nie durchgesetzt. Um die Jahrhundertwende erhielt sie den Beinamen „Fashion Road“ wegen der vielen Kaufhäuser, die dort lagen. \\ \midrule
+    \textbf{Intrepid Musuem}\newline
+    Pier 86, W 46th Street & Ehemaliger Flugzeugträger USS Intrepid, umgebaut zum Museumsschiff mit historischen technischen Ausstellungsstücken aus dem Bereich der US-amerikanischen Seestreitkräfte, Luftfahrt und Raumfahrt. \\ \midrule
+    \textbf{Fifth Avenue}\newline
+    Zwischen 48th und 59th Street & Beginnt am Washington Square in Greenwich Village, führt durch Midtown, am Central Park die Upper East Side entlang bis zum Harlem River. Teilt die Strassen Manhattans in East und West. Auf Ihren ersten Kilometern wohnten früher wohlhabende New Yorker Familien (Astor, Forbes, Rockefeller, Vanderbilt). Erhielt damals den Beinamen „Millionaire’s Row“. Flagship-Stores bekannter Marken wie Apple (767 Fifth Avenue), Armani, Cartier, Chanel, Escada, Prada, Tiffany und Versace. \\ \midrule
+    \textbf{Rockefeller Center}\newline
+    Zwischen 47thn und 50th Street & Riesiger Wolkenkratzer-Komplex von hochkarätigem Architektenteam in den 1930er Jahren errichtet. Büros, Fernsehstudios, Restaurants und Läden. Im Zentrum steht das 1933 fertiggestellte GE-Building. Zu General Eletric gehört auch der Sender NBS, dessen „Todays“-Show jeden Morgen zwischen 7.00 und 9.00 in einem der Studios über die Bühne geht. Im GE-Building befindet sich die Aussichtsplattform „Top of the Rock“, die sich über drei Etagen erstreckt (67., 69., 70. Etage). Von der 70. hat man einen freien Blick auf das umliegende Midtown Manhattan. \\ \midrule
+    \textbf{Radio City Music Hall}\newline
+    Rockefeller Center & Gehört zum Rockefeller Center. Entertainment-Komplex, 1932 eröffnet. Heute vor allem Livebühne für aktuelle Rock- und Popgrößen. \\ \midrule
+    \textbf{Museum of Modern Art}\newline
+    11 W 53rd Street & Beherbergt auf einer Fläche von 58.000 m2 eine der weltweit bedeutendsten und einflussreichsten Sammlungen moderner und zeitgenössischer Kunst \\ \midrule
+    \textbf{Trump Tower}\newline
+    Fifth Avenue/Ecke 56th Street & 202 Meter hoher, 1983 vollendeter Glaspalast \\ \midrule
+    \textbf{Carnegie Hall}\newline
+    881 7th Avenue & Eines der berühmtesten Konzerthäuser der Welt \\ \midrule
+    \textbf{Bloomingdale’s}\newline
+    3rd Avenue zwischen 59th und 60th Street & Konsumententempel \\ \midrule
+    \textbf{Central Park}\newline
+     & 4 km langer und 800 m breiter Stadtpark im Zentrum Manhattans \\ \midrule
+    \textbf{Metropolitan Museum of Art}\newline
+    Central Park & Größtes Kunstmuseum der USA, in Besitz bedeutender kunsthistorischer Sammlungen \\ \midrule
+    \textbf{Whithney Museum of American Art}\newline
+    99 Gansevoort Street & Sammlungen amerikanischer Kunst des 20. und 21. Jahrhundert \\ \midrule
+    \textbf{Solomon R. Guggenheim Museum}\newline
+    1071 5th Avenue & Berühmtes Museum für moderne Kunst \\ \midrule
+    \textbf{East Harlem}\newline
+    Östlich der 5th Avenue zwischen 96th und 125th Street & Größte Latinogemeinde New Yorks \\ \midrule
+    \textbf{Lincoln Center for the Performing Arts}\newline
+    Zwischen Columbus und Amsterdam Avenue, zwischen 62nd und 66th Street & Bedeutendstes und bekanntestes Kulturzentrum von New York \\ \midrule
+    \textbf{American Museum of Natural History}\newline
+    Central Park, 77th Street & Eines der größten Naturkundemuseen der Welt. Gewaltige Dinosaurier-Skelette, Blauwal-Skelett \\ \midrule
+    \textbf{Harlem}\newline
+     & Berühmteste schwarze Neighborhood der USA. Viele berühmte Jazz-Clubs (Lenox Lounge, mittlerweile dauerhaft geschlossen) besonders am Sugar Hill \\ \midrule
+    \textbf{125th Street}\newline
+     & Harlem’s Lebensader \\ \midrule
+    \textbf{Apollo Theater}\newline
+    125th Street, Harlem & Hier wurden viele Künstler berühmt: Aretha Franklin, James Brown, Marvin Gaye, Jackson Five. Andere wie die Beatles und Elvis traten hier oft auf. \\
 \end{longtable}
+%\end{mdframed}
 }
-
+ 
 Erstaunlich ist auch, wie leicht man sich in New York zurechtfindet. Manhattan ist in die drei Abschnitte Downtown, Midtown und Uptown unterteilt. Downtown liegt südlich vom Union Square. Midtown beginnt nördlich davon und reicht bis zur 59th Straße. Uptown ist alles nördlich der 59th Straße, etwa ab Höhe Central Park. Die Straßen sind nach einem Gittersystem angelegt. Straßen (Streets) verlaufen waagerecht von Ost nach West und Alleen (Avenues) senkrecht von Nord nach Süd. Die Fifth Avenue teilt New York in West (W) und Ost (E). Das Gebäude 150 E 34th liegt also östlich Fifth Avenue auf der 34. Straße und hat die Hausnummer 150.
 
 \setlength{\fboxsep}{0pt}    % Kein Abstand zwischen Rahmen und Bild

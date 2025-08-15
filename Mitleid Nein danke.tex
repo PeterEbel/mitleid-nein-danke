@@ -9,6 +9,7 @@
 
 \usepackage{longtable}
 \usepackage{array}
+\usepackage[most]{tcolorbox}
 
 \usepackage[
     format=plain,
@@ -150,6 +151,7 @@ Ich ließ nicht locker und zog mich an meinem – damals noch vorhandenen – Ha
 
 Auf gewisse Weise erinnerst Du, Marius, mich an mich. Nicht nur, dass Dein Name die männliche Variante meines zweiten Vornamens ist, strebst Du auch danach, Dich auszudrücken, kreativ zu sein, der Welt etwas zu schenken. Und dieses Geschenk, das gleichsam Dein Vermächtnis ist, halten wir nun in den Händen.
 Danke dafür. Danke, dass Du uns an Dir teilhaben lässt. Danke, dass Du diesen Kraftakt vollzogen hast.
+
 Ein schlauer Mensch hat mal gesagt: Es ist schön, wenn man tun kann, was man will. Es ist schöner, wenn man tun will, was man kann.
 Du kannst. Und wie!
 
@@ -172,9 +174,7 @@ Schenk uns weitere Bücher. Ich weiß schon jemanden, der gerne wieder ein Vorwo
 
 Das war 2020 während eines Aufenthalts im Balthasar. Ich war gerade angekommen. Meine Eltern hatten die Koffer ausgeräumt, meine Klamotten in den Schränken verstaut, Laptop und Playstation angeschlossen und sich nach der üblichen Abschiedszeremonie auf den Heimweg gemacht. Anja Schulte, die damalige pädagogische Leiterin, kam in mein Zimmer und fragte mich, ob ich Zeit und Lust auf ein Gespräch hätte. Die Mutter eines sechsjährigen Jungen, der ebenfalls mit Duchenne Muskeldystrophie auf die Welt gekommen war, wollte die Gelegenheit nutzen und sich mit jemandem austauschen, der an der gleichen Krankheit litt wie ihr Sohn. Jemand, der sozusagen aus erster Hand berichten und ihr Tipps geben konnte.
 
-Natürlich hatte ich Zeit. Und Lust.
-
-So trafen wir uns noch am gleichen Nachmittag. Die Frau war ziemlich taff; sie erinnerte mich an meine Mutter. In ihrem Sohn, der mir zuvor schon im Aufenthaltsbereich aufgefallen war, sah ich mich selbst vor über 20 Jahren. Ich beantwortete ihre Fragen so gut ich konnte, beispielsweise welche medizinischen Eingriffe ich hinter mir habe, warum ich mich für die eine oder andere Operation entschieden habe, welche Hilfsmittel ich in der Vergangenheit in Anspruch genommen habe und welche ich zurzeit nutze, aber auch wie meine Erfahrungen mit den Krankenkassen sind und welche Therapien ich mache.
+Natürlich hatte ich Zeit. Und Lust. So trafen wir uns noch am gleichen Nachmittag. Die Frau war ziemlich taff; sie erinnerte mich an meine Mutter. In ihrem Sohn, der mir zuvor schon im Aufenthaltsbereich aufgefallen war, sah ich mich selbst vor über 20 Jahren. Ich beantwortete ihre Fragen so gut ich konnte, beispielsweise welche medizinischen Eingriffe ich hinter mir habe, warum ich mich für die eine oder andere Operation entschieden habe, welche Hilfsmittel ich in der Vergangenheit in Anspruch genommen habe und welche ich zurzeit nutze, aber auch wie meine Erfahrungen mit den Krankenkassen sind und welche Therapien ich mache.
 
 Die Zeit flog nur so dahin. Obwohl das Gespräch über zwei Stunden dauerte, kam es mir vor wie zehn Minuten. Ich hoffe sehr, dass ich der Frau habe helfen können, indem ich ihr von meinem Leben mit der Krankheit erzählte und von meinen Erfahrungen, in der Kindheit, der Jugend, bis zum heutigen Tag. Vielleicht konnte ich ihr auch vor Augen führen, dass man als Mittzwanziger mit Duchenne durchaus zuversichtlich und lebensbejahend sein kann und nicht zurückgezogen und in sich gekehrt sein muss – was wohl viele denken – und dass die Krankheit das Leben der Betroffenen und ihrer Familien zwar in vielen Bereichen beherrscht, aber eben nicht komplett.
 
@@ -184,7 +184,7 @@ Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetz
 
 \begin{figure}[H]
     \raggedright
-    \includegraphics[width=0.35\textwidth]{Fotos/Marius_skaliert.jpg}
+    \includegraphics[width=0.45\textwidth]{Fotos/marius_skaliert.jpg}
 \end{figure}
 \vspace{-1\baselineskip}
 \noindent\small\textit{Grevenbroich, September 2024}
@@ -204,11 +204,9 @@ Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetz
 \pagestyle{scrheadings}
 
 \addchap{Die ersten Jahre}
-\thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seite des Kapitels
+\thispagestyle{scrheadings} % Wichtig für eine Kopfzeile auf der ersten Seite des Kapitels
 \addcontentsline{toc}{chapter}{Die ersten Jahre}
-
 \leavevmode
-%\vspace*{0.5\baselineskip}
 {\noindent\fontsize{18}{24}\selectfont\textcolor{myblue}{Ich, Wunschkind}\par}
 {\noindent\fontsize{14}{20}\selectfont\scshape\textcolor{myblue}{Eigentlich lief alles bestens}\ldots\par}
 \vspace*{0.5\baselineskip}
@@ -222,10 +220,18 @@ Auf die Welt kam ich schließlich im Mai 1995 im Kreißsaal des Elisabeth-Kran\-
 
 Apropos Namen: Den Namen Grevenbroich habt ihr vermutlich schon einmal gehört. Grevenbroich ist diese kleine Stadt, gelegen auf der linken Rheinseite im Dreieck Köln-Düsseldorf-Mönchengladbach, die bei Umweltschützern wegen der Braunkohleförderung im riesigen Tagebau Garzweiler zu zweifelhaftem Ruhm gekommen ist. 2030 soll damit Schluss sein. Grevenbroich wurde aber auch durch die von Hape Kerkeling verkörperte Kunstfigur Horst Schlämmer, seines Zeichens nuschelnder Chefredakteur des fiktiven Grevenbroicher Tagblattes, deutschlandweit bekannt.
 
+% \begin{figure}[ht]
+%     \centering
+%     \includegraphics[width=\textwidth]{Fotos/grevenbroich.jpg}
+%     \caption{Grevenbroich hat etwa 67.000 Einwohner und liegt im Braunkohlerevier westlich von Köln. Die ockerfarbenen Flecken auf der Karte sind Tagebaue, riesige, hunderte Meter tiefe Löcher, in denen gigantische Schaufelradbagger Braunkohle fördern.\\
+%     \parbox{\textwidth}{\raggedleft Quelle: Google Earth}}  
+%     \label{fig:grevenbroich}
+% \end{figure}
+
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=\textwidth]{Fotos/Grevenbroich_in_Google_Earth.png}
-    \caption{Grevenbroich hat etwa 67.000 Einwohner und liegt im Braunkohlerevier westlich von Köln. Die ockerfarbenen Flecken auf der Karte sind Tagebaue, riesige, hunderte Meter tiefe Löcher, in denen gigantische Schaufelradbagger Braunkohle fördern.}
+    \includegraphics[width=\textwidth]{Fotos/grevenbroich.jpg}
+    \caption{Grevenbroich hat etwa 67.000 Einwohner und liegt im Braunkohlerevier westlich von Köln. Die ockerfarbenen Flecken auf der Karte sind Tagebaue, riesige, hunderte Meter tiefe Löcher, in denen gigantische Schaufelradbagger Braunkohle fördern.\hfill Quelle: Google Earth}
     \label{fig:grevenbroich}
 \end{figure}
 
@@ -237,7 +243,7 @@ Das Haus, in dem ich die ersten acht Jahre meines Lebens verbracht habe, ist ein
 \setlength{\fboxrule}{0.2pt} % Rahmenstärke auf 0.2 pt setzen
 \begin{figure}[ht]
     \centering
-    \fcolorbox{rahmenlinie}{white}{\includegraphics[width=1\textwidth]{Fotos/Zeltgemeinschaft.jpg}}
+    \fcolorbox{rahmenlinie}{white}{\includegraphics[width=1\textwidth]{Fotos/marius_und_rudi.jpg}}
     \caption{Der Schapendoes-Rüde Rudi hat mich viele Jahre begleitet. Aufgenommen wurde das Foto an einem Strand in der niederländischen Provinz Zeeland. Ein Leben ohne Haustiere ist für mich unvorstellbar.}
     \label{fig:zeltgemeinschaft}
 \end{figure}
@@ -257,11 +263,11 @@ Rückblickend betrachtet, so meine Mutter, gab es sehr wohl Anzeichen. Allerding
 
 Meine Mutter hatte mich ein halbes Jahr nach meiner Geburt bereits in einem Kindergarten angemeldet, den ich mit dreieinhalb Jahren dann auch besuchte. Ein Jahr zuvor bin ich bereits regelmäßig in eine Spielgruppe gegangen (in der ich meinen ältesten Freund Marvin kennengelernt habe, zu dem ich heute noch Kontakt halte, auch wenn er zwischenzeitlich nach Berlin gezogen ist).
 
-Gegen Ende meiner Zeit in dieser Spielgruppe fiel einer der beiden Pädagoginnen auf, dass ich offensichtlich Plattfüße und einen Watschelgang hatte. Beides sind Anzeichen für Duchenne Muskeldystrophie. Diese Art zu gehen, entsteht aufgrund der Schwäche der Hüft- und Gesäßmuskulatur. Um die Schwäche in der Hüfte auszugleichen und eine möglichst stabile Körperhaltung einzunehmen, machen Duchenne-Jungen ein Hohlkreuz und wölben den Bauch nach vorne. Wenn man in dieser Haltung barfuß geht, Plattfüße hat, weil das Fußgewölbe nicht richtig ausgebildet ist, und man den Fuß auch nicht abrollen kann, dann hat dieser Gang etwas von Watscheln. Duchenne Muskeldystrophie erkläre ich euch auf Seite 119 *** noch genauer.
+Gegen Ende meiner Zeit in dieser Spielgruppe fiel einer der beiden Pädagoginnen auf, dass ich offensichtlich Plattfüße und einen Watschelgang hatte. Beides sind Anzeichen für Duchenne Muskeldystrophie. Diese Art zu gehen, entsteht aufgrund der Schwäche der Hüft- und Gesäßmuskulatur. Um die Schwäche in der Hüfte auszugleichen und eine möglichst stabile Körperhaltung einzunehmen, machen Duchenne-Jungen ein Hohlkreuz und wölben den Bauch nach vorne. Wenn man in dieser Haltung barfuß geht, Plattfüße hat, weil das Fußgewölbe nicht richtig ausgebildet ist, und man den Fuß auch nicht abrollen kann, dann hat dieser Gang etwas von Watscheln. Duchenne Muskeldystrophie erkläre ich euch auf Seite \pageref{sec:muskeldystrophie} noch genauer.
 
 \subsection{„Ach was! Das kommt noch!“ Denkste!}
 
-Auch wenn man diese Fehlhaltung anfangs vielleicht noch mit einem „Ach was! Nicht alle Kinder sind gleich flink und beweglich. Das kommt schon noch!“ abtut, so schaut man nach einem solchen Fingerzeig vielleicht doch etwas genauer hin. Während man anfangs noch darüber hinwegsah, so waren die eigentümliche Körperhaltung mit vorgewölbtem Bauch und der tapsige Gang spätestens von da an unübersehbar geworden. Aber sie waren längst noch nicht beunruhigend. Wofür gibt es schließlich Physiotherapeut:innen? Man riet uns denn auch, eine solche aufzusuchen, um den Plattfuß und die vermeintlich daraus resultierende Fehlhaltung (wie meine Eltern fälschlicherweise glaubten) frühzeitig zu behandeln.
+Auch wenn man diese Fehlhaltung anfangs vielleicht noch mit einem „Ach was! Nicht alle Kinder sind gleich flink und beweglich. Das kommt schon noch!“ abtut, so schaut man nach einem solchen Fingerzeig vielleicht doch etwas genauer hin. Während man anfangs noch darüber hinwegsah, so waren die eigentümliche Körperhaltung mit vorgewölbtem Bauch und der tapsige Gang spätestens von da an unübersehbar geworden. Aber sie waren längst noch nicht beunruhigend. Wofür gibt es schließlich Phy\-sio\-the\-ra\-peu\-t:in\-nen? Man riet uns denn auch, eine solche aufzusuchen, um den Plattfuß und die vermeintlich daraus resultierende Fehlhaltung (wie meine Eltern fälschlicherweise glaubten) frühzeitig zu behandeln.
               
 \subsection{Gowers-Manöver und die Schwierigkeit aufzustehen}
 
@@ -272,7 +278,7 @@ Alles gut? Leider nicht. Denn es wurde immer offensichtlicher, dass ich meinen A
 \begin{figure}[ht]
     \centering
     \fcolorbox{rahmenlinie}{white}{\includegraphics[width=1\textwidth]{Fotos/gowers-manöver.jpg}}
-    \caption{Als Gowers-Manöver bezeichnet man die typische Art, wie sich Patienten mit einer Rumpfmuskelschwäche aus der Bauchlage in den Stand aufrichten. Zeichnung: Thomas Ebel}
+    \caption{Als Gowers-Manöver bezeichnet man die typische Art, wie sich Patienten mit einer Rumpfmuskelschwäche aus der Bauchlage in den Stand aufrichten. \hfill Zeichnung: Thomas Ebel}
     \label{fig:gowers-manöver}
 \end{figure}
 
@@ -294,7 +300,9 @@ Die dritte Physiotherapeutin (diese Praxis betreut mich übrigens bis heute) rie
 
 Der Arzt entnahm mir eine Blutprobe und ließ sie im Labor untersuchen. Wir hatten vor, das Weihnachtsfest und den Jahreswechsel gemeinsam mit meinen Großeltern im Erzgebirge zu verbringen. Meine Eltern erwähnten dies dem Arzt gegenüber wohl mehr oder weniger beiläufig. Denn obwohl das Ergebnis der Blutuntersuchung bereits vor unserer Abreise feststand, teilte man es meinen Eltern sozusagen aus Rücksicht auf ein paar unbeschwerte Feiertage erst nach unserer Rückkehr am 11. Januar 1999 mit.
 
-Der Creatinkinase Wert (CK) in meinem Blut war deutlich erhöht. Das Enzym Creatinkinase ist für den Energiestoffwechsel der Muskelzellen wichtig. Sind die Zellen geschädigt, etwa durch einen Herzinfarkt, Sturz oder wie in meinem Fall durch das Fehlen des Proteins Dystrophin (daher auch der Name Muskeldystrophie), findet sich vermehrt Creatinkinase im Blut. Der Normalwert liegt bei einem Gesunden in meinem Alter bei weniger als 150 Einheiten pro Liter Plasma. Bei mir waren es 7.000. Die unbeschwerten Jahre waren damit vorbei.
+Der Creatinkinase Wert (CK) in meinem Blut war deutlich erhöht. Das Enzym Creatinkinase ist für den Energiestoffwechsel der Muskelzellen wichtig. Sind die Zellen geschädigt, etwa durch einen Herzinfarkt, Sturz oder wie in meinem Fall durch das Fehlen des Proteins Dystrophin (daher auch der Name Muskeldystrophie), findet sich vermehrt Creatinkinase im Blut. Der Normalwert liegt bei einem Gesunden in meinem Alter bei weniger als 150 Einheiten pro Liter Plasma. Bei mir waren es 7.000. 
+
+Die unbeschwerten Jahre waren damit vorbei.
 
 Was die Diagnose Duchenne Muskeldystrophie bedeutete, war mir natürlich nicht klar. Aber von dem Moment der Diagnose an änderte sich mein Leben und das meiner Eltern schlagartig und dauerhaft. Ihnen wurde der Boden unter den Füßen weggezogen. Unser altes Leben, das noch wenige Wochen zuvor unbekümmert und glücklich war, rückte mit einem Schlag unwiederbringlich in weite Ferne und wurde zu etwas langsam Verblassendem, an das sie sehnsüchtig zurückdachten. Es sollten zwei Jahre vergehen, bis der Horror zumindest teilweise verarbeitet worden war und das Glück nach und nach in unsere Familie zurückkehrte.
 
@@ -304,13 +312,23 @@ Was tun Eltern, die soeben erfahren haben, dass ihr nicht einmal vier Jahre alte
 
 Ziel der Initiative war es, Geld zu sammeln, um damit die Forschung in Bezug auf eine Heilung der Duchenne Muskeldystrophie zu intensivieren. Aktion Benni \& Co. ist mittlerweile in dem eingetragenen Verein Duchenne Deutschland e.~V. aufgegangen.
 
-\begin{mdframed}[
-    linewidth=0.3pt,         % Dünne Linie
-    linecolor=rahmenlinie,   % Deine definierte Rahmenfarbe
-    leftmargin=0, rightmargin=0,
-    innertopmargin=12pt, innerbottommargin=12pt,
-    innerleftmargin=12pt, innerrightmargin=12pt,
-    backgroundcolor=white
+% \begin{mdframed}[
+%     linewidth=0.3pt,         % Dünne Linie
+%     linecolor=rahmenlinie,   % Deine definierte Rahmenfarbe
+%     leftmargin=0, rightmargin=0,
+%     innertopmargin=12pt, innerbottommargin=12pt,
+%     innerleftmargin=12pt, innerrightmargin=12pt,
+%     backgroundcolor=white
+% ]
+\begin{tcolorbox}[
+    enhanced,
+    breakable,
+    colframe=rahmenlinie,      % Rahmenfarbe wie bisher
+    colback=white,             % Hintergrundfarbe
+    left=12pt, right=12pt,     % Innenabstände
+    top=12pt, bottom=12pt,     % Innenabstände
+    boxrule=0.3pt,             % Rahmenstärke
+    arc=8pt                    % Eckenradius (optional)
 ]
 \small\sffamily
 \setlength{\parindent}{0pt} % Kein Erstzeileneinzug
@@ -349,7 +367,8 @@ Deutsche Duchenne Stiftung\\
 Volksbank Ruhr Mitte\\
 IBAN: DE44 4226 0001 0603 1297 00
 
-\end{mdframed}
+\end{tcolorbox}
+% \end{mdframed}
 
 \vspace{0.8\baselineskip}
 
@@ -367,7 +386,7 @@ Dies hatte dann auch den gewünschten Schneeballeffekt zur Folge: Denn nicht nur
 \setlength{\fboxrule}{0.2pt} % Rahmenstärke auf 0.2 pt setzen
 \begin{figure}[ht]
     \centering
-    \fcolorbox{rahmenlinie}{white}{\includegraphics[width=1\textwidth]{Fotos/Zeitungsausschnitte.jpg}}
+    \fcolorbox{rahmenlinie}{white}{\includegraphics[width=1\textwidth]{Fotos/zeitungsausschnitte.jpg}}
     \caption{Unsere Geschichte wurde um die Jahrtausendwende in zahlreichen Zeitschriften veröffentlicht und machte das Thema Duchenne lokal und regional einer größeren Öffentlichkeit bekannt. Viele Menschen spendeten Geld. Innerhalb von etwa zwei Jahren gingen 100.000 DM aus unserem Postleitzahlbezirk auf dem Spendenkonto von Aktion Benni \& Co. ein.}
     \label{fig:zeitungsausschnitte}
 \end{figure}
@@ -392,7 +411,7 @@ Natürlich hatte ich als kleiner Junge überhaupt keine Ahnung, was Barrierefrei
 
 Mit der Diagnose Duchenne Muskeldystrophie stand unweigerlich fest, dass ich früher oder später einen Elektro-Rollstuhl brauchen würde, um mich eigenständig fortbewegen zu können. Ein Thema, das meine Eltern anfangs komplett ausgeblendet hatten. Mich im Rollstuhl sitzen zu sehen, war etwas, mit dem sie sich in den ersten beiden Jahren nach der Diagnose nicht befassen wollten oder konnten. Der Rollstuhl war nicht nur ein Hilfsmittel zur Fortbewegung und zum Erhalt der Selbstständigkeit. Er war auch ein Symbol. Ein Symbol dafür, dass mit dem Verlust meiner Gehfähigkeit für alle sichtbar das nächste Stadium der Krankheit begonnen hatte. Mit dem Rollstuhl würde eine neue Phase in meinem Leben anbrechen, die ich von da an im Sitzen und auf Rädern meistern musste, ob ich wollte oder nicht. Das zu akzeptieren, fiel anfangs nicht nur meinen Eltern schwer, sondern mir auch. Denn ich hatte Angst vor Rollstühlen.
 
-Klingt komisch, aber war tatsächlich so. Es gibt eine Situation, die mir heute fast wie eine sich selbst erfüllende Prophezeiung vorkommt (ich bin allerdings nicht abergläubisch). Meine Eltern waren immer schon bekennende Camper. Eigentlich sind sie es immer noch, aber leider machen die Umstände das Zelten so gut wie unmöglich, der logistische Aufwand ist einfach riesig. Früher, als ich noch gehen konnte, aber auch noch, als ich schon im e-fix saß, haben wir viele unserer Urlaube und verlängerten Wochenenden an der holländischen Küste auf einem Campingplatz in der Nähe vor Domburg verbracht. Dazu auf Seite 67 *** mehr.
+Klingt komisch, aber war tatsächlich so. Es gibt eine Situation, die mir heute fast wie eine sich selbst erfüllende Prophezeiung vorkommt (ich bin allerdings nicht abergläubisch). Meine Eltern waren immer schon bekennende Camper. Eigentlich sind sie es immer noch, aber leider machen die Umstände das Zelten so gut wie unmöglich, der logistische Aufwand ist einfach riesig. Früher, als ich noch gehen konnte, aber auch noch, als ich schon im e-fix saß, haben wir viele unserer Urlaube und verlängerten Wochenenden an der holländischen Küste auf einem Campingplatz in der Nähe vor Domburg verbracht. Dazu auf Seite \pageref{sec:zeltgemeinschaft} mehr.
 
 Es war vielleicht im Sommer 1999 oder 2000, als ich auf diesem Campingplatz zum ersten Mal einen Jungen in einem Elektro-Rollstuhl sah. Der Rollstuhl erschien mir riesig und er machte mir Angst. Anders als ich und alle anderen Menschen, die ich kannte, ging der Junge nicht auf zwei Beinen, sondern er fuhr mit diesem Ding umher, das zu allem Schrecken dieses seltsam summende Geräusch von sich gab. Ich konnte kaum hinschauen und ging dem Jungen falls möglich aus dem Weg. Dass ich keine zwei Jahre später selbst auf einen Rollstuhl angewiesen sein würde (zumindest zeitweise), ahnte ich natürlich nicht. Es würde zur Ironie des Schicksals passen, wäre der Junge so wie ich an Duchenne Muskeldystrophie erkrankt und ich sozusagen einen Blick meiner eigenen Zukunft erhascht hätte. So viel zur Angst vor Rollstühlen. Klar, die Angst war spätestens verschwunden, als ich selbst in einem saß.
 
@@ -417,14 +436,14 @@ Ich war ungefähr sieben Jahre alt und saß schon zeitweise im Rollstuhl, als ic
 \setlength{\fboxrule}{0.2pt} % Rahmenstärke auf 0.2 pt setzen
 \begin{figure}[ht]
     \centering
-    \fcolorbox{rahmenlinie}{white}{\includegraphics[width=1\textwidth]{Fotos/Schützenfest 2002.jpg}}
+    \fcolorbox{rahmenlinie}{white}{\includegraphics[width=1\textwidth]{Fotos/artillerie.jpg}}
     \caption{Ich auf der Kanone der Artillerie Neurath sitzend. In späteren Jahren wurde ich sicherheitshalber mit einem Gurt an der Sitzbank befestigt. Im Hintergrund sieht man übrigens den Traktor, mit dem die Kanone der Erwachsenen gezogen wird.}
     \label{fig:schützenfest}
 \end{figure}
 
-Anfangs bin ich noch selbst auf die Kanone geklettert, später dann, als meine Kräfte mich mehr und mehr verließen, wurde ich von einem der Erwachsenen auf die Kanone gehoben. Die Umzüge haben viel Spaß gemacht und ich habe mich immer darauf gefreut! Leider war eine Fahrt auf der Kanone nach meiner Wirbelsäulen-Operation, von der ich euch auf Seite 133 berichten werde, nicht mehr möglich. Die Kanone war nicht gefedert und jede Unebenheit im Boden, hätte meine Wirbelsäule erschüttert und die an den Wirbelkörpern befestigten Stangen lösen können. Mitgefahren bin ich aber trotzdem, und zwar uniformiert in meinem Rollstuhl direkt neben der Kanone! Noch heute bin ich passives Mitglied in der Artillerie und werde von den Jungs jedes Jahr besucht. Zum Auftakt des Schützenfestes kommen sie mit der Kanone bei mir vorbei und wir böllern das Fest mit ein paar lauten Schüssen ein.
+Anfangs bin ich noch selbst auf die Kanone geklettert, später dann, als meine Kräfte mich mehr und mehr verließen, wurde ich von einem der Erwachsenen auf die Kanone gehoben. Die Umzüge haben viel Spaß gemacht und ich habe mich immer darauf gefreut! Leider war eine Fahrt auf der Kanone nach meiner Wirbelsäulen-Operation, von der ich euch auf Seite \pageref{sec:wirbelsaeulenversteifung} berichten werde, nicht mehr möglich. Die Kanone war nicht gefedert und jede Unebenheit im Boden, hätte meine Wirbelsäule erschüttert und die an den Wirbelkörpern befestigten Stangen lösen können. Mitgefahren bin ich aber trotzdem, und zwar uniformiert in meinem Rollstuhl direkt neben der Kanone! Noch heute bin ich passives Mitglied in der Artillerie und werde von den Jungs jedes Jahr besucht. Zum Auftakt des Schützenfestes kommen sie mit der Kanone bei mir vorbei und wir böllern das Fest mit ein paar lauten Schüssen ein.
 
-Wenn wir drei heute darüber reden und uns fragen, ob wir nicht besser fortgezogen wären, dann sind wir immer noch hin und hergerissen zwischen dem Leben, das wir heute führen, und dem Leben, das wir zum Beispiel in Köln hätten führen können. Ironischerweise bin ich nach der Grundschule auf die Anna-Freud-Schule in Köln gewechselt (http://www.anna-freud-schule.de/). Mein Schulweg wäre deutlich kürzer gewesen, hätte ich damals in Köln statt in Neurath gewohnt. So aber hat mich jeden Morgen ein Fahrdienst zuhause abgeholt, nach Köln-Müngersdorf gebracht und nachmittags dort wieder abgeholt. Trotzdem: Mir persönlich tut die Entscheidung jedenfalls nicht leid. Ich fühle mich auf dem Land wohl. Außerdem sind Köln und Düsseldorf ja nicht weit. Und wenn die S-Bahn-Linie 6 Grevenbroich-Köln kommt (hoffentlich bald und hoffentlich mit barrierefreiem Zugang zum Gleis und in den Zug), dann sind wir in gerade mal 30 Minuten in der Domstadt.
+Wenn wir drei heute darüber reden und uns fragen, ob wir nicht besser fortgezogen wären, dann sind wir immer noch hin und hergerissen zwischen dem Leben, das wir heute führen, und dem Leben, das wir zum Beispiel in Köln hätten führen können. Ironischerweise bin ich nach der Grundschule auf die Anna-Freud-Schule in Köln gewechselt (\url{http://www.anna-freud-schule.de/}). Mein Schulweg wäre deutlich kürzer gewesen, hätte ich damals in Köln statt in Neurath gewohnt. So aber hat mich jeden Morgen ein Fahrdienst zuhause abgeholt, nach Köln-Müngersdorf gebracht und nachmittags dort wieder abgeholt. Trotzdem: Mir persönlich tut die Entscheidung jedenfalls nicht leid. Ich fühle mich auf dem Land wohl. Außerdem sind Köln und Düsseldorf ja nicht weit. Und wenn die S-Bahn-Linie 6 Grevenbroich-Köln kommt (hoffentlich bald und hoffentlich mit barrierefreiem Zugang zum Gleis und in den Zug), dann sind wir in gerade mal 30 Minuten in der Domstadt.
 
 \subsection{Auf Grundstücksuche}
 
@@ -779,6 +798,7 @@ Solange ich noch klein und leicht war, trug mein Vater mich wie gesagt die Trepp
 2010 waren wir das letzte Mal in Hormersdorf. Ich war mittlerweile 15 Jahre alt, ausgewachsen und die Verhältnisse waren nun einfach zu beengt. Unter Berücksichtigung des Fortschreitens meiner Krankheit war der Aufwand einfach zu groß, wenn man einmal etwas außerhalb der vier Wände unternehmen wollte. Ich langweilte mich zusehends und nach 12 Jahren war die Zeit im Erzgebirge einfach vorbei.
 
 \section{Die Zeltgemeinschaft}
+\label{sec:zeltgemeinschaft}
 
 Soweit ich zurückdenken kann, waren meine Eltern bekennende Zeltcamper. Nachdem sie zusammengezogen waren, entdeckten beide das Windsurfen für sich. Gemeinsam mit meinem Onkel Michael, dem Bruder meines Vaters, sowie Bernhardiner-Dame Bianca fuhren sie viele Jahre und so oft es ging ans Veerse Meer, ein Binnengewässer in der niederländischen Provinz Zeeland, um dort, angetrieben vom Wind, wenn er denn blies, über das Wasser zu gleiten. Sie übernachteten zu dritt in einem kleinen Zelt und spielten bei Flaute (und bei Dosenbier) oft Rommé. Die drei begnügten sich mit einem kleinen Gaskocher, um das Wasser für den Kaffee zu erhitzen und ernährten sich ansonsten von niederländischem Fastfood wie Frikandel Spezial, Pommes, Bami Goreng sowie anderen meist frittierten Speisen.
 
@@ -1402,6 +1422,7 @@ Als meine Eltern und ich an jenem 11. Januar 1999 im Sprechzimmer des Kinderarzt
 Die hohen CK-Werte, die man in meinem Blut gemessen hatte, deuteten nahezu zweifelsfrei auf eine Form von Muskelschwund hin. Die vom Arzt geäußerte Vermutung musste jedoch zunächst noch molekulargenetisch bestätigt werden. Es wurde ein Termin in der Universitätsklinik Düsseldorf vereinbart, wo man einem meiner Oberschenkel mit einer ziemlich großen Hohlnadel Muskelgewebe entnahm. Diese Probe wurde untersucht und bestätigte letztlich den Verdacht des Kinderarztes. Bei meiner Erkrankung handelte es sich eindeutig um Duchenne Muskeldystrophie, leider die aggressivere der beiden häufigsten Formen von Muskeldystrophie. Einer von 3.500 Jungen erkrankt daran. In Deutschland leben 1.500 bis 2.000 Betroffene. Ich bin einer von ihnen.
 
 \subsection{Ich weihe euch mal ein: Das verbirgt sich hinter Duchenne}
+\label{sec:muskeldystrophie}
 
 Duchenne Muskeldystrophie (DMD) ist eine genetische Erkrankung, die durch fortschreitenden Muskelschwund gekennzeichnet ist und zu einer Verschlechterung der Skelett-, Herz- und Atemmuskulatur führt. Duchenne betrifft etwa 1 von 3.500 männlichen Lebendgeburten. Jedes Jahr wird weltweit bei etwa 20.000 Kindern Duchenne diagnostiziert. Duchenne wird durch eine Veränderung im Dystrophin-Gen auf dem X-Chromosom verursacht. Ohne Dystrophin sind die Muskeln nicht in der Lage, richtig zu funktionieren oder sich selbst zu reparieren. Die Muskeldystrophie vom Typ Becker-Kiener verläuft weniger schwer als Duchenne. Sie tritt auf, wenn Dystrophin hergestellt wird, aber nicht in der normalen Form oder Menge.
 
@@ -1545,7 +1566,7 @@ Bei der Operation werden zunächst die Sehnen von drei am Darmbein (Hüftknochen
 Wahrscheinlich fragst du dich jetzt, ob diese Operation dem Patienten nicht mehr schadet als nützt. Das kann ich gut nachvollziehen, denn auch mir wird beim Lesen des Absatzes wieder bewusst, was für ein Eingriff das war. Aber an wirklich starke Schmerzen nach der OP kann ich mich nicht erinnern. Und im Nachhinein betrachtet besteht überhaupt kein Zweifel daran, dass die Entscheidung, die Rideau-Operation durchführen zu lassen, richtig war. Bis heute kann ich Schuhe tragen kann, was bei einem ausgebildeten Spitzfuß unmöglich ist. Seit dem Eingriff habe ich auch keine durch Kontrakturen hervorgerufenen Krämpfe mehr in Oberschenkel- und Wadenmuskel, womit ich vorher häufiger zu kämpfen hatte.
 
 \subsection{Wirbelsäulenbegradigung}
-
+\label{sec:wirbelsaeulenversteifung}
 Am 17. Juli 2008, stand die nächste Operation an, die Stabilisierung meiner Wirbelsäule nach dem sogenannten ISOLA-System. Ich will jetzt nicht behaupten, dass die Rideau-Operation eineinhalb Jahre zuvor im Vergleich mit diesem Eingriff eine Kleinigkeit war, aber der Eingriff an meinem Rückgrat war dann doch etwas anderes. Man stelle ich einfach vor, dass während dieser Operation, die Wirbelsäule oberhalb des Steißbeins bin hin zum Nacken freigelegt wird, um an den Wirbelkörpern rechts und links Metallstangen und Querverbindungen zu verschrauben. Dass innerhalb der Wirbelsäule das Rückenmark verläuft und dass bei einer Verletzung eine Querschnittslähmung droht, ist ja allseits bekannt. Schon alleine deshalb war der Eingriff alles andere als banal und machte meinen Eltern eine Höllenangst. Natürlich hatte auch ich Angst. Mit 13 Jahren hat man bereits eine gewisse Vorstellung davon, was es bedeutet, an der Wirbelsäule operiert zu werden, auch wenn man die Details (zum Glück) nicht kennt.
 
 Im Laufe der Jahre hatte sich bei mir also durch die fehlende Rumpfmuskulatur eine Skoliose entwickelt. Diese Verkrümmung war im Bereich der Lenden- und Brustwirbelsäule in den letzten beiden Jahren relativ schnell fortgeschritten. Die Lungenfunktionsuntersuchungen ergaben zudem eine beginnende Einschränkung der normalen Atmung.

@@ -41,10 +41,24 @@
 }
 
 \RedeclareSectionCommand[
-  runin=false,
-  afterindent=false,
-  beforeskip=.5\baselineskip,
-  afterskip=5pt]{section}
+    runin=false,
+    afterindent=false,
+    beforeskip=.5\baselineskip,
+    afterskip=-5pt
+  ]{section}
+
+\RedeclareSectionCommand[
+    runin=false,
+    afterindent=false,
+    beforeskip=.2\baselineskip,
+    afterskip=-5pt
+]{subsection}
+
+\newcommand{\absatzueberschrift}[1]{%
+  \vspace{1em}%
+  {\noindent\textbf{\textcolor{myblue}{#1}}\par}
+  \vspace{0.5em}%
+}
 
 \raggedbottom
 
@@ -75,6 +89,7 @@
 
 \linespread{1.2}
 \setlength{\parindent}{0pt} % Keine Einrückung für neue Absätze
+\setlength{\parskip}{0.5\baselineskip}
 
 \setcounter{secnumdepth}{-1} % Deaktiviert die Nummerierung für alle Überschriften
 
@@ -104,11 +119,13 @@
 \pagestyle{plain}
 \addchap{Danksagung}
 \addcontentsline{toc}{chapter}{Danksagung}
+\vspace{-1\baselineskip}
 
 Ich möchte mich bei all jenen bedanken, die mich dabei unterstützt haben, diese Autobiographie zu schreiben und die mich dazu ermuntert haben, am Ball zu bleiben, wenn Zweifel in mir aufkamen.
 Ein besonderer Dank gilt dabei Anja Schulte, Roland Penz und Rüdiger Barth vom Kinder- und Jugendhospiz Balthasar, die mir dieses Projekt ans Herz gelegt haben, und ebenso Rebecca Kranz, die die Organisation übernommen und dafür gesorgt hat, dass aus dem Text ein richtiges Buch geworden ist.
 
 Danksagen möchte ich auch allen Mitarbeiter:innen des Balthasars. Danke für eure Verbundenheit, eure Fürsorge und Gastfreundschaft. Ihr seid es, die das Balthasar für mich zu einem zweiten Zuhause haben werden lassen.
+
 Ebenso bedanken möchte ich mich bei allen, die mich bei diesem Projekt in der ein oder anderen Form unterstützt haben. Ohne ihre Hilfe wäre dieses Buch nicht möglich gewesen.
 
 Schließlich will ich an dieser Stelle auch meine Eltern erwähnen, deren Liebe ich mir ebenso sicher sein kann wie ihrer Unterstützung, wann immer ich sie brauche. Ihr wart und seid immer für mich da und ermutigt mich, meinen eigenen Weg zu gehen. Ihr habt mir gezeigt, dass das Leben trotz aller Herausforderungen lebenswert ist und dass es sich lohnt, für seine Träume zu kämpfen.
@@ -118,8 +135,10 @@ Schließlich will ich an dieser Stelle auch meine Eltern erwähnen, deren Liebe 
 
 \addchap{Statt eines Vorwortes}
 \addcontentsline{toc}{chapter}{Statt eines Vorwortes}
+\vspace{-1\baselineskip}
 Lieber Marius,\par
-\vspace*{0.5\baselineskip}
+\vspace{0\baselineskip}
+
 \noindent als ich in Deinem Alter war, hatte ich mir auch gerade einen Traum erfüllt: Ich war in meinem ersten Theaterengagement.
 Der Weg dorthin war eher alptraumhaft. Ich hatte kaum Kohle für Fahrten und Bewerbungen. Ich hatte an allen Schauspielschulen Aufnahmeprüfungen abgelegt und alle versicherten mir, dass es mir an Talent fehlt. Ich hatte einen Minderwertigkeitskomplex, der für mehrere Leben gereicht hätte.
 Aber ich wollte, nein, musste doch Schauspieler werden.
@@ -147,6 +166,7 @@ Schenk uns weitere Bücher. Ich weiß schon jemanden, der gerne wieder ein Vorwo
 
 \addchap{Warum es dieses Buch gibt}
 \addcontentsline{toc}{chapter}{Warum es dieses Buch gibt}
+\vspace{-1\baselineskip}
 
 \textit{„Wie kommst Du damit klar?“}, fragte mich die Frau ganz direkt. Wir hatten bereits eine Zeit lang über dies und das geplaudert. Gemeinsam mit der pädagogischen Leiterin der Einrichtung saßen wir im Leseraum des Kinder- und Jugendhospizes Olpe und ich überlegte, wie ich ihre Frage beantworten wollte. Es ging um die Krankheit, an der ich leide: eine fortschreitende Form von Muskelschwund. Die Antwort, die ich ihr dann gab, klingt vielleicht banal: \textit{„Man wächst einfach hinein.“} Und genauso ist es.
 
@@ -193,7 +213,7 @@ Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetz
 \vspace*{0.5\baselineskip}
 \normalsize
 
-\noindent Was ist deine früheste Kindheitserinnerung? Und wie alt warst du da? Man sagt, dass die Grenze für früheste Erinnerungen zwischen drei und vier Jahren liegt. Um euch also über meine ersten Lebensjahre berichten zu können, musste ich meine Eltern, Elke und Peter, interviewen. Wir drei haben ein sehr gutes und inniges Verhältnis zueinander. Und meine Fragen über diese Phase meines Lebens haben sie gerne und ausführlich beantwortet. Apropos: falls ihr euch fragt – ich bin Marius, 29 Jahre alt.
+Was ist deine früheste Kindheitserinnerung? Und wie alt warst du da? Man sagt, dass die Grenze für früheste Erinnerungen zwischen drei und vier Jahren liegt. Um euch also über meine ersten Lebensjahre berichten zu können, musste ich meine Eltern, Elke und Peter, interviewen. Wir drei haben ein sehr gutes und inniges Verhältnis zueinander. Und meine Fragen über diese Phase meines Lebens haben sie gerne und ausführlich beantwortet. Apropos: falls ihr euch fragt – ich bin Marius, 29 Jahre alt.
 
 Offenbar war ich ein lang ersehntes Wunschkind. Meine Eltern hatten sich jedenfalls riesig gefreut, als feststand, dass meine Mutter mit mir schwanger war. So wie sich alle Eltern freuen, die sich ein Kind wünschen. Die ersten drei Monate einer Schwangerschaft sind ja die kritischsten. Wie man nachlesen kann, übernimmt die Plazenta etwa ab der 12. Schwangerschaftswoche die vollständige Versorgung des Fötus. Danach sinkt das Risiko einer Fehlgeburt drastisch. Dementsprechend vorsichtig war meine Mutter während dieser Zeit und gab besonders gut auf uns beide acht. Wir kamen gut durch diese Phase und auch die übrigen 26 Wochen der Schwangerschaft.
 

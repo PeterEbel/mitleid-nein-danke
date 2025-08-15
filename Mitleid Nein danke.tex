@@ -14,7 +14,7 @@
     format=plain,
     labelformat=empty,
     textfont={small,it,singlespacing},
-   %justification=raggedright,
+    %justification=raggedright,
     belowskip=-6pt
  ]{caption}
 
@@ -74,6 +74,7 @@
 \setkomafont{subsection}{\normalfont\large\rmfamily\textcolor{myblue}}
 
 \linespread{1.2}
+\setlength{\parindent}{0pt} % Keine Einrückung für neue Absätze
 
 \setcounter{secnumdepth}{-1} % Deaktiviert die Nummerierung für alle Überschriften
 
@@ -1230,8 +1231,9 @@ Leider gab es in Hockenheim kein Hotel mit behindertengerechtem Familienzimmer, 
 \setlength{\fboxsep}{0pt}    % Kein Abstand zwischen Rahmen und Bild
 \setlength{\fboxrule}{0.2pt} % Rahmenstärke auf 0.2 pt setzen
 \begin{figure}[ht]
-    \raggedright
+    \centering
     \fcolorbox{rahmenlinie}{white}{\includegraphics[width=\textwidth]{Fotos/Hockenheim 1.jpg}}
+    \captionsetup{justification=raggedright}
     \caption{Im Vordergrund mein Vater und ich auf dem Rock 'n' Heim Festival 2014.}
     \label{fig:hockenheim}
 \end{figure}

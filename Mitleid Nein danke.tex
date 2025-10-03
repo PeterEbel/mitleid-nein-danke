@@ -40,6 +40,10 @@
     chapterprefix=true    % Auch wenn Kapitel nicht nummeriert sind, oft hilfreich
 }
 
+% Anpassung des Inhaltsverzeichnisses für bessere Trennung der Ebenen
+\RedeclareSectionCommand[tocindent=0pt, tocbeforeskip=0.4\baselineskip]{section}
+\RedeclareSectionCommand[tocindent=0pt, tocbeforeskip=0\baselineskip]{subsection}
+
 \RedeclareSectionCommand[
     runin=false,
     afterindent=false,
@@ -70,9 +74,11 @@
 \usepackage[table,dvipsnames]{xcolor}
 \definecolor{myblue}{RGB}{47, 84, 150}
 \definecolor{rahmenlinie}{RGB}{127, 127, 127}
-\definecolor{tableheadblue}{RGB}{47,84,150}    % Dunkles Blau für Kopf
-\definecolor{tablecellblue}{RGB}{198,217,241}  % Hellblau für linke Spalte
-\definecolor{rightcolumn}{RGB}{235,242,249}  % Hellblau für linke Spalte
+\definecolor{tableheadblue}{RGB}{47,84,150}      % Dunkles Blau für Kopf
+\definecolor{tablecellblue}{RGB}{198,217,241}    % Hellblau für linke Spalte
+\definecolor{rightcolumn}{RGB}{235,242,249}      % Hellblau für linke Spalte
+\definecolor{chapterdarkblue}{RGB}{47,84,150}    % Dunkelblau
+\definecolor{chapterlightblue}{RGB}{198,217,241} % Hellblau
 \usepackage{makecell}
 
 \usepackage{fontspec}
@@ -105,6 +111,22 @@
 \usepackage{footmisc}
 \setlength{\footnotemargin}{0pt} % Sorgt für eine linksbündige Ausrichtung von Fußnoten ohne hängenden Einzug.
 
+\newtcolorbox{chapterbox}[1][]{
+    enhanced,
+    breakable,
+    colframe=white,
+    boxrule=0pt,
+    width=\textwidth,
+    arc=0pt,
+    left=6pt, right=0pt, top=0.5cm, bottom=0.5cm,
+    valign=center,
+    fontupper=\normalfont\huge\rmfamily\color{white},
+    halign=center,
+    sharp corners,
+    colback=chapterdarkblue!5!chapterlightblue!95,
+    #1
+}
+
 
 \begin{document}
 
@@ -122,9 +144,10 @@
 \end{center}
 \vspace*{\fill}
 
+\tableofcontents
+
 \pagestyle{plain}
 \addchap{Danksagung}
-\addcontentsline{toc}{chapter}{Danksagung}
 \vspace{-1\baselineskip}
 
 Ich möchte mich bei all jenen bedanken, die mich dabei unterstützt haben, diese Autobiographie zu schreiben und die mich dazu ermuntert haben, am Ball zu bleiben, wenn Zweifel in mir aufkamen.
@@ -140,7 +163,6 @@ Schließlich will ich an dieser Stelle auch meine Eltern erwähnen, deren Liebe 
 \noindent\textit{Marius Ebel}
 
 \addchap{Statt eines Vorwortes}
-\addcontentsline{toc}{chapter}{Statt eines Vorwortes}
 \vspace{-1\baselineskip}
 Lieber Marius,\par
 \vspace{0\baselineskip}
@@ -172,7 +194,6 @@ Schenk uns weitere Bücher. Ich weiß schon jemanden, der gerne wieder ein Vorwo
 \end{figure}
 
 \addchap{Warum es dieses Buch gibt}
-\addcontentsline{toc}{chapter}{Warum es dieses Buch gibt}
 \vspace{-1\baselineskip}
 
 \textit{„Wie kommst Du damit klar?“}, fragte mich die Frau ganz direkt. Wir hatten bereits eine Zeit lang über dies und das geplaudert. Gemeinsam mit der pädagogischen Leiterin der Einrichtung saßen wir im Leseraum des Kinder- und Jugendhospizes Olpe und ich überlegte, wie ich ihre Frage beantworten wollte. Es ging um die Krankheit, an der ich leide: eine fortschreitende Form von Muskelschwund. Die Antwort, die ich ihr dann gab, klingt vielleicht banal: \textit{„Man wächst einfach hinein.“} Und genauso ist es.
@@ -208,9 +229,11 @@ Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetz
 
 \pagestyle{scrheadings}
 
-\addchap{Die ersten Jahre}
+\addchap[Die ersten Jahre]{}
+\begin{chapterbox}
+    Die ersten Jahre
+\end{chapterbox}
 \thispagestyle{scrheadings} % Wichtig für eine Kopfzeile auf der ersten Seite des Kapitels
-\addcontentsline{toc}{chapter}{Die ersten Jahre}
 \leavevmode
 {\noindent\fontsize{18}{24}\selectfont\textcolor{myblue}{Ich, Wunschkind}\par}
 {\noindent\fontsize{14}{20}\selectfont\scshape\textcolor{myblue}{Eigentlich lief alles bestens}\ldots\par}
@@ -487,7 +510,6 @@ Der Bau zog sich über ein Jahr hin, und größere Probleme gab es zum Glück ke
 
 \addchap{Schule, Ausbildung und Job}
 \thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seite des Kapitels
-\addcontentsline{toc}{chapter}{Schule, Ausbildung und Job}
 \leavevmode
 \normalsize
 
@@ -761,7 +783,6 @@ Wenn man wie ich an einer körperlichen Behinderung leidet und mit Einschränkun
 
 \addchap{Auf Reisen}
 \thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seite des Kapitels
-\addcontentsline{toc}{chapter}{Auf Reisen}
 
 \leavevmode
 \normalsize
@@ -1089,7 +1110,6 @@ Erstaunlich ist auch, wie leicht man sich in New York zurechtfindet. Manhattan i
 
 \addchap{Das Balthasar}
 \thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seite des Kapitels
-\addcontentsline{toc}{chapter}{Das Balthasar}
 \leavevmode
 \normalsize
 
@@ -1431,7 +1451,6 @@ Falls es ein Leben nach dem Tod gibt, könnte ich mir vorstellen, in einer ander
 
 \addchap{Ärzte, OPs und Forschung}
 \thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seite des Kapitels
-\addcontentsline{toc}{chapter}{Ärzte, OPs und Forschung}
 
 \leavevmode
 \normalsize
@@ -1812,7 +1831,6 @@ Die Funktion des Herzmuskels bei Duchenne Muskeldystrophie kann durch verschiede
 
 \addchap{Nachwort von Roland Penz}
 \thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seite des Kapitels
-\addcontentsline{toc}{chapter}{Nachwort von Roland Penz}
 
 \leavevmode
 \normalsize

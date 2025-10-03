@@ -42,7 +42,7 @@
 
 % Anpassung des Inhaltsverzeichnisses für bessere Trennung der Ebenen
 \RedeclareSectionCommand[tocindent=0pt, tocbeforeskip=0.4\baselineskip]{section}
-\RedeclareSectionCommand[tocindent=0pt, tocbeforeskip=0\baselineskip]{subsection}
+\RedeclareSectionCommand[tocindent=1em, tocbeforeskip=0\baselineskip]{subsection}
 
 \RedeclareSectionCommand[
     runin=false,
@@ -144,9 +144,13 @@
 \end{center}
 \vspace*{\fill}
 
-\tableofcontents
+\thispagestyle{empty}
 
-\pagestyle{plain}
+\pagestyle{plain}  % Inhaltsverzeichnis mit römischen Seitenzahlen, aber ohne Kopfzeile
+\tableofcontents
+\clearpage         % Neue Seite nach Inhaltsverzeichnis
+
+% Frontmatter-Kapitel: römische Seitenzahlen in Fußzeile, keine Kopfzeile
 \addchap{Danksagung}
 \vspace{-1\baselineskip}
 
@@ -878,7 +882,7 @@ Für die Wahl der Stadt gibt es zwei Kriterien: Zum einen muss sie mit der Bahn 
 
 München, Berlin und Hamburg erfüllen diese Kriterien. Und obwohl sie unterschiedlicher nicht sein können, so haben sie doch eines gemeinsam: sie sind groß, lebendig und strahlen alle ihren eigenen Charme aus.
 
-\section{München}
+\subsection{München}
 
 Das beste Wetter hatten wir bisher in München. Immerhin liegt München im Vergleich zu Hamburg 600 km und im Vergleich zu Berlin 500 km weiter südlich. Das macht einen Unterschied. Wobei wir auch in Berlin und Hamburg noch nie so richtig Pech mit dem Wetter hatten. Wenn das Wetter mitspielt, ist ein Urlaub gleich viel entspannter, vor allem, wenn man mit dem Rollstuhl unterwegs ist, da die Elektronik der Rollstuhlsteuerung vor Regen geschützt werden muss.
 
@@ -886,7 +890,7 @@ München ist keine Weltstadt wie New York, London, Paris oder auch Berlin und ha
 
 In Sachen Übernachtung ist es auch in München nicht einfach, ein passendes Hotel zu finden. Aber es gibt sie. Eines, das ich wirklich sehr empfehlen kann, ist das Mercure Hotel München City Center, an der Senefelderstraße 9. Es verfügt über ein sehr großes Zimmer mit drei Betten und ein barrierefreies Bad mit Rollstuhl-befahrbarer Dusche. Das Frühstück ist sehr gut und die Lage fast perfekt. Das Hotel liegt im Bahnhofsviertel, und Bahnhofsviertel haben ja ihren eigenen „Charme“, aber dafür ist es auch keine 200 Meter vom Bahnhof entfernt. Das bedeutet, man kann bequem mit der Bahn anreisen, was wir in der Regel auch tun. Auch das U-Bahn-Netz von München ist sehr gut. Man kommt schnell und unkompliziert in jeden Winkel der Stadt (wenn nicht gerade am Knotenpunkt Marienplatz größere Bauarbeiten stattfinden, wie wir es schon zweimal erlebt haben).
 
-\section{Hamburg}
+\subsection{Hamburg}
 
 Hamburg ist ganz anders als München. Anders schön. Hamburg hat Wasser, viel Wasser. Da sind nicht nur die Elbe und der Hamburger Hafen mit den Landungsbrücken, eine ehemalige Anlegestelle für Dampfschiffe mit viel Gastronomie und Touristenshops. Auch die Binnenalster, ein künstlicher See mit riesigem Springbrunnen, die Außenalster, das Endstück eines 50 km langen Flusses und ein Hotspot für Segler, oder die zahlreichen Kanäle, machen Hamburg zu etwas Einzigartigem. Hamburg hat auch eine interessante Architektur, die sich einfügt in die weit zurückreichende Geschichte als Hansestadt. Wenn man an den Landungsbrücken steht und den großen Pötten hinterherschaut, da macht sich auch ein bisschen Fernweh breit. Von hier geht’s in die weite Welt.
 
@@ -903,7 +907,7 @@ Hamburg hat aber noch eine andere Seite, die nicht weniger bekannt ist als Hafen
 
 Allerdings gibt es auch einen Wermutstropfen. Als Stadt am Wasser hat Hamburg auch mit Sturmfluten und Überschwemmungen zu rechnen. Die Eingänge vieler, vor allem älterer Häuser, befinden sich drei bis vier Stufen über Straßenniveau. Darunter sind auch viele Restaurants, die für Rollstuhlfahrer wie mich deshalb unerreichbar sind. Auch sind längst nicht alle Bordsteine abgesenkt, so dass man oft hunderte von Metern Umwege fahren muss, bis man eine Absenkung gefunden hat. Auch Hamburgs U-Bahn-Netz ist mit dem von München oder Berlin nicht zu vergleichen. In Hamburg fährt man als Rollstuhlfahrer:in besser mit dem Bus, wenn man größere Strecken zurücklegen muss.
 
-\section{Berlin}
+\subsection{Berlin}
 
 Last but not least ist da natürlich Berlin. Berlin ist speziell. Speziell aufgrund seiner Geschichte. Der Kalte Krieg, die ehemalige DDR und die Mauer sind in der Stadt allgegenwärtig. Berlin ist vielseitig. Ich habe bei meinen Aufenthalten drei der 12 Stadtbezirke näher kennen- und lieben gelernt. Jeder von ihnen hat einen ganz speziellen Charme.
 
@@ -919,7 +923,7 @@ Das Hotel ist barrierefrei, alle Zimmer sind mit dem Aufzug erreichbar. Die 16 s
 
 Das Berliner U-Bahn- und S-Bahn-Netz ist ein Traum. Aufzüge für Rollstuhlfahrer gibt es gefühlt an jeder zweiten Straßenecke. Was ich wärmstens empfehlen kann, ist übrigens die Anschaffung einer leichten, robusten und faltbaren Rampe aus Kohlefaser, die man an den Rollstuhl hängen kann, um Hindernisse zu überbrücken, wie beispielsweise den Spalt zwischen Bahnsteig und Waggon. Zugegebenermaßen sie sind nicht ganz billig, aber für einen Stadturlaub eigentlich unerlässlich.
 
-\section{New York}
+\subsection{New York}
 \label{sec:new_york}
 
 Um es gleich vorwegzunehmen: an New York kommt – mit großem Abstand – keine Stadt heran, zumindest keine, die ich kenne (zugegebenermaßen sind das nicht so viele). New York ist anders, unvergleichlich, eine andere Welt. Ich wollte unbedingt einmal im Leben dorthin. Im August 2011, während der Sommerferien, war es soweit. Wir flogen nach Big Apple!
@@ -1149,7 +1153,7 @@ Noch am gleichen Tag lernte ich Julian\footnote{Name geändert} kennen. Julian w
 
 Das Balthasar stellt für mich einen Rückzugsort dar. Es ist ein Ort, an dem ich mich erhole, an dem die Probleme der Welt draußen bleiben, an dem immer jemand ein offenes Ohr für mich hat. Ein Ort, an dem ich mich traue, Themen anzusprechen, über die ich nicht mit jedem reden würde. Ein Ort, an dem ich nie Angst haben muss, zurückgewiesen zu werden. Ein Ort, wohin ich gehen kann, ob es mir gut oder schlecht geht.
 
-\section{Von der Gewissheit, willkommen zu sein}
+\subsection{Von der Gewissheit, willkommen zu sein}
 
 Ob man als Besucher oder Gast willkommen ist, merkt man relativ verlässlich am Verhalten des Gastgebers. Trägt er oder sie ein Lächeln auf dem Gesicht und öffnet die Arme, dann kann man sicher sein, dass man freudig erwartet wird. Diese Gewissheit habe ich auch, wenn sich bei meiner Ankunft im Balthasar die Tür des Fahrstuhls im Erdgeschoss öffnet. Auf der Wand gegenüber hängt eine Tafel, auf der ein persönlicher Willkommensgruß für den jeweiligen Gast geschrieben steht. Es ist immer wieder ein schönes Gefühl, den eigenen Namen auf dieser Tafel zu sehen. Vom ersten Moment an weiß ich, dass man sich hier freut, mich wiederzusehen.
 
@@ -1168,7 +1172,7 @@ Früher fühlte ich mich als Außenseiter und mied den Kontakt mit Menschen, die
 
 Internet sei Dank! Noch vor 40 Jahren war das nicht möglich. Gespräche mit Leidensgenossen sind natürlich leichter zu führen als mit einer Person, die den Blickkontakt mit dir meidet, weil sie befürchtet, man könnte in ihren Augen das Mitleid sehen, das sie eigentlich nicht zeigen möchte. In solchen Situationen fühle auch ich mich unwohl.
 
-\section{Ein wichtiger Schritt}
+\subsection{Ein wichtiger Schritt}
 
 Jeder Mensch freut sich darüber besucht zu werden, denn ein Besuch ist ja ein Zeichen dafür, dass dich jemand wertschätzt und sich die Zeit nimmt, dich zu sehen. Auch ich freue mich über Besuche von Freunden oder der Familie. Wir unterhalten uns dann über dies und das, lachen oft, aber sprechen auch über tiefsinnige Themen und philosophieren dabei schon fast.
 
@@ -1185,7 +1189,7 @@ Während ein Besuch zuhause zwar schön, aber an sich ja nichts Außergewöhnlic
 
 Ich habe Verständnis dafür, dass es jemandem schwerfällt, ein Hospiz zu betreten. Die erste Assoziation, die man bei dem Wort „Hospiz“ hat, ist der Tod. Wir Menschen tendieren dazu, uns erst dann mit Dingen wie dem Tod zu beschäftigen, wenn wir direkt oder indirekt betroffen sind. In unserer Gesellschaft ist er immer noch ein Tabu-Thema, das man ausblendet. Doch in einem Hospiz wie dem Balthasar gibt es diese Trennung zwischen Leben und Tod, zwischen Lachen und Weinen nicht. Nicht umsonst ist das Motto der Einrichtung „Leben und Lachen - Sterben und Trauern“.
 
-\section{Spuren hinterlassen}
+\subsection{Spuren hinterlassen}
 
 Möchte nicht jeder Mensch Spuren hinterlassen? Im Kinder- und Jugendhospiz Balthasar gehört das wie selbstverständlich dazu. Bei ihrem ersten Aufenthalt im Balthasar hinterlassen die erkrankten Kinder einen Hand- oder Fußabdruck auf einer Wand. Die Abdrücke sind so bunt und vielfältig wie die Kinder selbst – ein außergewöhnliches „Gästebuch“ und für viele Familien ein wertvoller Ort der dauerhaften Erinnerung.
 
@@ -1200,7 +1204,7 @@ Möchte nicht jeder Mensch Spuren hinterlassen? Im Kinder- und Jugendhospiz Balt
 
 Für die erkrankten Jugendlichen und jungen Erwachsenen gibt es im Jugendhospiz eine Spirale, an der sie ihre Namen eintragen können. Eine tolle Idee, finde ich. Denn wer möchte nicht, dass etwas von ihm bleibt? Mir bedeutet zum Beispiel dieses Buch sehr viel. Vielleicht hinterlasse ich mit ihm Spuren, vielleicht aber auch nicht. Meine Gedanken, die ich hier zu Papier bringe, werden die Welt nicht verändern, aber vielleicht helfen sie ja jemandem, regen ihn zu etwas an oder bauen ihn sogar auf.
 
-\section{Den Moment genießen}
+\subsection{Den Moment genießen}
 
 Bei meinen Aufenthalten im Balthasar suche ich mindestens einmal den Snoezelen-Raum auf, um dort unter Anleitung einer Mitarbeiterin zu entspannen. Mir fällt es schwer, mich ohne Anleitung in einen solchen Modus zu versetzen. Entspannend ist für mich vor allem das Spüren meines eigenen Atems. Indem ich meine Gedanken auf den Rhythmus und das Geräusch beim Ein- und Ausatmen fokussiere und wenn dabei im Hintergrund leise Musik läuft, schalte ich ab und genieße den Moment.
 
@@ -1247,7 +1251,7 @@ Wie ich mich noch gerne entspanne? Naja, ich spiele gerne, vor allem am PC. Was 
     \label{fig:weihnachtskarte}
 \end{figure}
 
-\section{Music was my first love…}
+\subsection{Music was my first love…}
 
 Musik begleitet mich, seitdem ich denken kann. Während viele von euch Musik wahrscheinlich eher nebenbei konsumieren (und dagegen ist überhaupt nichts einzuwenden), fühle und lebe ich Musik. Musik zu hören, ist für mich ein Grundbedürfnis, so wie Essen und Trinken. Ich war gerade einmal ein Jahr alt, da saß ich schon vor der Musikanlage meiner Eltern und lauschte den Klängen und Stimmen, die in meine Ohren drangen. Mein erster Kontakt mit Musik fand schon statt, als ich noch im Bauch meiner Mutter war und sie mir klassische Musik vorspielte. Aus mir ist zwar kein Mozart geworden, aber zumindest bedeutet mir Musik vom ersten Tag an sehr viel.
 
@@ -1322,7 +1326,7 @@ Als wir in das Zimmer kamen, war uns sofort klar, dass wir ein Problem hatten. D
 
 Zurück zum Festival. Auf einen Künstler hatte ich mich ganz besonders gefreut: Deadmau5 (die 5 ist kein Rechtschreibfehler). Bei Deadmau5 handelt es sich um einen kanadischen Musiker, der im Genre House aktiv ist und auf Live-Konzerten als Markenzeichen eine riesige Micky Mouse Maske trägt. Ich hatte ihn noch nie live gesehen und war super gespannt auf seine Performance. Was wir nicht wussten: Er war der letzte Gig des ersten Festivaltages. Doch eigentlich war er der erste Gig des zweiten Tages, denn er trat um 2 Uhr morgens auf! Noch nie zuvor hatte sich die Zeit bei einem Konzert so gezogen! Ich wurde immer müder, konnte die Augen kaum noch offen halten und war im Laufe des späten Abends mehrere Male kurz davor, das Handtuch zu werfen und zurück zum Hotel zu fahren. Irgendwie habe ich es aber geschafft, bis 2 Uhr wach zu bleiben, um den 60-minütigen Auftritt von Deadmau5 mitzuerleben. Gegen 4 Uhr lag ich im Bett. Ich werde jetzt noch müde, wenn ich daran zurückdenke.
 
-\section{Wo alles begann}
+\subsection{Wo alles begann}
 
 Das Lese- und Entspannungszimmer im Kinder- und Jugendhospiz Balthasar ist ein wunderschön gestalteter Raum, der eine beruhigende Atmosphäre ausstrahlt. Er ist deshalb nicht nur der ideale Platz zum Lesen, sondern dient auch als Rückzugsort oder für vertrauliche Gespräche. Mein persönlicher Rückzugsort im Balthasar ist zwar das Gartenhaus, doch wenn es draußen kälter ist, dann bevorzuge ich das Lesezimmer, zum Beispiel für Gespräche mit den Mitarbeiter:innen. Im Lesezimmer hat übrigens auch das Gespräch mit der Mutter stattgefunden, von der ich eingangs auf Seite 12 erzählt habe, und das mich dazu angeregt hat, dieses Buch zu schreiben.
 
@@ -1337,7 +1341,7 @@ Das Lese- und Entspannungszimmer im Kinder- und Jugendhospiz Balthasar ist ein w
 
 Gedruckte Bücher spielen in meinem Leben allerdings keine so große Rolle. Ich bin das Gegenteil einer Leseratte. Stattdessen höre ich leidenschaftlich gerne Hörbücher, am liebsten die von Stephen King. Am besten gefällt mir sein Zeitreisen-Roman „Der Anschlag“. Er handelt von dem Attentat auf John F. Kennedy und davon, wie sich dieser hätte verhindern lassen. Allgemein geht es in dem Buch um das Thema, wie man Situationen in der Zukunft dadurch verändern kann, dass man in der Gegenwart Dinge anders macht. Die Hauptfigur des Romans reist dabei in der Zeit zurück und versucht dann, Lee Harvey Oswald davon abzuhalten, Kennedy zu erschießen. Das Thema „Was wäre, wenn…“ und inwiefern können (oftmals nur kleine) Änderungen in der Gegenwart gewaltige Änderungen in der Zukunft nach sich ziehen, finde ich faszinierend. Und ich kann mir gut vorstellen, wie echte Bücherwürmer im Lesezimmer vom Balthasar in andere Welten eintauchen.
 
-\section{Raum für mich}
+\subsection{Raum für mich}
 
 Meine Aufenthalte im Balthasar müssen natürlich geplant werden. Da ich berufstätig bin, muss ich dafür auch Urlaub nehmen. Von meinen 33 Urlaubstagen nehme ich 20 für meine Aufenthalte im Hospiz, die restlichen verbringe ich mit meinen Eltern.
 
@@ -1360,7 +1364,7 @@ In einem der Flure hängt eine kunterbunte Weltkarte. Würde diese stattdessen i
 
 Mein Zimmer zuhause ist ebenfalls modern eingerichtet. An der Wand befindet sich ein cooles Wand-Tattoo von einem Drachen. Außerdem hängt ein von einer talentierten Freundin gemaltes Bild an der Wand neben meinem Bett, neben diversen Postern von anderen Bands, auf deren Musik ich stehe. Mein Bett zuhause ist etwa so breit wie das Bett in Zimmer 12. Allerdings ist die Matratze im Balthasar klar besser. Dort muss ich nämlich nachts seltener gewendet werden als zuhause. Einen besseren Qualitätsmesser für Matratzen gibt es nicht.
 
-\section{Sich einfach treiben lassen}
+\subsection{Sich einfach treiben lassen}
 
 Das Balthasar verfügt sogar über ein eigenes Schwimmbad, in dem ich einmal mit Renate, einer Krankenschwester und Kindertrauerbegleiterin im Balthasar, war. Renate praktiziert Wasser-Shiatsu. Wasser-Shiatsu ist eine Form der Körpertherapie, die in einem Pool oder auch in einer speziellen Wasserwanne durchgeführt wird. Dabei werden Techniken der klassischen Akupressur mit der Entspannung und dem Auftrieb, die durch das Wasser erreicht werden, kombiniert. Während der Behandlung habe ich eine Schwimmweste getragen, die mich über Wasser hielt. Renate hat dann mit den Händen und Fingern auf bestimmte Akupressurpunkte gedrückt, um den Energiefluss in meinem Körper zu fördern und Muskelverspannungen zu lösen. Das Treiben im warmen Wasser führt zu einer tiefen Entspannung und ist sehr beruhigend. Ich fand es jedenfalls großartig!
 
@@ -1390,7 +1394,7 @@ Mein Vater hat mich nach dem Umziehen Huckepack genommen und von der Kabine bis 
     \label{fig:seepferdchen}
 \end{figure}
 
-\section{Hineinwachsen}
+\subsection{Hineinwachsen}
 
 Ich verliere zunehmend an Beweglichkeit, es ist ein stetiges Bergab. Ich spüre, dass ich immer weniger kann und immer mehr Hilfe einfordern muss. Das fiel mir anfangs sehr schwer. Am meisten Angst habe ich davor, meinen Job nicht mehr ausführen und meinen Hobbies nicht mehr nachgehen zu können. In solchen Momenten versuche ich mich auf die Gegenwart zu fokussieren und mir vor Augen zu führen, dass mein Gesundheitszustand die letzten Jahre relativ stabil geblieben ist. Dieses Bergab – klar, viele Menschen glauben, es sich vorstellen zu können. Aber es zu spüren, es selbst zu erleben, das ist etwas ganz anderes.
 
@@ -1411,7 +1415,7 @@ Manchmal frage ich mich, was wäre, wenn? Was wäre, wenn ich diese Erkrankung n
 
 Früher behielt ich meine Gedanken, Sorgen und Gefühle für mich. Heute kann ich darüber sprechen. Und ja, ich bin manchmal immer noch nachdenklich, aber deutlich seltener, seitdem ich mein Hobby zum Beruf gemacht habe. Das ist ein großes Glück für mich.
 
-\section{Vom Umgang mit dem Tod}
+\subsection{Vom Umgang mit dem Tod}
 
 Den Raum der Stille mit seiner natürlichen Gestaltung finde ich wunderschön. Er strahlt Wärme und Geborgenheit aus und er hat mir dadurch auch ein bisschen die Angst vor dem Tod genommen.
 
@@ -1720,13 +1724,15 @@ Die Kontraktion ist eine mechanische Belastung für die Muskelzelle. Dystrophin 
 
 Geschädigte Muskelzellen rufen wiederum Entzündungen hervor, die letztlich zum Abbau der Muskelfasern führen. Der Körper ist nämlich bestrebt, Entzündungen so schnell wie möglich einzudämmen. Dazu aktiviert er Entzündungszellen, welche die beschädigten Zellen abbauen. Weil die Muskelzellen aber nicht alle gleichzeitig, sondern nach und nach geschädigt werden, werden sie auch vom Körper nach und nach abgebaut. Jemand, der an Duchenne Muskeldystrophie leidet, lebt sozusagen in einem ständigen Entzündungszustand, weil zu jedem beliebigen Zeitpunkt irgendwo im Körper Muskelzellen zerfallen und der Körper darauf mit der Aktivierung von Entzündungszellen reagiert. Hier setzt übrigens die Kortisontherapie an, die zum Ziel hat, die Entzündungen einzudämmen und so den Zerfall der Muskelzellen zu verlangsamen.
 
-\begin{mdframed}[
-    linewidth=0.3pt,         % Dünne Linie
-    linecolor=rahmenlinie,   % Deine definierte Rahmenfarbe
-    leftmargin=0, rightmargin=0,
-    innertopmargin=12pt, innerbottommargin=12pt,
-    innerleftmargin=12pt, innerrightmargin=12pt,
-    backgroundcolor=white
+\begin{tcolorbox}[
+    enhanced,
+    breakable,
+    colframe=rahmenlinie,      % Rahmenfarbe wie bisher
+    colback=white,             % Hintergrundfarbe
+    left=12pt, right=12pt,     % Innenabstände
+    top=12pt, bottom=12pt,     % Innenabstände
+    boxrule=0.3pt,             % Rahmenstärke
+    arc=8pt                    % Eckenradius (optional)
 ]
 \small\sffamily
 \setlength{\parindent}{0pt} % Kein Erstzeileneinzug
@@ -1745,9 +1751,9 @@ Es gibt verschiedene Arten von Genmutationen. Eine Punktmutation ist eine Verän
 
 Einige Genmutationen können wie im Fall von Duchenne Muskeldystrophie zu Erkrankungen führen, während andere keine Auswirkungen haben oder sogar von Vorteil sein können. Ein Beispiel für eine vorteilhafte Genmutation ist die Sichelzellenanämie, die Menschen vor Malaria schützen kann. Menschen mit einer Sichelzellmutation produzieren veränderte Hämoglobinmoleküle, die zu einer Verformung der roten Blutkörperchen führen. Diese verformten roten Blutkörperchen können nicht so leicht von den Malaria-Parasiten befallen werden, wodurch das Risiko, an Malaria zu erkranken, verringert wird.
 
-\end{mdframed}
+\end{tcolorbox}
 
-%\vspace{0.8\baselineskip}
+\vspace{0.8\baselineskip}
 
 \subsection{Gentherapie}
 \label{sec:therapien}

@@ -2,10 +2,12 @@
 
 \usepackage{float}
 \usepackage[left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry} % Seitenränder
+
 \usepackage{polyglossia}
 \setmainlanguage{german}
 \setotherlanguage{english}
 \hyphenation{Kran-ken-hau-ses Pro-dukt-de-signer Be-rufs-bil-dungs-werk We-ser-berg-land-Kli-nik Nord-rhein-West-fa-len}
+
 \usepackage{longtable}
 \usepackage{array}
 \usepackage[most]{tcolorbox}
@@ -40,11 +42,16 @@
     chapterprefix=true    % Auch wenn Kapitel nicht nummeriert sind, oft hilfreich
 }
 
-% Anpassung des Inhaltsverzeichnisses für bessere Trennung der Ebenen
-\RedeclareSectionCommand[tocindent=0pt, tocbeforeskip=0.4\baselineskip]{section}
-\RedeclareSectionCommand[tocindent=1em, tocbeforeskip=0\baselineskip]{subsection}
-
+% Kapitel-Layout anpassen: Abstände vor Kapiteln entfernen
 \RedeclareSectionCommand[
+    beforeskip=1.2\baselineskip,
+    afterskip=1.2\baselineskip
+]{chapter}
+
+% Anpassung des Inhaltsverzeichnisses für bessere Trennung der Ebenen
+\RedeclareSectionCommand[
+    tocindent=0pt,
+    tocbeforeskip=0.4\baselineskip,
     runin=false,
     afterindent=false,
     beforeskip=.5\baselineskip,
@@ -52,6 +59,8 @@
   ]{section}
 
 \RedeclareSectionCommand[
+    tocindent=1em,
+    tocbeforeskip=0\baselineskip,
     runin=false,
     afterindent=false,
     beforeskip=.5\baselineskip,
@@ -68,8 +77,6 @@
 
 %\rohead{\leftmark} % Unkommentieren, falls die Seitenzahlen in der Fußzeile erscheinen sollen
 
-\setkomafont{pageheadfoot}{\color{myblue}} % Stellt sicher, dass die Schriftart der Kopf-/Fußzeile neutral ist
-
 %\usepackage[dvipsnames]{xcolor}
 \usepackage[table,dvipsnames]{xcolor}
 \definecolor{myblue}{RGB}{47, 84, 150}
@@ -79,7 +86,11 @@
 \definecolor{rightcolumn}{RGB}{235,242,249}      % Hellblau für linke Spalte
 \definecolor{chapterdarkblue}{RGB}{47,84,150}    % Dunkelblau
 \definecolor{chapterlightblue}{RGB}{198,217,241} % Hellblau
+
 \usepackage{makecell}
+
+\usepackage{footmisc}
+\setlength{\footnotemargin}{0pt} % Sorgt für eine linksbündige Ausrichtung von Fußnoten ohne hängenden Einzug.
 
 \usepackage{fontspec}
 % \setmainfont{Palatino Linotype}
@@ -93,6 +104,7 @@
 \setkomafont{section}{\normalfont\fontsize{18}{24}\rmfamily\textcolor{myblue}}
 \setkomafont{subsection}{\setstretch{0.9}\normalfont\fontsize{16}{20}\rmfamily\textcolor{myblue}}
 \setkomafont{chapterentry}{\rmfamily\textbf} % Kapitelüberschriften im Inhaltsverzeichnis in Serifenschrift
+\setkomafont{pageheadfoot}{\color{myblue}}   % Stellt sicher, dass die Schriftart der Kopf-/Fußzeile neutral ist
 
 \linespread{1.2}
 \setlength{\parindent}{0pt} % Keine Einrückung für neue Absätze
@@ -107,9 +119,6 @@
 \clubpenalty=10000    % Verhindert Schusterjungen (erste Zeile eines Absatzes am Seitenende)
 \widowpenalty=10000   % Verhindert Hurenkinder (letzte Zeile eines Absatzes am Seitenanfang)
 
-\usepackage{footmisc}
-\setlength{\footnotemargin}{0pt} % Sorgt für eine linksbündige Ausrichtung von Fußnoten ohne hängenden Einzug.
-
 \newtcolorbox{chapterbox}[1][]{
     enhanced,
     breakable,
@@ -117,12 +126,15 @@
     boxrule=0pt,
     width=\textwidth,
     arc=0pt,
-    left=6pt, right=0pt, top=0.5cm, bottom=0.5cm,
+    left=12pt, right=0pt, top=2cm, bottom=2cm,
     valign=center,
     fontupper=\normalfont\huge\rmfamily\color{white},
-    halign=center,
+    halign=left,
     sharp corners,
-    colback=chapterdarkblue!5!chapterlightblue!95,
+    interior style={top color=chapterlightblue, bottom color=chapterdarkblue},
+    before skip=0pt,
+    after skip=18pt,
+    parbox=false,
     #1
 }
 
@@ -233,13 +245,15 @@ Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetz
 \pagestyle{scrheadings}
 
 \addchap[Die ersten Jahre]{}
+
+\vspace*{-3\baselineskip}% Stärkerer negativer Abstand für chapterbox
 \begin{chapterbox}
     Die ersten Jahre
 \end{chapterbox}
-\thispagestyle{scrheadings} % Wichtig für eine Kopfzeile auf der ersten Seite des Kapitels
-\leavevmode
-{\noindent\fontsize{18}{24}\selectfont\textcolor{myblue}{Ich, Wunschkind}\par}
-{\noindent\fontsize{14}{20}\selectfont\scshape\textcolor{myblue}{Eigentlich lief alles bestens}\ldots\par}
+
+\thispagestyle{scrheadings}% Wichtig für eine Kopfzeile auf der ersten Seite des Kapitels
+\noindent{\fontsize{18}{24}\selectfont\textcolor{myblue}{Ich, Wunschkind}\par}
+\noindent{\fontsize{14}{20}\selectfont\scshape\textcolor{myblue}{Eigentlich lief alles bestens}\ldots\par}
 \vspace*{0.5\baselineskip}
 \normalsize
 
@@ -513,7 +527,6 @@ Der Bau zog sich über ein Jahr hin, und größere Probleme gab es zum Glück ke
 
 \addchap{Schule, Ausbildung und Job}
 \thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seite des Kapitels
-\leavevmode
 \normalsize
 
  \section{Meine Grundschulzeit}
@@ -786,8 +799,6 @@ Wenn man wie ich an einer körperlichen Behinderung leidet und mit Einschränkun
 
 \addchap{Auf Reisen}
 \thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seite des Kapitels
-
-\leavevmode
 \normalsize
 
 Abhängig von ihrer Schwere beeinflusst eine Krankheit oder Körperbehinderung das Leben der Betroffenen mehr oder weniger stark. Je schwerer die Behinderung, desto größer ist ihr Einfluss, desto mehr Einschränkungen muss man lernen zu akzeptieren. Das betrifft alle möglichen Bereiche und Situationen des täglichen Lebens, unter anderem auch die Entscheidung, wo und wie man Urlaub macht.
@@ -1113,7 +1124,6 @@ Erstaunlich ist auch, wie leicht man sich in New York zurechtfindet. Manhattan i
 
 \addchap{Das Balthasar}
 \thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seite des Kapitels
-\leavevmode
 \normalsize
 
 \section{Die Geschichte der Hospizbewegung}
@@ -1454,8 +1464,6 @@ Falls es ein Leben nach dem Tod gibt, könnte ich mir vorstellen, in einer ander
 
 \addchap{Ärzte, OPs und Forschung}
 \thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seite des Kapitels
-
-\leavevmode
 \normalsize
 
 \section{Duchenne Muskeldystrophie: Die Krankheit}
@@ -1836,8 +1844,6 @@ Die Funktion des Herzmuskels bei Duchenne Muskeldystrophie kann durch verschiede
 
 \addchap{Nachwort von Roland Penz}
 \thispagestyle{scrheadings} % Wichtig, sonst erscheint die Kopfzeile nicht auf der ersten Seite des Kapitels
-
-\leavevmode
 \normalsize
 
 „Ich habe was, was Du nicht hast“: Diesen Spruch hat Marius auf einem Rucksack, der an der Rückenlehne seines Rollstuhls hängt. Wer hinter ihm hergeht, kann das lesen. Seitdem ich Marius kenne, ist das so und seitdem finde ich das sehr gut. Denn wenn einem ein so junger Mann in einem Rollstuhl entgegenkommt, fragen sich die meisten Menschen vermutlich, welche Erkrankung wohl die Ursache dafür ist. Wer an Marius vorbeigegangen ist, bekommt die Antwort weiß auf schwarz präsentiert – es ist etwas, was man selbst nicht hat. Ja, so ist das. Und das darf durchaus Anlass dafür sein, sein eigenes Glück zu empfinden und gleichzeitig diesen Humor zu bewundern. Denn diese Art Humor drückt viel Lebensmut und Lebensfreude aus.

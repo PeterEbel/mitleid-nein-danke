@@ -1,7 +1,7 @@
 \documentclass[fontsize=14pt,a4paper,headinclude,DIV=calc,automark]{scrbook}
 
 \usepackage{float}
-\usepackage[left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry} % Seitenränder
+\usepackage[left=3cm,right=2cm,top=3.5cm,bottom=2.5cm]{geometry} % Seitenränder
 
 \usepackage{polyglossia}
 \setmainlanguage{german}
@@ -42,14 +42,14 @@
     chapterprefix=true    % Auch wenn Kapitel nicht nummeriert sind, oft hilfreich
 }
 
-% Kapitel-Layout anpassen: Abstände vor Kapiteln entfernen
+% Kapitel-Layout anpassen: Abstände vor und nach Kapiteln festlegen
 \RedeclareSectionCommand[
     beforeskip=1.2\baselineskip,
-    afterskip=1.2\baselineskip
+    afterskip=1.5\baselineskip
 ]{chapter}
 
-% Anpassung des Inhaltsverzeichnisses für bessere Trennung der Ebenen
 \RedeclareSectionCommand[
+  % Anpassung des Inhaltsverzeichnisses für bessere Trennung der Ebenen
     tocindent=0pt,
     tocbeforeskip=0.4\baselineskip,
     runin=false,
@@ -59,6 +59,7 @@
   ]{section}
 
 \RedeclareSectionCommand[
+  % Anpassung des Inhaltsverzeichnisses für bessere Trennung der Ebenen
     tocindent=1em,
     tocbeforeskip=0\baselineskip,
     runin=false,
@@ -67,6 +68,7 @@
     afterskip=-5pt
 ]{subsection}
 
+% Neuer Formatvorlagen-Befehl für Absatzüberschriften
 \newcommand{\absatzueberschrift}[1]{%
   \vspace{1em}%
   {\noindent\textbf{\textcolor{myblue}{#1}}\par}
@@ -94,11 +96,16 @@
 
 \usepackage{fontspec}
 % \setmainfont{Palatino Linotype}
-% \setsansfont{Palatino Linotype}
+% \setsansfont{Calibri}
 % \setmonofont{Palatino Linotype}
-\setmainfont{Cambria}
-\setsansfont{Calibri}
-\setmonofont{Cambria}
+
+\setmainfont{Frutiger LT 45 Light}
+\setsansfont{Frutiger LT 45 Light}
+\setmonofont{Frutiger LT 45 Light}
+
+% \setmainfont{Cambria}
+% \setsansfont{Calibri}
+% \setmonofont{Cambria}
 
 \setkomafont{chapter}{\normalfont\huge\rmfamily\textcolor{myblue}}
 \setkomafont{section}{\normalfont\fontsize{18}{24}\rmfamily\textcolor{myblue}}
@@ -110,6 +117,7 @@
 \setlength{\parindent}{0pt} % Keine Einrückung für neue Absätze
 \setlength{\parskip}{0.5\baselineskip}
 
+\setlength{\headsep}{1.5cm}  % Legt den Abstand zwischen Kopfzeile und Text fest
 \setcounter{secnumdepth}{-1} % Deaktiviert die Nummerierung für alle Überschriften
 
 \title{Mitleid? Nein, danke!}
@@ -202,16 +210,16 @@ Schenk uns weitere Bücher. Ich weiß schon jemanden, der gerne wieder ein Vorwo
 \vspace{0.5cm}
 \noindent\textit{Dein Christoph Maria Herbst}
 
-\begin{figure}[ht] % [htbp] sind Platzierungsoptionen: h=here, t=top, b=bottom, p=page
+\begin{figure}[ht] % [htbp] sind Platzierungsoptionen: h=h
     \centering % Zentriert die Abbildung auf der Seite
-    \includegraphics[width=0.8\textwidth]{Fotos/ChristophMariaHerbst.jpg}
+    \includegraphics[width=0.75\textwidth]{Fotos/ChristophMariaHerbst.jpg}
     \label{fig:ChristophMariaHerbst} % Label für Querverweise
 \end{figure}
 
 \addchap{Warum es dieses Buch gibt}
 \vspace{-1\baselineskip}
 
-\textit{„Wie kommst Du damit klar?“}, fragte mich die Frau ganz direkt. Wir hatten bereits eine Zeit lang über dies und das geplaudert. Gemeinsam mit der pädagogischen Leiterin der Einrichtung saßen wir im Leseraum des Kinder- und Jugendhospizes Olpe und ich überlegte, wie ich ihre Frage beantworten wollte. Es ging um die Krankheit, an der ich leide: eine fortschreitende Form von Muskelschwund. Die Antwort, die ich ihr dann gab, klingt vielleicht banal: \textit{„Man wächst einfach hinein.“} Und genauso ist es.
+\textit{„Wie kommst Du damit klar?“}, fragte mich die Frau ganz direkt. Wir hatten bereits eine Zeit lang über dies und das geplaudert. Gemeinsam mit der pädagogischen Leiterin der Einrichtung saßen wir im Leseraum des Kinder- und Jugendhospizes Olpe und ich überlegte, wie ich ihre Frage beantworten wollte. Es ging um die Krankheit, an der ich leide: eine fortschreitende Form von Muskelschwund. Die Antwort, die ich ihr dann gab, klingt vielleicht banal: \textit{„Man wächst einfach hinein.“} Genauso ist es.
 
 Das war 2020 während eines Aufenthalts im Balthasar. Ich war gerade angekommen. Meine Eltern hatten die Koffer ausgeräumt, meine Klamotten in den Schränken verstaut, Laptop und Playstation angeschlossen und sich nach der üblichen Abschiedszeremonie auf den Heimweg gemacht. Anja Schulte, die damalige pädagogische Leiterin, kam in mein Zimmer und fragte mich, ob ich Zeit und Lust auf ein Gespräch hätte. Die Mutter eines sechsjährigen Jungen, der ebenfalls mit Duchenne Muskeldystrophie auf die Welt gekommen war, wollte die Gelegenheit nutzen und sich mit jemandem austauschen, der an der gleichen Krankheit litt wie ihr Sohn. Jemand, der sozusagen aus erster Hand berichten und ihr Tipps geben konnte.
 
@@ -230,9 +238,6 @@ Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetz
 \vspace{-1\baselineskip}
 \noindent\small\textit{Grevenbroich, September 2024}
 
-%\clearpage
-%\tableofcontents % Hier wird das Inhaltsverzeichnis eingefügt
-%\clearpage
 
 \mainmatter
 
@@ -246,12 +251,12 @@ Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetz
 
 \addchap[Die ersten Jahre]{}
 
-\vspace*{-3\baselineskip}% Stärkerer negativer Abstand für chapterbox
+\vspace*{-5\baselineskip} % Stärkerer negativer Abstand für chapterbox
 \begin{chapterbox}
     Die ersten Jahre
 \end{chapterbox}
 
-\thispagestyle{scrheadings}% Wichtig für eine Kopfzeile auf der ersten Seite des Kapitels
+\thispagestyle{scrheadings} % Wichtig für eine Kopfzeile auf der ersten Seite des Kapitels
 \noindent{\fontsize{18}{24}\selectfont\textcolor{myblue}{Ich, Wunschkind}\par}
 \noindent{\fontsize{14}{20}\selectfont\scshape\textcolor{myblue}{Eigentlich lief alles bestens}\ldots\par}
 \vspace*{0.5\baselineskip}
@@ -276,7 +281,7 @@ Apropos Namen: Den Namen Grevenbroich habt ihr vermutlich schon einmal gehört. 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{Fotos/grevenbroich.jpg}
-    \caption{Grevenbroich hat etwa 67.000 Einwohner und liegt im Braunkohlerevier westlich von Köln. Die ockerfarbenen Flecken auf der Karte sind Tagebaue, riesige, hunderte Meter tiefe Löcher, in denen gigantische Schaufelradbagger Braunkohle fördern.\hfill Quelle: Google Earth}
+    \caption{Grevenbroich hat etwa 67.000 Einwohner und liegt im Braunkohlerevier westlich von Köln. Die ockerfarbenen Flecken auf der Karte sind Tagebaue, riesige, hunderte Meter tiefe Löcher, in denen gigantische Schaufelradbagger Braunkohle fördern. \hfill Quelle: Google Earth}
     \label{fig:grevenbroich}
 \end{figure}
 
@@ -357,14 +362,6 @@ Was tun Eltern, die soeben erfahren haben, dass ihr nicht einmal vier Jahre alte
 
 Ziel der Initiative war es, Geld zu sammeln, um damit die Forschung in Bezug auf eine Heilung der Duchenne Muskeldystrophie zu intensivieren. Aktion Benni \& Co. ist mittlerweile in dem eingetragenen Verein Duchenne Deutschland e.~V. aufgegangen.
 
-% \begin{mdframed}[
-%     linewidth=0.3pt,         % Dünne Linie
-%     linecolor=rahmenlinie,   % Deine definierte Rahmenfarbe
-%     leftmargin=0, rightmargin=0,
-%     innertopmargin=12pt, innerbottommargin=12pt,
-%     innerleftmargin=12pt, innerrightmargin=12pt,
-%     backgroundcolor=white
-% ]
 \begin{tcolorbox}[
     enhanced,
     breakable,
@@ -1135,7 +1132,7 @@ Der Begriff „Hospiz“ kommt vom lateinischen Wort „hospitium“, was sowohl
 \begin{figure}[ht]
     \center
     \fcolorbox{rahmenlinie}{white}{\includegraphics[width=0.75\textwidth]{Fotos/Cicely Saunders.jpg}}
-    \caption{»Es geht nicht darum, dem Leben mehr Tage zu geben, sondern den Tagen mehr Leben«. So lautet das berühmte Zitat der britischen Krankenschwester, Sozialarbeiterin und Ärztin Cicely Saunders (1918-2005). Saunders gilt heute als Pionierin der Palliativmedizin und Begründerin der modernen Hospizbewegung. Quelle: Wikipedia}
+    \caption{»Es geht nicht darum, dem Leben mehr Tage zu geben, sondern den Tagen mehr Leben«. So lautet das berühmte Zitat der britischen Krankenschwester, Sozialarbeiterin und Ärztin Cicely Saunders (1918-2005). Saunders gilt heute als Pionierin der Palliativmedizin und Begründerin der modernen Hospizbewegung.\hfill Quelle: Wikipedia}
     \label{fig:cicely_saunders}
 \end{figure}
 
@@ -1484,7 +1481,7 @@ Da sich das Duchenne-Gen auf dem X-Chromosom befindet, betrifft es hauptsächlic
 \begin{figure}[H]
     \centering
     \fcolorbox{rahmenlinie}{white}{\includegraphics[width=\textwidth]{Fotos/x-chromosomal-rezessive-vererbung.jpg}}
-    \caption{Die Wahrscheinlichkeit, dass eine Mutter, die Trägerin ist, einen kranken Sohn auf die Welt bringt, beträgt 50~\%. Ebenso hoch ist die Wahrscheinlichkeit, dass ihre Tochter Trägerin ist.\\ \parbox{\textwidth}{\raggedleft Zeichnung: Peter Ebel}}
+    \caption{Die Wahrscheinlichkeit, dass eine Mutter, die Trägerin ist, einen kranken Sohn auf die Welt bringt, beträgt 50~\%. Ebenso hoch ist die Wahrscheinlichkeit, dass ihre Tochter Trägerin ist. \hfill Zeichnung: Peter Ebel}
     \label{fig:vererbung}
 \end{figure}
 
@@ -1499,7 +1496,7 @@ Muskelschwund wird erstmals in der Kindheit bemerkt, mit Verlust von Kraft, Funk
 Das Fortschreiten der Symptome durch Duchenne Muskeldystrophie erstreckt sich über ein Spektrum, das von spätem Beginn mit sehr milden Symptomen bis zu frühem Beginn und schweren Symptomen reicht.
 
 
-\subsection{Komplexe Krankheit: Warum Therapien so lange auf sich warten lassen}
+\subsection{Warum Therapien so lange auf sich warten lassen}
 
 Wenn man sich mit Krankheiten und deren Ursache beschäftigt und den menschlichen Körper dabei etwas genauer unter die Lupe nimmt, kann man oft kaum fassen, was für ein biologisches Wunderwerk er ist und wie fein abgestimmt alles abläuft. Es wundert einen dann nicht, dass sich Fehler in dieser hochkomplexen Maschinerie nicht so einfach beheben lassen. Das trifft auf Krankheiten wie Krebs zu und auch auf Krankheiten mit genetischer Ursache wie z.~B. Duchenne Muskeldystrophie. Fehler in unserem Erbgut kann man nicht korrigieren, indem man eine Pille nimmt.
 
@@ -1630,7 +1627,7 @@ Bei einer zunehmenden Skoliose kommt es zu einer unvermeidbaren Schrägstellung 
 \begin{figure}[H]
     \centering
     \fcolorbox{rahmenlinie}{white}{\includegraphics[width=\textwidth]{Fotos/wirbelsäulenversteifung.jpg}}
-    \caption{Bei der Skoliose handelt es sich um eine Verformung und Verdrehung der Wirbelsäule. Bei Duchenne Muskeldystrophie entsteht sie durch die zunehmende Schwächung der Rumpfmuskulatur und sorgt für eine unnatürliche, gekrümmte Sitzposition im Rollstuhl. Diese ist problematisch, da sie die Funktionsfähigkeit von Lungen und Zwerchfell und damit die Atmung beeinträchtigt. Bei einer Wirbelsäulenbegradigung werden Metallstangen und Querverbindungen mit Schrauben an den Wirbelkörpern befestigt.\hfill 3D-Modell: Marius Ebel}
+    \caption{Bei der Skoliose handelt es sich um eine Verformung und Verdrehung der Wirbelsäule. Bei Duchenne Muskeldystrophie entsteht sie durch die zunehmende Schwächung der Rumpfmuskulatur und sorgt für eine unnatürliche, gekrümmte Sitzposition im Rollstuhl. Diese ist problematisch, da sie die Funktionsfähigkeit von Lungen und Zwerchfell und damit die Atmung beeinträchtigt. Bei einer Wirbelsäulenbegradigung werden Metallstangen und Querverbindungen mit Schrauben an den Wirbelkörpern befestigt. \hfill 3D-Modell: Marius Ebel}
     \label{fig:wirbelsäulenbegradigung}
 \end{figure}
 

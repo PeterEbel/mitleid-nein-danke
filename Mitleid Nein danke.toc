@@ -5,101 +5,101 @@
 \contentsline {chapter}{\nonumberline Warum es dieses Buch gibt}{xi}{chapter*.5}%
 \contentsline {chapter}{\nonumberline Die ersten Jahre}{1}{chapter*.7}%
 \contentsline {section}{\nonumberline Da stimmt was nicht}{5}{section*.11}%
-\contentsline {subsection}{\nonumberline „Ach was! Das kommt noch!“ Denkste!}{5}{subsection*.13}%
+\contentsline {subsection}{\nonumberline „Ach was! Das kommt noch!“ Denkste!}{6}{subsection*.13}%
 \contentsline {subsection}{\nonumberline Gowers-Manöver und die Schwierigkeit aufzustehen}{6}{subsection*.15}%
 \contentsline {subsection}{\nonumberline Ich kann nicht so schnell}{6}{subsection*.18}%
-\contentsline {subsection}{\nonumberline Physiotherapie half auch nicht}{6}{subsection*.20}%
+\contentsline {subsection}{\nonumberline Physiotherapie half auch nicht}{7}{subsection*.20}%
 \contentsline {subsection}{\nonumberline Das Ende der unbeschwerten Jahre}{8}{subsection*.22}%
 \contentsline {subsection}{\nonumberline Was tun? Aktion Benni \& Co.}{9}{subsection*.24}%
-\contentsline {section}{\nonumberline Wir bauen ein Haus}{12}{section*.27}%
-\contentsline {subsection}{\nonumberline Unser erstes Zuhause, das Gegenteil von barrierefrei}{13}{subsection*.29}%
-\contentsline {subsection}{\nonumberline Meine Angst vor Rollstühlen}{14}{subsection*.31}%
-\contentsline {subsection}{\nonumberline Treppen und Rollstuhl? Unmöglich.}{15}{subsection*.33}%
-\contentsline {subsection}{\nonumberline Entscheidung Neubau}{16}{subsection*.35}%
-\contentsline {subsection}{\nonumberline Auf Grundstücksuche}{19}{subsection*.38}%
+\contentsline {section}{\nonumberline Wir bauen ein Haus}{13}{section*.27}%
+\contentsline {subsection}{\nonumberline Unser erstes Zuhause, das Gegenteil von barrierefrei}{14}{subsection*.29}%
+\contentsline {subsection}{\nonumberline Meine Angst vor Rollstühlen}{15}{subsection*.31}%
+\contentsline {subsection}{\nonumberline Treppen und Rollstuhl? Unmöglich.}{16}{subsection*.33}%
+\contentsline {subsection}{\nonumberline Entscheidung Neubau}{17}{subsection*.35}%
+\contentsline {subsection}{\nonumberline Auf Grundstücksuche}{20}{subsection*.38}%
 \contentsline {subsection}{\nonumberline Der Zufall klopft an}{20}{subsection*.40}%
-\contentsline {subsection}{\nonumberline Der Bagger kommt}{22}{subsection*.43}%
+\contentsline {subsection}{\nonumberline Der Bagger kommt}{23}{subsection*.43}%
 \contentsline {chapter}{\nonumberline Schule, Ausbildung und Job}{25}{chapter*.44}%
 \contentsline {section}{\nonumberline Meine Grundschulzeit}{25}{section*.46}%
 \contentsline {subsection}{\nonumberline Kindergarten oder Schule}{25}{subsection*.48}%
 \contentsline {subsection}{\nonumberline Was wäre, wenn…}{26}{subsection*.50}%
 \contentsline {subsection}{\nonumberline Die Schule zieht um}{27}{subsection*.53}%
 \contentsline {subsection}{\nonumberline Die neue Grundschule – Barrierefrei mit Einschränkung}{29}{subsection*.55}%
-\contentsline {subsection}{\nonumberline Auf Klassenfahrt}{29}{subsection*.57}%
+\contentsline {subsection}{\nonumberline Auf Klassenfahrt}{30}{subsection*.57}%
 \contentsline {subsection}{\nonumberline Bundesjugendspiele}{31}{subsection*.60}%
 \contentsline {section}{\nonumberline Die Anna-Freud-Schule in Köln}{33}{section*.63}%
-\contentsline {subsection}{\nonumberline Der Tipp vom Professor}{33}{subsection*.65}%
-\contentsline {subsection}{\nonumberline Nicht jeder kann die Anna-Freud-Schule besuchen}{35}{subsection*.67}%
-\contentsline {subsection}{\nonumberline Nur mit Realschulempfehlung}{36}{subsection*.69}%
-\contentsline {subsection}{\nonumberline Allein in Köln}{36}{subsection*.71}%
-\contentsline {subsection}{\nonumberline Keine Sonderbehandlung für Behinderte}{37}{subsection*.73}%
-\contentsline {subsection}{\nonumberline Das Konzept der Förderschule}{37}{subsection*.75}%
+\contentsline {subsection}{\nonumberline Der Tipp vom Professor}{34}{subsection*.65}%
+\contentsline {subsection}{\nonumberline Nicht jeder kann die Anna-Freud-Schule besuchen}{36}{subsection*.67}%
+\contentsline {subsection}{\nonumberline Nur mit Realschulempfehlung}{37}{subsection*.69}%
+\contentsline {subsection}{\nonumberline Allein in Köln}{37}{subsection*.71}%
+\contentsline {subsection}{\nonumberline Keine Sonderbehandlung für Behinderte}{38}{subsection*.73}%
+\contentsline {subsection}{\nonumberline Das Konzept der Förderschule}{38}{subsection*.75}%
 \contentsline {subsection}{\nonumberline Von „Zivis“ und „FSJ-lern“}{38}{subsection*.77}%
-\contentsline {subsection}{\nonumberline Das Komplettprogramm: Physio-, Logo- und Ergotherapie}{38}{subsection*.79}%
-\contentsline {section}{\nonumberline Ausbildung und Job}{39}{section*.81}%
-\contentsline {subsection}{\nonumberline Nur nicht entmutigen lassen}{39}{subsection*.83}%
-\contentsline {subsection}{\nonumberline Der Zufall klopft erneut an}{40}{subsection*.85}%
-\contentsline {subsection}{\nonumberline Nichts für mich. Das Berufsbildungswerk in Volmarstein}{40}{subsection*.87}%
-\contentsline {subsection}{\nonumberline Auf der Suche nach einem Ausbildungsplatz}{41}{subsection*.89}%
-\contentsline {subsection}{\nonumberline Meine Ausbildung zum Technischen Produktdesigner 3D}{41}{subsection*.91}%
-\contentsline {subsection}{\nonumberline Ausbildung abgeschlossen! Und jetzt?}{44}{subsection*.95}%
-\contentsline {subsection}{\nonumberline Alleine pinkeln müsste man können…}{44}{subsection*.97}%
-\contentsline {subsection}{\nonumberline Ein Job! Der 6er im Lotto}{46}{subsection*.99}%
-\contentsline {subsection}{\nonumberline Ein toller Arbeitgeber, die St. Augustinus Gruppe Neuss}{46}{subsection*.101}%
-\contentsline {chapter}{\nonumberline Auf Reisen}{49}{chapter*.102}%
-\contentsline {section}{\nonumberline Im Erzgebirge}{49}{section*.104}%
-\contentsline {section}{\nonumberline Die Zeltgemeinschaft}{54}{section*.108}%
-\contentsline {section}{\nonumberline Städtereisen im Rollstuhl}{57}{section*.112}%
-\contentsline {subsection}{\nonumberline München}{59}{subsection*.114}%
-\contentsline {subsection}{\nonumberline Hamburg}{60}{subsection*.116}%
-\contentsline {subsection}{\nonumberline Berlin}{61}{subsection*.119}%
-\contentsline {subsection}{\nonumberline New York}{63}{subsection*.121}%
-\contentsline {chapter}{\nonumberline Das Balthasar}{77}{chapter*.123}%
-\contentsline {section}{\nonumberline Die Geschichte der Hospizbewegung}{77}{section*.125}%
-\contentsline {section}{\nonumberline Mein Weg ins Balthasar}{79}{section*.128}%
-\contentsline {subsection}{\nonumberline Von der Gewissheit, willkommen zu sein}{81}{subsection*.130}%
-\contentsline {subsection}{\nonumberline Ein wichtiger Schritt}{82}{subsection*.133}%
-\contentsline {subsection}{\nonumberline Spuren hinterlassen}{83}{subsection*.136}%
-\contentsline {subsection}{\nonumberline Den Moment genießen}{84}{subsection*.139}%
-\contentsline {subsection}{\nonumberline Music was my first love…}{87}{subsection*.143}%
-\contentsline {subsection}{\nonumberline Wo alles begann}{91}{subsection*.147}%
-\contentsline {subsection}{\nonumberline Raum für mich}{93}{subsection*.150}%
-\contentsline {subsection}{\nonumberline Sich einfach treiben lassen}{95}{subsection*.153}%
-\contentsline {subsection}{\nonumberline Hineinwachsen}{97}{subsection*.157}%
-\contentsline {subsection}{\nonumberline Vom Umgang mit dem Tod}{99}{subsection*.160}%
-\contentsline {chapter}{\nonumberline Ärzte, OPs und Forschung}{103}{chapter*.163}%
-\contentsline {section}{\nonumberline Duchenne Muskeldystrophie: Die Krankheit}{103}{section*.165}%
-\contentsline {subsection}{\nonumberline Ich weihe euch mal ein: Das verbirgt sich hinter Duchenne}{103}{subsection*.167}%
-\contentsline {subsection}{\nonumberline Anzeichen, Symptome und Fortschreiten der Krankheit}{106}{subsection*.170}%
-\contentsline {subsection}{\nonumberline Warum Therapien so lange auf sich warten lassen}{106}{subsection*.172}%
-\contentsline {subsection}{\nonumberline Unheilbar, aber nicht unbehandelbar: Was man tun kann}{109}{subsection*.175}%
-\contentsline {subsection}{\nonumberline Gehört ab jetzt dazu: Die Behandlung mit Kortison}{110}{subsection*.177}%
-\contentsline {section}{\nonumberline Kinderarzt: Der Verdacht}{111}{section*.179}%
-\contentsline {section}{\nonumberline Uniklinik Düsseldorf: Die Diagnose}{113}{section*.182}%
-\contentsline {subsection}{\nonumberline Jährliche Verlaufskontrollen}{115}{subsection*.185}%
-\contentsline {subsection}{\nonumberline Die Behandlung mit Kreatinmonohydrat}{115}{subsection*.187}%
-\contentsline {subsection}{\nonumberline Feststellung der Schulreife}{116}{subsection*.189}%
-\contentsline {section}{\nonumberline Waldkrankenhaus Erlangen: Die OPs}{117}{section*.191}%
-\contentsline {subsection}{\nonumberline Rideau-Operation zur Vorbeugung eines Spitzfußes}{118}{subsection*.193}%
-\contentsline {subsection}{\nonumberline Wirbelsäulenbegradigung}{119}{subsection*.195}%
-\contentsline {section}{\nonumberline Weserbergland-Klinik Höxter: Die Rehas}{124}{section*.200}%
-\contentsline {section}{\nonumberline Therapien und Hilfsmittel}{128}{section*.203}%
-\contentsline {subsection}{\nonumberline Beatmung}{128}{subsection*.205}%
-\contentsline {subsection}{\nonumberline Logopädie}{128}{subsection*.207}%
-\contentsline {subsection}{\nonumberline Physiotherapie}{128}{subsection*.209}%
-\contentsline {subsection}{\nonumberline Psychotherapie}{129}{subsection*.211}%
-\contentsline {section}{\nonumberline Duchenne-Forschung}{129}{section*.213}%
-\contentsline {subsection}{\nonumberline Die Funktion von Dystrophin in Muskelzellen}{131}{subsection*.215}%
-\contentsline {subsection}{\nonumberline Gentherapie}{133}{subsection*.217}%
-\contentsline {subsection}{\nonumberline Pharmakologische Therapien}{134}{subsection*.219}%
-\contentsline {subsection}{\nonumberline Stammzelltherapie}{135}{subsection*.221}%
-\contentsline {subsection}{\nonumberline Mikro-Dystrophin und Mini-Dystrophin}{136}{subsection*.223}%
-\contentsline {subsection}{\nonumberline Physiotherapie}{137}{subsection*.225}%
-\contentsline {subsection}{\nonumberline Narbenbildung (Fibrose) reduzieren}{137}{subsection*.227}%
-\contentsline {subsection}{\nonumberline Regulation des Kalziumhaushalts}{137}{subsection*.229}%
-\contentsline {subsection}{\nonumberline Entzündungen des Muskelgewebes reduzieren}{138}{subsection*.231}%
-\contentsline {subsection}{\nonumberline Erhöhung der Mitochondrien in Muskelzellen}{139}{subsection*.233}%
-\contentsline {subsection}{\nonumberline Verbesserung der Herzmuskelfunktion}{139}{subsection*.235}%
-\contentsline {chapter}{\nonumberline Nachwort von Roland Penz}{141}{chapter*.236}%
+\contentsline {subsection}{\nonumberline Das Komplettprogramm: Physio-, Logo- und Ergotherapie}{39}{subsection*.79}%
+\contentsline {section}{\nonumberline Ausbildung und Job}{40}{section*.81}%
+\contentsline {subsection}{\nonumberline Nur nicht entmutigen lassen}{40}{subsection*.83}%
+\contentsline {subsection}{\nonumberline Der Zufall klopft erneut an}{41}{subsection*.85}%
+\contentsline {subsection}{\nonumberline Nichts für mich. Das Berufsbildungswerk in Volmarstein}{41}{subsection*.87}%
+\contentsline {subsection}{\nonumberline Auf der Suche nach einem Ausbildungsplatz}{42}{subsection*.89}%
+\contentsline {subsection}{\nonumberline Meine Ausbildung zum Technischen Produktdesigner 3D}{43}{subsection*.91}%
+\contentsline {subsection}{\nonumberline Ausbildung abgeschlossen! Und jetzt?}{45}{subsection*.95}%
+\contentsline {subsection}{\nonumberline Alleine pinkeln müsste man können…}{46}{subsection*.97}%
+\contentsline {subsection}{\nonumberline Ein Job! Der 6er im Lotto}{47}{subsection*.99}%
+\contentsline {subsection}{\nonumberline Ein toller Arbeitgeber, die St. Augustinus Gruppe Neuss}{48}{subsection*.101}%
+\contentsline {chapter}{\nonumberline Auf Reisen}{51}{chapter*.102}%
+\contentsline {section}{\nonumberline Im Erzgebirge}{51}{section*.104}%
+\contentsline {section}{\nonumberline Die Zeltgemeinschaft}{56}{section*.108}%
+\contentsline {section}{\nonumberline Städtereisen im Rollstuhl}{60}{section*.112}%
+\contentsline {subsection}{\nonumberline München}{61}{subsection*.114}%
+\contentsline {subsection}{\nonumberline Hamburg}{62}{subsection*.116}%
+\contentsline {subsection}{\nonumberline Berlin}{64}{subsection*.119}%
+\contentsline {subsection}{\nonumberline New York}{65}{subsection*.121}%
+\contentsline {chapter}{\nonumberline Das Balthasar}{79}{chapter*.123}%
+\contentsline {section}{\nonumberline Die Geschichte der Hospizbewegung}{79}{section*.125}%
+\contentsline {section}{\nonumberline Mein Weg ins Balthasar}{81}{section*.128}%
+\contentsline {subsection}{\nonumberline Von der Gewissheit, willkommen zu sein}{83}{subsection*.130}%
+\contentsline {subsection}{\nonumberline Ein wichtiger Schritt}{84}{subsection*.133}%
+\contentsline {subsection}{\nonumberline Spuren hinterlassen}{86}{subsection*.136}%
+\contentsline {subsection}{\nonumberline Den Moment genießen}{87}{subsection*.139}%
+\contentsline {subsection}{\nonumberline Music was my first love…}{88}{subsection*.143}%
+\contentsline {subsection}{\nonumberline Wo alles begann}{94}{subsection*.147}%
+\contentsline {subsection}{\nonumberline Raum für mich}{95}{subsection*.150}%
+\contentsline {subsection}{\nonumberline Sich einfach treiben lassen}{97}{subsection*.153}%
+\contentsline {subsection}{\nonumberline Hineinwachsen}{100}{subsection*.157}%
+\contentsline {subsection}{\nonumberline Vom Umgang mit dem Tod}{103}{subsection*.160}%
+\contentsline {chapter}{\nonumberline Ärzte, OPs und Forschung}{107}{chapter*.163}%
+\contentsline {section}{\nonumberline Duchenne Muskeldystrophie: Die Krankheit}{107}{section*.165}%
+\contentsline {subsection}{\nonumberline Ich weihe euch mal ein: Das verbirgt sich hinter Duchenne}{108}{subsection*.167}%
+\contentsline {subsection}{\nonumberline Anzeichen, Symptome und Fortschreiten der Krankheit}{110}{subsection*.170}%
+\contentsline {subsection}{\nonumberline Warum Therapien so lange auf sich warten lassen}{110}{subsection*.172}%
+\contentsline {subsection}{\nonumberline Unheilbar, aber nicht unbehandelbar: Was man tun kann}{113}{subsection*.175}%
+\contentsline {subsection}{\nonumberline Gehört ab jetzt dazu: Die Behandlung mit Kortison}{114}{subsection*.177}%
+\contentsline {section}{\nonumberline Kinderarzt: Der Verdacht}{115}{section*.179}%
+\contentsline {section}{\nonumberline Uniklinik Düsseldorf: Die Diagnose}{117}{section*.182}%
+\contentsline {subsection}{\nonumberline Jährliche Verlaufskontrollen}{119}{subsection*.185}%
+\contentsline {subsection}{\nonumberline Die Behandlung mit Kreatinmonohydrat}{120}{subsection*.187}%
+\contentsline {subsection}{\nonumberline Feststellung der Schulreife}{120}{subsection*.189}%
+\contentsline {section}{\nonumberline Waldkrankenhaus Erlangen: Die OPs}{121}{section*.191}%
+\contentsline {subsection}{\nonumberline Rideau-Operation zur Vorbeugung eines Spitzfußes}{122}{subsection*.193}%
+\contentsline {subsection}{\nonumberline Wirbelsäulenbegradigung}{124}{subsection*.195}%
+\contentsline {section}{\nonumberline Weserbergland-Klinik Höxter: Die Rehas}{129}{section*.200}%
+\contentsline {section}{\nonumberline Therapien und Hilfsmittel}{132}{section*.203}%
+\contentsline {subsection}{\nonumberline Beatmung}{132}{subsection*.205}%
+\contentsline {subsection}{\nonumberline Logopädie}{133}{subsection*.207}%
+\contentsline {subsection}{\nonumberline Physiotherapie}{133}{subsection*.209}%
+\contentsline {subsection}{\nonumberline Psychotherapie}{133}{subsection*.211}%
+\contentsline {section}{\nonumberline Duchenne-Forschung}{134}{section*.213}%
+\contentsline {subsection}{\nonumberline Die Funktion von Dystrophin in Muskelzellen}{136}{subsection*.215}%
+\contentsline {subsection}{\nonumberline Gentherapie}{138}{subsection*.217}%
+\contentsline {subsection}{\nonumberline Pharmakologische Therapien}{139}{subsection*.219}%
+\contentsline {subsection}{\nonumberline Stammzelltherapie}{140}{subsection*.221}%
+\contentsline {subsection}{\nonumberline Mikro-Dystrophin und Mini-Dystrophin}{141}{subsection*.223}%
+\contentsline {subsection}{\nonumberline Physiotherapie}{142}{subsection*.225}%
+\contentsline {subsection}{\nonumberline Narbenbildung (Fibrose) reduzieren}{142}{subsection*.227}%
+\contentsline {subsection}{\nonumberline Regulation des Kalziumhaushalts}{142}{subsection*.229}%
+\contentsline {subsection}{\nonumberline Entzündungen des Muskelgewebes reduzieren}{143}{subsection*.231}%
+\contentsline {subsection}{\nonumberline Erhöhung der Mitochondrien in Muskelzellen}{144}{subsection*.233}%
+\contentsline {subsection}{\nonumberline Verbesserung der Herzmuskelfunktion}{144}{subsection*.235}%
+\contentsline {chapter}{\nonumberline Nachwort von Roland Penz}{147}{chapter*.236}%
 \xpginauxfilefalse 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

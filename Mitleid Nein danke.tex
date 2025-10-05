@@ -1,7 +1,11 @@
 \documentclass[fontsize=14pt,a4paper,headinclude,DIV=calc,automark]{scrbook}
 
 \usepackage{float}
-\usepackage[left=3cm,right=2cm,top=3.5cm,bottom=2.5cm]{geometry} % Seitenränder
+\usepackage[left=3cm,right=2cm,top=3.5cm,bottom=3.5cm]{geometry} % Seitenränder
+
+\setlength{\headsep}{1.5cm}  % Abstand zwischen Kopfzeile und Text fest
+\setlength{\footskip}{1cm}   % Abstand zwischen Text und Fußzeile (für Seitenzahlen)
+\setcounter{secnumdepth}{-1} % Deaktiviert die Nummerierung für alle Überschriften
 
 \usepackage{polyglossia}
 \setmainlanguage{german}
@@ -113,9 +117,6 @@
 \setlength{\parindent}{0pt}             % Keine Einrückung für neue Absätze
 \setlength{\parskip}{0.5\baselineskip}  % Standard Absatzendeabstand
 
-\setlength{\headsep}{1.5cm}  % Abstand zwischen Kopfzeile und Text fest
-\setcounter{secnumdepth}{-1} % Deaktiviert die Nummerierung für alle Überschriften
-
 \title{Mitleid? Nein, danke!}
 \author{Marius Ebel}
 \date{November 2024}
@@ -162,10 +163,9 @@
 \thispagestyle{empty}
 
 \pagestyle{plain}  % Inhaltsverzeichnis mit römischen Seitenzahlen, aber ohne Kopfzeile
-\tableofcontents
-\clearpage         % Neue Seite nach Inhaltsverzeichnis
+\tableofcontents   % Inhaltsverzeichnis
+\clearpage         % Manueller Seitenumbruch nach Inhaltsverzeichnis
 
-% Frontmatter-Kapitel: römische Seitenzahlen in Fußzeile, keine Kopfzeile
 \addchap{Danksagung}
 \vspace{-1\baselineskip}
 
@@ -208,7 +208,7 @@ Schenk uns weitere Bücher. Ich weiß schon jemanden, der gerne wieder ein Vorwo
 
 \begin{figure}[ht] % [htbp] sind Platzierungsoptionen: h=h
     \centering % Zentriert die Abbildung auf der Seite
-    \includegraphics[width=0.75\textwidth]{Fotos/ChristophMariaHerbst.jpg}
+    \includegraphics[width=0.6\textwidth]{Fotos/ChristophMariaHerbst.jpg}
     \label{fig:ChristophMariaHerbst} % Label für Querverweise
 \end{figure}
 
@@ -223,13 +223,11 @@ Natürlich hatte ich Zeit. Und Lust. So trafen wir uns noch am gleichen Nachmitt
 
 Die Zeit flog nur so dahin. Obwohl das Gespräch über zwei Stunden dauerte, kam es mir vor wie zehn Minuten. Ich hoffe sehr, dass ich der Frau habe helfen können, indem ich ihr von meinem Leben mit der Krankheit erzählte und von meinen Erfahrungen, in der Kindheit, der Jugend, bis zum heutigen Tag. Vielleicht konnte ich ihr auch vor Augen führen, dass man als Mittzwanziger mit Duchenne durchaus zuversichtlich und lebensbejahend sein kann und nicht zurückgezogen und in sich gekehrt sein muss – was wohl viele denken – und dass die Krankheit das Leben der Betroffenen und ihrer Familien zwar in vielen Bereichen beherrscht, aber eben nicht komplett.
 
-Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetzt etwas pathetisch an, aber ich spürte das Geschenk des ehrlichen Interesses, des aufmerksamen Zuhörens und des Dankes. Das inspirierte mich. Als die Einrichtungsleitung des Balthasars einige Wochen später auf mich zukam und mich fragte, ob ich mir vorstellen könne, ein Buch über mich und meine Krankheit zu schreiben, musste ich nur kurz überlegen. Früher hätte ich mir ein solches Projekt nicht zugetraut. Jetzt aber gehe ich dieses Wagnis ein, auch wenn es mich einiges an Überwindung kostet, immerhin gebe ich viel von mir Preis.
-
-\noindent Aber alles der Reihe nach …
+Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetzt etwas pathetisch an, aber ich spürte das Geschenk des ehrlichen Interesses, des aufmerksamen Zuhörens und des Dankes. Das inspirierte mich. Als die Einrichtungsleitung des Balthasars einige Wochen später auf mich zukam und mich fragte, ob ich mir vorstellen könne, ein Buch über mich und meine Krankheit zu schreiben, musste ich nur kurz überlegen. Früher hätte ich mir ein solches Projekt nicht zugetraut. Jetzt aber gehe ich dieses Wagnis ein, auch wenn es mich einiges an Überwindung kostet, immerhin gebe ich viel von mir Preis. Aber alles der Reihe nach …
 
 \begin{figure}[H]
     \raggedright
-    \includegraphics[width=0.45\textwidth]{Fotos/marius_skaliert.jpg}
+    \includegraphics[width=0.35\textwidth]{Fotos/marius_skaliert.jpg}
 \end{figure}
 \vspace{-1\baselineskip}
 \noindent\small\textit{Grevenbroich, September 2024}
@@ -245,12 +243,12 @@ Für mich war das Gespräch mit dieser Mutter eine Bereicherung. Hört sich jetz
 
 \pagestyle{scrheadings}
 
-\addchap[Die ersten Jahre]{}
+\addchap{Die ersten Jahre}
 
-\vspace*{-5\baselineskip} % Stärkerer negativer Abstand für chapterbox
-\begin{chapterbox}
-    Die ersten Jahre
-\end{chapterbox}
+% \vspace*{-5\baselineskip} % Stärkerer negativer Abstand für chapterbox
+% \begin{chapterbox}
+%     Die ersten Jahre
+% \end{chapterbox}
 
 \thispagestyle{scrheadings} % Wichtig für eine Kopfzeile auf der ersten Seite des Kapitels
 \noindent{\fontsize{18}{24}\selectfont\textcolor{myblue}{Ich, Wunschkind}\par}
@@ -265,14 +263,6 @@ Offenbar war ich ein lang ersehntes Wunschkind. Meine Eltern hatten sich jedenfa
 Auf die Welt kam ich schließlich im Mai 1995 im Kreißsaal des Elisabeth-Kran\-ken\-hau\-ses in Grevenbroich. Auf den Tag genau, so wie es die Geburtsberechnung vorausgesagt hatte. Ich kam mit dem Kopf voran und mein jetziges, dunkelblondes Haar war bei der Geburt und auch einige Wochen danach noch schwarz. Getauft wurde ich auf den Namen Marius. Im Wettstreit der Vornamen hatten die Konkurrenten Oskar und Luis das Nachsehen. Zum Glück. Denn ist es nicht so, hat man erst einmal einen Vornamen, kann man sich einen anderen irgendwie nicht mehr vorstellen?
 
 Apropos Namen: Den Namen Grevenbroich habt ihr vermutlich schon einmal gehört. Grevenbroich ist diese kleine Stadt, gelegen auf der linken Rheinseite im Dreieck Köln-Düsseldorf-Mönchengladbach, die bei Umweltschützern wegen der Braunkohleförderung im riesigen Tagebau Garzweiler zu zweifelhaftem Ruhm gekommen ist. 2030 soll damit Schluss sein. Grevenbroich wurde aber auch durch die von Hape Kerkeling verkörperte Kunstfigur Horst Schlämmer, seines Zeichens nuschelnder Chefredakteur des fiktiven Grevenbroicher Tagblattes, deutschlandweit bekannt.
-
-% \begin{figure}[ht]
-%     \centering
-%     \includegraphics[width=\textwidth]{Fotos/grevenbroich.jpg}
-%     \caption{Grevenbroich hat etwa 67.000 Einwohner und liegt im Braunkohlerevier westlich von Köln. Die ockerfarbenen Flecken auf der Karte sind Tagebaue, riesige, hunderte Meter tiefe Löcher, in denen gigantische Schaufelradbagger Braunkohle fördern.\\
-%     \parbox{\textwidth}{\raggedleft Quelle: Google Earth}}  
-%     \label{fig:grevenbroich}
-% \end{figure}
 
 \begin{figure}[ht]
     \centering
@@ -1849,7 +1839,7 @@ Das genaue Gegenteil beschreibt Marius in diesem Buch. Dieses Buch strotzt vor L
 
 Dieses Buch wird nicht nur anderen „Duchenne-Jungs“ und ihren Familien ein guter Wegweiser und Ratgeber sein. Marius Leben gibt viel her, von dem auch gesunde Menschen profitieren können. Es macht mich sehr stolz und ich freue mich unglaublich, dass Marius den Schritt zu diesem Buch gewagt hat. Denn hier erzählt ein wahrer Meister des Lebens seine Geschichte.
 
-\vspace{1.5\baselineskip}
+\vspace{1\baselineskip}
 \textit{Roland Penz} \\
 
 \textit{Einrichtungsleitung} \\

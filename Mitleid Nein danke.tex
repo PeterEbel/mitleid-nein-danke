@@ -24,8 +24,6 @@
 \usepackage{booktabs}       % Für professionelle Tabellenlinien
 \usepackage{eurosym}        % Für das Euro-Symbol
 \usepackage{graphicx}       % Für das Einbinden von Grafiken
-\usepackage{fancybox}       % Für Rahmen um Text und Bilder
-\usepackage{mdframed}       % Für Rahmen um Text und Bilder
 
 \usepackage[
     colorlinks=true,
@@ -42,30 +40,30 @@
     chapterprefix=true    % Auch wenn Kapitel nicht nummeriert sind, oft hilfreich
 }
 
-% Kapitel-Layout anpassen: Abstände vor und nach Kapiteln festlegen
+% Kapitelüberschriften definieren
 \RedeclareSectionCommand[
     beforeskip=1.2\baselineskip,
     afterskip=1.5\baselineskip
 ]{chapter}
 
 \RedeclareSectionCommand[
-  % Anpassung des Inhaltsverzeichnisses für bessere Trennung der Ebenen
-    tocindent=0pt,
-    tocbeforeskip=0.4\baselineskip,
     runin=false,
     afterindent=false,
     beforeskip=.5\baselineskip,
-    afterskip=-5pt
+    afterskip=-5pt,
+    % Anpassung der Verzeichnisüberschriften
+    tocindent=0pt,
+    tocbeforeskip=0.4\baselineskip
   ]{section}
 
 \RedeclareSectionCommand[
-  % Anpassung des Inhaltsverzeichnisses für bessere Trennung der Ebenen
-    tocindent=1em,
-    tocbeforeskip=0\baselineskip,
     runin=false,
     afterindent=false,
     beforeskip=.5\baselineskip,
-    afterskip=-5pt
+    afterskip=-5pt,
+    % Anpassung der Verzeichnisüberschriften
+    tocindent=1em,
+    tocbeforeskip=0\baselineskip
 ]{subsection}
 
 % Neuer Formatvorlagen-Befehl für Absatzüberschriften
@@ -79,7 +77,6 @@
 
 %\rohead{\leftmark} % Unkommentieren, falls die Seitenzahlen in der Fußzeile erscheinen sollen
 
-%\usepackage[dvipsnames]{xcolor}
 \usepackage[table,dvipsnames]{xcolor}
 \definecolor{myblue}{RGB}{47, 84, 150}
 \definecolor{rahmenlinie}{RGB}{127, 127, 127}
@@ -90,9 +87,8 @@
 \definecolor{chapterlightblue}{RGB}{198,217,241} % Hellblau
 
 \usepackage{makecell}
-
 \usepackage{footmisc}
-\setlength{\footnotemargin}{0pt} % Sorgt für eine linksbündige Ausrichtung von Fußnoten ohne hängenden Einzug.
+\setlength{\footnotemargin}{0pt} % Linksbündige Ausrichtung von Fußnoten ohne hängenden Einzug.
 
 \usepackage{fontspec}
 % \setmainfont{Palatino Linotype}
@@ -114,10 +110,10 @@
 \setkomafont{pageheadfoot}{\color{myblue}}   % Stellt sicher, dass die Schriftart der Kopf-/Fußzeile neutral ist
 
 \linespread{1.2}
-\setlength{\parindent}{0pt} % Keine Einrückung für neue Absätze
-\setlength{\parskip}{0.5\baselineskip}
+\setlength{\parindent}{0pt}             % Keine Einrückung für neue Absätze
+\setlength{\parskip}{0.5\baselineskip}  % Standard Absatzendeabstand
 
-\setlength{\headsep}{1.5cm}  % Legt den Abstand zwischen Kopfzeile und Text fest
+\setlength{\headsep}{1.5cm}  % Abstand zwischen Kopfzeile und Text fest
 \setcounter{secnumdepth}{-1} % Deaktiviert die Nummerierung für alle Überschriften
 
 \title{Mitleid? Nein, danke!}

@@ -1,0 +1,26 @@
+{
+  "latex-workshop.latex.tools": [
+    {
+      "name": "xelatex (Docker)",
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-v", "%DIR%:/data",
+        "-v", "/usr/share/fonts:/usr/share/fonts:ro",
+        "-w", "/data",
+        "texlive/texlive",
+        "xelatex",
+        "-interaction=nonstopmode",
+        "-synctex=1",
+        "%DOCFILE%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "Docker XeLaTeX",
+      "tools": ["xelatex (Docker)"]
+    }
+  ]
+}

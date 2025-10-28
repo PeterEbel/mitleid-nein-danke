@@ -1,5 +1,4 @@
-\xpginauxfiletrue 
-\selectlanguage *{german}
+\xpg@aux {}{german}
 \contentsline {chapter}{\nonumberline Danksagung}{vii}{chapter*.2}%
 \contentsline {chapter}{\nonumberline Statt eines Vorwortes}{ix}{chapter*.3}%
 \contentsline {chapter}{\nonumberline Warum es dieses Buch gibt}{xi}{chapter*.5}%
@@ -101,5 +100,4 @@
 \contentsline {subsection}{\nonumberline Erhöhung der Mitochondrien in Muskelzellen}{144}{subsection*.233}%
 \contentsline {subsection}{\nonumberline Verbesserung der Herzmuskelfunktion}{144}{subsection*.235}%
 \contentsline {chapter}{\nonumberline Nachwort von Roland Penz}{147}{chapter*.236}%
-\xpginauxfilefalse 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
